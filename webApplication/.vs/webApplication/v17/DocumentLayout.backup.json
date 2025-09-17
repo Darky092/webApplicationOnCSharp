@@ -1,9 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\purr\\source\\repos\\webApplication\\",
+  "WorkspaceRootPath": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\source\\repos\\webapplication\\dataacces\\dataacces.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\test\\webapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\webapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\dataacces\\models\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\models\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\dataacces\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\dataacces\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\dataacces\\models\\ldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\models\\ldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\dataacces\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\dataacces\\wrapper\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\wrapper\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\dataacces\\models\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\models\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webapplication\\dataacces\\dataacces.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\dataacces.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -14,20 +62,176 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "webApplication",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\test\\webApplication.csproj",
+              "RelativeDocumentMoniker": "test\\webApplication.csproj",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\test\\webApplication.csproj",
+              "RelativeToolTip": "test\\webApplication.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T22:53:46.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\test\\Program.cs",
+              "RelativeDocumentMoniker": "test\\Program.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\test\\Program.cs",
+              "RelativeToolTip": "test\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:35:35.77Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\test\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "test\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\test\\Controllers\\UserController.cs",
+              "RelativeToolTip": "test\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:33:59.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:21:34.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\BusinessLogic\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\BusinessLogic\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:19:57.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Models\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "DataAcces\\Models\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Models\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "DataAcces\\Models\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:11:25.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "DataAcces\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "DataAcces\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:53:52.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepositoryWrapper.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Wrapper\\IRepositoryWrapper.cs",
+              "RelativeDocumentMoniker": "DataAcces\\Wrapper\\IRepositoryWrapper.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Wrapper\\IRepositoryWrapper.cs",
+              "RelativeToolTip": "DataAcces\\Wrapper\\IRepositoryWrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:47:54.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RepositoryWrapper.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Wrapper\\RepositoryWrapper.cs",
+              "RelativeDocumentMoniker": "DataAcces\\Wrapper\\RepositoryWrapper.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Wrapper\\RepositoryWrapper.cs",
+              "RelativeToolTip": "DataAcces\\Wrapper\\RepositoryWrapper.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:47:44.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Models\\Repositories\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "DataAcces\\Models\\Repositories\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Models\\Repositories\\RepositoryBase.cs",
+              "RelativeToolTip": "DataAcces\\Models\\Repositories\\RepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:29:06.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Interfaces\\IRepositoryBase.cs",
+              "RelativeDocumentMoniker": "DataAcces\\Interfaces\\IRepositoryBase.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Interfaces\\IRepositoryBase.cs",
+              "RelativeToolTip": "DataAcces\\Interfaces\\IRepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:25:35.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Models\\LDBContext.cs",
+              "RelativeDocumentMoniker": "DataAcces\\Models\\LDBContext.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\Models\\LDBContext.cs",
+              "RelativeToolTip": "DataAcces\\Models\\LDBContext.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAiwCcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:12:49.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "DataAcces.csproj",
-              "DocumentMoniker": "C:\\Users\\purr\\source\\repos\\webApplication\\DataAcces\\DataAcces.csproj",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\DataAcces.csproj",
               "RelativeDocumentMoniker": "DataAcces\\DataAcces.csproj",
-              "ToolTip": "C:\\Users\\purr\\source\\repos\\webApplication\\DataAcces\\DataAcces.csproj",
-              "RelativeToolTip": "DataAcces\\DataAcces.csproj",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\\u043A\u0443\u0440\u0441\u0430\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\webApplication\\DataAcces\\DataAcces.csproj*",
+              "RelativeToolTip": "DataAcces\\DataAcces.csproj*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-09-17T20:21:05.832Z",

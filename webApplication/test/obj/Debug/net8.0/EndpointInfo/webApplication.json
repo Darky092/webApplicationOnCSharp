@@ -1,10 +1,123 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.0.4",
   "info": {
     "title": "webApplication",
     "version": "1.0"
   },
   "paths": {
+    "/api/User": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/user"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/user"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/user"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/user"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/user"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/user"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/{id}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -212,5 +325,423 @@
       }
     }
   },
-  "components": { }
+  "components": {
+    "schemas": {
+      "attendance": {
+        "type": "object",
+        "properties": {
+          "attendanceid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lectureid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ispresent": {
+            "type": "boolean"
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          },
+          "recordedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lecture": {
+            "$ref": "#/components/schemas/lecture"
+          },
+          "user": {
+            "$ref": "#/components/schemas/user"
+          }
+        },
+        "additionalProperties": false
+      },
+      "city": {
+        "type": "object",
+        "properties": {
+          "cityid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cityname": {
+            "type": "string",
+            "nullable": true
+          },
+          "postalcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "institutions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/institution"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "object",
+        "properties": {
+          "groupid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "groupname": {
+            "type": "string",
+            "nullable": true
+          },
+          "course": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "curatorid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "specialty": {
+            "type": "string",
+            "nullable": true
+          },
+          "institutionid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "curator": {
+            "$ref": "#/components/schemas/user"
+          },
+          "institution": {
+            "$ref": "#/components/schemas/institution"
+          },
+          "lectures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/lecture"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "institution": {
+        "type": "object",
+        "properties": {
+          "institutionid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "institutionname": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "street": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "cityid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cityNavigation": {
+            "$ref": "#/components/schemas/city"
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/group"
+            },
+            "nullable": true
+          },
+          "rooms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/room"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "lecture": {
+        "type": "object",
+        "properties": {
+          "lectureid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lecturename": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "starttime": {
+            "type": "string",
+            "format": "time"
+          },
+          "endtime": {
+            "type": "string",
+            "format": "time"
+          },
+          "teacherid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roomid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "attendances": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/attendance"
+            },
+            "nullable": true
+          },
+          "room": {
+            "$ref": "#/components/schemas/room"
+          },
+          "teacher": {
+            "$ref": "#/components/schemas/user"
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/group"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "notification": {
+        "type": "object",
+        "properties": {
+          "notificationid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isread": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/user"
+          }
+        },
+        "additionalProperties": false
+      },
+      "portfolio": {
+        "type": "object",
+        "properties": {
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "achievement": {
+            "type": "string",
+            "nullable": true
+          },
+          "addedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/user"
+          }
+        },
+        "additionalProperties": false
+      },
+      "room": {
+        "type": "object",
+        "properties": {
+          "roomid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roomnumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "institutionid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "institution": {
+            "$ref": "#/components/schemas/institution"
+          },
+          "lectures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/lecture"
+            },
+            "nullable": true
+          },
+          "room_equipments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/room_equipment"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "room_equipment": {
+        "type": "object",
+        "properties": {
+          "roomid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipment": {
+            "type": "string",
+            "nullable": true
+          },
+          "room": {
+            "$ref": "#/components/schemas/room"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "avatar": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "patronymic": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "telephonnumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwordhash": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "attendances": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/attendance"
+            },
+            "nullable": true
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/group"
+            },
+            "nullable": true
+          },
+          "lectures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/lecture"
+            },
+            "nullable": true
+          },
+          "notifications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/notification"
+            },
+            "nullable": true
+          },
+          "portfolios": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/portfolio"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }
