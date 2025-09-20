@@ -1,13 +1,13 @@
 
-using DataAcces.Models;
 using DataAcces.Wrapper;
 using System.Reflection;
 using Npgsql.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using BusinessLogic.Interfaces;
+using Domain.Interfaces;
 using BusinessLogic.Services;
+using Domain.Models;
 
 
 

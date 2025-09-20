@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "DataAcces.Models.user",
+        "Type": "Domain.Models.user",
         "IsRequired": true
       }
     ],
@@ -35,7 +35,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "DataAcces.Models.user",
+        "Type": "Domain.Models.user",
         "IsRequired": true
       }
     ],

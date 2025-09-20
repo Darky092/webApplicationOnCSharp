@@ -971,6 +971,19 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -2923,10 +2936,16 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4"
     ]
@@ -2938,11 +2957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\DataAcces.csproj",
+      "projectUniqueName": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\DataAcces.csproj",
       "projectName": "DataAcces",
-      "projectPath": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\DataAcces.csproj",
+      "projectPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\DataAcces.csproj",
       "packagesPath": "C:\\Users\\purr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\obj\\",
+      "outputPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2962,7 +2981,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

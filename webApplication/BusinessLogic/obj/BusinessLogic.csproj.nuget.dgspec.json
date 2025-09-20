@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\BusinessLogic\\BusinessLogic.csproj": {}
+    "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\BusinessLogic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\purr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\DataAcces.csproj": {
-                "projectPath": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\DataAcces.csproj"
+              "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Domain.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\DataAcces.csproj": {
+    "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\DataAcces.csproj",
-        "projectName": "DataAcces",
-        "projectPath": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\DataAcces.csproj",
+        "projectUniqueName": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\purr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\purr\\Desktop\\курсавая работа\\webApplication\\DataAcces\\obj\\",
+        "outputPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
