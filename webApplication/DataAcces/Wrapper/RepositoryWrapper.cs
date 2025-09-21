@@ -21,6 +21,21 @@ namespace DataAcces.Wrapper
 
         private IAttendanceRepository _attendance;
 
+        private IRoomRepository _room;
+
+
+        public IRoomRepository room
+        {
+            get
+            {
+                if (_room == null)
+                {
+                    _room = new RoomRepository(_repoContext);
+                }
+                return _room;
+            }
+        }
+
 
         public IAttendanceRepository attendance 
         {

@@ -13,6 +13,9 @@ namespace Domain.Interfaces
         ICityRepository city { get; }
 
         IAttendanceRepository attendance { get; }
+
+        IRoomRepository room { get; }
+
         Task Save();
     }
 }

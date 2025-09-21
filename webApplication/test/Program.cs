@@ -32,6 +32,7 @@ namespace test
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<ICityService, CityService>();
             builder.Services.AddScoped<IAttendanceService, AttendanceService>();
+            builder.Services.AddScoped<IRoomService, RoomService>();
 
             var app = builder.Build();
 
