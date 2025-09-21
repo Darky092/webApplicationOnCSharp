@@ -570,6 +570,119 @@
         }
       }
     },
+    "/api/LectureGroups": {
+      "get": {
+        "tags": [
+          "LectureGroups"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LectureGroups"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/lectures_group"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/lectures_group"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/lectures_group"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LectureGroups"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/lectures_group"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/lectures_group"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/lectures_group"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LectureGroups"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/LectureGroups/{id}": {
+      "get": {
+        "tags": [
+          "LectureGroups"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Notificatiion": {
       "get": {
         "tags": [
@@ -1472,6 +1585,26 @@
               "$ref": "#/components/schemas/group"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "lectures_group": {
+        "type": "object",
+        "properties": {
+          "groupid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lectureid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "group": {
+            "$ref": "#/components/schemas/group"
+          },
+          "lecture": {
+            "$ref": "#/components/schemas/lecture"
           }
         },
         "additionalProperties": false

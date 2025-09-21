@@ -37,7 +37,9 @@ public partial class LDBContext : DbContext
 
     public virtual DbSet<user> users { get; set; }
 
-  
+    public virtual DbSet<lectures_group> lectures_groups { get; set; }
+
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -89,22 +91,24 @@ public partial class LDBContext : DbContext
                 .HasForeignKey(d => d.institutionid)
                 .HasConstraintName("groups_institutionid_fkey");
 
-            entity.HasMany(d => d.lectures).WithMany(p => p.groups)
-                .UsingEntity<Dictionary<string, object>>(
-                    "lectures_group",
-                    r => r.HasOne<lecture>().WithMany()
-                        .HasForeignKey("lectureid")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("lectures_groups_lectureid_fkey"),
-                    l => l.HasOne<group>().WithMany()
-                        .HasForeignKey("groupid")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("lectures_groups_groupid_fkey"),
-                    j =>
-                    {
-                        j.HasKey("groupid", "lectureid").HasName("lectures_groups_pkey");
-                        j.ToTable("lectures_groups");
-                    });
+        });
+
+        modelBuilder.Entity<lectures_group>(entity =>
+        {
+            entity.HasKey(e => new { e.groupid, e.lectureid }).HasName("lectures_groups_pkey");
+            entity.ToTable("lectures_groups");
+
+            entity.HasOne(d => d.group)
+                .WithMany()
+                .HasForeignKey(d => d.groupid)
+                .HasConstraintName("lectures_groups_groupid_fkey")
+                .OnDelete(DeleteBehavior.ClientSetNull);
+
+            entity.HasOne(d => d.lecture)
+                .WithMany()
+                .HasForeignKey(d => d.lectureid)
+                .HasConstraintName("lectures_groups_lectureid_fkey")
+                .OnDelete(DeleteBehavior.ClientSetNull);
         });
 
         modelBuilder.Entity<institution>(entity =>

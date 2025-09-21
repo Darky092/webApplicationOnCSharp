@@ -37,7 +37,19 @@ namespace DataAcces.Wrapper
 
         private IStudentsGroupRepository _students;
 
+        private ILecturesGroupsRepository _lecturesGroups;
 
+        public ILecturesGroupsRepository lecturesGroups 
+        {
+            get
+            {
+                if (_lecturesGroups == null)
+                {
+                    _lecturesGroups = new LecturesGroupsReposiitory(_repoContext);
+                }
+                return _lecturesGroups;
+            }
+        }
 
         public IStudentsGroupRepository studentsGroup
         {

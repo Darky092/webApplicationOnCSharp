@@ -30,6 +30,8 @@ namespace Domain.Interfaces
 
         IStudentsGroupRepository studentsGroup { get; }
 
+        ILecturesGroupsRepository lecturesGroups { get; }
+
         Task Save();
     }
 }
