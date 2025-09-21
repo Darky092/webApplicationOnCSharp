@@ -30,6 +30,8 @@ namespace test
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<ICityService, CityService>();
+            builder.Services.AddScoped<IAttendanceService, AttendanceService>();
 
             var app = builder.Build();
 

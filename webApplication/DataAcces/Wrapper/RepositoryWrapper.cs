@@ -15,18 +15,45 @@ namespace DataAcces.Wrapper
     {
         private LDBContext _repoContext;
 
-
+        private ICityRepository _city;
 
         private IUserRepository _user;
-        public IUserRepository user 
+
+        private IAttendanceRepository _attendance;
+
+
+        public IAttendanceRepository attendance 
         {
             get 
+            {
+                if (_attendance == null) 
+                {
+                    _attendance = new AttendanceRepository(_repoContext);
+                }
+                return _attendance;
+            }
+        }
+        public IUserRepository user
+        {
+            get
             {
                 if (_user == null)
                 {
                     _user = new UserRepository(_repoContext);
                 }
                 return _user;
+            }
+        }
+
+        public ICityRepository city 
+        {
+            get 
+            {
+                if (_city == null) 
+                {
+                _city = new CityRepository(_repoContext);
+                }
+                return _city;
             }
         }
 

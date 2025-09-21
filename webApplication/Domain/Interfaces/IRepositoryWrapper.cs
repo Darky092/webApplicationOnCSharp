@@ -10,6 +10,9 @@ namespace Domain.Interfaces
     public interface IRepositoryWrapper
     {
         IUserRepository user { get; }
+        ICityRepository city { get; }
+
+        IAttendanceRepository attendance { get; }
         Task Save();
     }
 }
