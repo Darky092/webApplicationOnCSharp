@@ -26,6 +26,10 @@ namespace Domain.Interfaces
 
         IPortfolioRepository portfolio { get; }
 
+        IRoomEquipmentRepository roomEquipment { get; }
+
+        IStudentsGroupRepository studentsGroup { get; }
+
         Task Save();
     }
 }

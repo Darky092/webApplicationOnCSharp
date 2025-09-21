@@ -33,7 +33,35 @@ namespace DataAcces.Wrapper
 
         private IPortfolioRepository _portfolio;
 
+        private IRoomEquipmentRepository _room_equipment;
 
+        private IStudentsGroupRepository _students;
+
+
+
+        public IStudentsGroupRepository studentsGroup
+        {
+            get
+            {
+                if (_students == null)
+                {
+                    _students = new StudentGroupRepository(_repoContext);
+                }
+                return _students;
+            }
+        }
+
+        public IRoomEquipmentRepository roomEquipment
+        {
+            get
+            {
+                if (_room_equipment == null)
+                {
+                    _room_equipment = new RoomEquipmentRepository(_repoContext);
+                }
+                return _room_equipment;
+            }
+        }
 
         public IPortfolioRepository portfolio
         {

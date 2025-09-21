@@ -38,6 +38,8 @@ namespace test
             builder.Services.AddScoped<ILectureService, LectureService>();
             builder.Services.AddScoped<INotificationService, NotificationService>();
             builder.Services.AddScoped<IportfolioService, PortfolioService>();
+            builder.Services.AddScoped<IRoomEquipmentService, RoomEquipmentService>();
+            builder.Services.AddScoped<IStudentsGroupService, StudentsGroupService>();
 
             var app = builder.Build();
 

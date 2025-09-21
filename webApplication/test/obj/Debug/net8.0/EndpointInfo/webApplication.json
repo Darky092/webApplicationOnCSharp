@@ -909,6 +909,232 @@
         }
       }
     },
+    "/api/RoomEquipment": {
+      "get": {
+        "tags": [
+          "RoomEquipment"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RoomEquipment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/room_equipment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/room_equipment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/room_equipment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RoomEquipment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/room_equipment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/room_equipment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/room_equipment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RoomEquipment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RoomEquipment/{id}": {
+      "get": {
+        "tags": [
+          "RoomEquipment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/StudentsGroup": {
+      "get": {
+        "tags": [
+          "StudentsGroup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "StudentsGroup"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/students_group"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/students_group"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/students_group"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "StudentsGroup"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/students_group"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/students_group"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/students_group"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "StudentsGroup"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/StudentsGroup/{id}": {
+      "get": {
+        "tags": [
+          "StudentsGroup"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/User": {
       "get": {
         "tags": [
@@ -1350,6 +1576,31 @@
           },
           "room": {
             "$ref": "#/components/schemas/room"
+          }
+        },
+        "additionalProperties": false
+      },
+      "students_group": {
+        "type": "object",
+        "properties": {
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "groupid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "enrolledat": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "group": {
+            "$ref": "#/components/schemas/group"
+          },
+          "user": {
+            "$ref": "#/components/schemas/user"
           }
         },
         "additionalProperties": false

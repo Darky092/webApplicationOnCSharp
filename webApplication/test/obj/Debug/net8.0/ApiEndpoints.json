@@ -592,6 +592,154 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "webApplication.Controllers.RoomEquipmentController",
+    "Method": "Get",
+    "RelativePath": "api/RoomEquipment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.RoomEquipmentController",
+    "Method": "Create",
+    "RelativePath": "api/RoomEquipment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "room_equipment",
+        "Type": "Domain.Models.room_equipment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.RoomEquipmentController",
+    "Method": "Update",
+    "RelativePath": "api/RoomEquipment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "room_equipment",
+        "Type": "Domain.Models.room_equipment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.RoomEquipmentController",
+    "Method": "Delete",
+    "RelativePath": "api/RoomEquipment",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.RoomEquipmentController",
+    "Method": "GetById",
+    "RelativePath": "api/RoomEquipment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.StudentsGroupController",
+    "Method": "Get",
+    "RelativePath": "api/StudentsGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.StudentsGroupController",
+    "Method": "Create",
+    "RelativePath": "api/StudentsGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "students_group",
+        "Type": "Domain.Models.students_group",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.StudentsGroupController",
+    "Method": "Update",
+    "RelativePath": "api/StudentsGroup",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "students_group",
+        "Type": "Domain.Models.students_group",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.StudentsGroupController",
+    "Method": "Delete",
+    "RelativePath": "api/StudentsGroup",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.StudentsGroupController",
+    "Method": "GetById",
+    "RelativePath": "api/StudentsGroup/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BackendApi.Controllers.UserController",
     "Method": "GetAll",
     "RelativePath": "api/User",
