@@ -16,6 +16,16 @@ namespace Domain.Interfaces
 
         IRoomRepository room { get; }
 
+        IGroupReposiitory group { get; }
+
+        IInstitutionRepository institution { get; }
+
+        ILectureRepository lecture { get; }
+
+        INotificationRepository notification { get; }
+
+        IPortfolioRepository portfolio { get; }
+
         Task Save();
     }
 }

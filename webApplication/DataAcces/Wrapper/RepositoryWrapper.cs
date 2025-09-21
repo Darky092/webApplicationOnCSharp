@@ -23,6 +23,78 @@ namespace DataAcces.Wrapper
 
         private IRoomRepository _room;
 
+        private IGroupReposiitory _group;
+
+        private IInstitutionRepository _institution;
+
+        private ILectureRepository _lecture;
+
+        private INotificationRepository _notification;
+
+        private IPortfolioRepository _portfolio;
+
+
+
+        public IPortfolioRepository portfolio
+        {
+            get
+            {
+                if (_portfolio == null)
+                {
+                    _portfolio = new PortfolioRepository(_repoContext);
+                }
+                return _portfolio;
+            }
+        }
+
+        public INotificationRepository notification 
+        {
+            get 
+            {
+                if (_notification == null) 
+                {
+                    _notification = new NotificationRepository(_repoContext);
+                }
+                return _notification;
+            }
+        }
+
+        public ILectureRepository lecture
+        {
+            get
+            {
+                if (_lecture == null)
+                {
+                    _lecture = new LectureRepository(_repoContext);
+                }
+                return _lecture;
+            }
+        }
+
+        public IInstitutionRepository institution
+        {
+            get
+            {
+                if (_institution == null)
+                {
+                    _institution = new InstitutionRepository(_repoContext);
+                }
+                return _institution;
+            }
+        }
+
+
+        public IGroupReposiitory group
+        {
+            get
+            {
+                if (_group == null)
+                {
+                    _group = new GroupRepository(_repoContext);
+                }
+                return _group;
+            }
+        }
 
         public IRoomRepository room
         {
