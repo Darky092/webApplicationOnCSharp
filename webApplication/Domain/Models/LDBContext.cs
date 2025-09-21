@@ -117,7 +117,6 @@ public partial class LDBContext : DbContext
 
             entity.ToTable("institution");
 
-            entity.Property(e => e.city).HasMaxLength(100);
             entity.Property(e => e.institutionname).HasMaxLength(256);
             entity.Property(e => e.phone).HasMaxLength(50);
             entity.Property(e => e.street).HasMaxLength(256);

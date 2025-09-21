@@ -9,8 +9,6 @@ public partial class institution
 
     public string institutionname { get; set; } = null!;
 
-    public string city { get; set; } = null!;
-
     public string street { get; set; } = null!;
 
     public string? phone { get; set; }

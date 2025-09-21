@@ -14,18 +14,56 @@ namespace BackendApi.Controllers
         {
             _userService = userService;
         }
-
+        /// <summary>
+        /// Get user
+        /// </summary>
+        /// <param name="model">User</param>
+        /// <returns></returns>
+        // Get api/<UsersController>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _userService.GetAll());
         }
-
+        /// <summary>
+        /// Get user by id
+        /// </summary>
+        /// <remarks>
+        /// Enter id
+        /// </remarks>
+        /// <param name="model">User</param>
+        /// <returns></returns>
+        // Get api/<UsersController>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             return Ok(await _userService.GetById(id));
         }
+        /// <summary>
+        /// Create new user
+        /// </summary>
+        /// <remarks>
+        /// Query Example
+        ///
+        ///     POST /Todo
+        ///     {
+        ///        "name" : "Мax",
+        ///        "surname" : "Morgan",
+        ///        "avatar" : "pathToImage/",
+        ///        "patronymic" : "___" nullable,
+        ///        "email" : "example@mail.ru",
+        ///        "telephonnumber" : "+79042391023"      
+        ///        "passwordhash" : "jhdsDHJD-12jda",
+        ///        "role" : "Student/Teacher/Admin" one of them,
+        ///        "isactive" : true/false filled in by itself, usually true,
+        ///        "createdat" : date.now() filled in by itself,        
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="model">User</param>
+        /// <returns></returns>
+
+        // POST api/<UsersController>
 
         [HttpPost]
         public async Task<IActionResult> Add(user user)
@@ -34,6 +72,32 @@ namespace BackendApi.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Update user
+        /// </summary>
+        /// <remarks>
+        /// Query Example
+        ///
+        ///     PUT /Todo
+        ///     {
+        ///        "userid" : 4
+        ///        "name" : "Мax",
+        ///        "surname" : "Morgan",
+        ///        "avatar" : "pathToImage/",
+        ///        "patronymic" : "___" nullable,
+        ///        "email" : "example@mail.ru",
+        ///        "telephonnumber" : "+79042391023"      
+        ///        "passwordhash" : "jhdsDHJD-12jda",
+        ///        "role" : "Student/Teacher/Admin" one of them,
+        ///        "isactive" : true/false filled in by itself, usually true,
+        ///        "createdat" : date.now() filled in by itself,  
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="model">User</param>
+        /// <returns></returns>
+
+        // PUT api/<UsersController>
         [HttpPut]
         public async Task<IActionResult> Update(user user)
         {
@@ -41,6 +105,15 @@ namespace BackendApi.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Delete user
+        /// </summary>
+        /// <remarks>
+        /// Enter user id
+        /// </remarks>
+        /// <param name="model">User</param>
+        /// <returns></returns>
+        // Delete api/<UsersController>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

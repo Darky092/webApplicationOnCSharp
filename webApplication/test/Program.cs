@@ -41,6 +41,27 @@ namespace test
             builder.Services.AddScoped<IRoomEquipmentService, RoomEquipmentService>();
             builder.Services.AddScoped<IStudentsGroupService, StudentsGroupService>();
             builder.Services.AddScoped<ILecturesGroupsService, LectureGroupsService>();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "LSM - Learning Management System API",
+                    Description = "Learning Management System API It is used to create classes and mark attendance. It can also be used to attend additional classes.",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Contacts",
+                        Url = new Uri("https://example.com/contact")
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "License",
+                        Url = new Uri("https://example.com/license")
+                    }
+                });
+                var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+            });
 
             var app = builder.Build();
 

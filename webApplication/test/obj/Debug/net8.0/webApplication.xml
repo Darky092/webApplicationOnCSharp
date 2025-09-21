@@ -1,0 +1,797 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webApplication</name>
+    </assembly>
+    <members>
+        <member name="M:webApplication.Controllers.AttendanceController.GetAll">
+            <summary>
+            Get all attendances
+            </summary>
+            <remarks>
+            Enter attendance id
+            </remarks>
+            <param name="model">attendance</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.AttendanceController.GetById(System.Int32)">
+            <summary>
+            Get attendance by attendance id
+            </summary>
+            <remarks>
+            Enter attendance id
+            </remarks>
+            <param name="model">attendance</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.AttendanceController.Add(Domain.Models.attendance)">
+             <summary>
+             Add attendance to user
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "lectureid" : 1,
+                    "userid" : 1,
+                    "ispresent" : true,
+                    "note" : "text",
+                 }
+            
+             </remarks>
+             <param name="model">attendance</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.AttendanceController.Update(Domain.Models.attendance)">
+             <summary>
+             Update attendance to user
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "attendanceid" : 1,
+                    "lectureid" : 1,
+                    "userid" : 1,
+                    "ispresent" : true,
+                    "note" : "text",
+                 }
+            
+             </remarks>
+             <param name="model">attendance</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.AttendanceController.Delete(System.Int32)">
+            <summary>
+            Delete attendance by attendance id
+            </summary>
+            <remarks>
+            Enter attendance id
+            </remarks>
+            <param name="model">attendance</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.CityController.GetAll">
+            <summary>
+            Get citys
+            </summary>
+            <param name="model">City</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.CityController.GetById(System.Int32)">
+            <summary>
+            Get city by id
+            </summary>
+            <remarks>
+            Enter city id
+            </remarks>
+            <param name="model">City</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.CityController.Add(Domain.Models.city)">
+             <summary>
+             Add new City
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "cityname" : "cool",
+                    "postalcode" : "123",
+                    "county" : "Moscow",
+                 }
+            
+             </remarks>
+             <param name="model">City</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.CityController.Update(Domain.Models.city)">
+             <summary>
+             Update City
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "cityid" : 1,
+                    "cityname" : "cool",
+                    "postalcode" : "123",
+                    "county" : "Moscow",
+                 }
+            
+             </remarks>
+             <param name="model">City</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.CityController.Delete(System.Int32)">
+            <summary>
+            Delete City by id
+            </summary>
+            <remarks>
+            Enter city id
+            </remarks>
+            <param name="model">City</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.GroupController.GetAll">
+            <summary>
+            Get Groups
+            </summary>
+            <param name="model">Group</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.GroupController.GetById(System.Int32)">
+            <summary>
+            Get Group by id
+            </summary>
+            <remarks>
+            Enter group id
+            </remarks>
+            <param name="model">Group</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.GroupController.Add(Domain.Models.group)">
+             <summary>
+             Add new Group
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "groupname" : "cool",
+                    "course" : 1,
+                    "curatorid" : 1,
+                    "specialty" : "proggramist",
+                    "institutionid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Group</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.GroupController.Update(Domain.Models.group)">
+             <summary>
+             Update Group
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "groupid" : 1,
+                    "groupname" : "cool",
+                    "course" : 1,
+                    "curatorid" : 1,
+                    "specialty" : "proggramist",
+                    "institutionid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Group</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.GroupController.Delete(System.Int32)">
+            <summary>
+            Delete Group by id
+            </summary>
+            <remarks>
+            Enter group id
+            </remarks>
+            <param name="model">Group</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.InstitutonController.GetAll">
+            <summary>
+            Get institutions
+            </summary>
+            <param name="model">Institution</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.InstitutonController.GetById(System.Int32)">
+            <summary>
+            Get institution by id
+            </summary>
+            <remarks>
+            Enter institution id
+            </remarks>
+            <param name="model">Institution</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.InstitutonController.Add(Domain.Models.institution)">
+             <summary>
+             Add new institution
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "institutionname" : "cool",
+                    "street" : "streer",
+                    "phone" : "+79032432030",
+                    "website" : "linc",
+                    "cityid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Institution</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.InstitutonController.Update(Domain.Models.institution)">
+             <summary>
+             Update institution
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "institutionid" : 1,
+                    "institutionname" : "cool",
+                    "street" : "streer",
+                    "phone" : "+79032432030",
+                    "website" : "linc",
+                    "cityid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Institution</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.InstitutonController.Delete(System.Int32)">
+            <summary>
+            Delete institution
+            </summary>
+            <remarks>
+            Enter institution id
+            </remarks>
+            <param name="model">Institution</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureController.GetAll">
+            <summary>
+            Get all lectures
+            </summary>
+            <param name="model">Lecture</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureController.GetById(System.Int32)">
+            <summary>
+            Get lecture by id
+            </summary>
+            <remarks>
+            Enter lecture id
+            </remarks>
+            <param name="model">Lecture</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureController.Add(Domain.Models.lecture)">
+             <summary>
+             Add new lecture
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "lecturename" : 1,
+                    "descriiption" : "parallel  cuda programming",
+                    "starttime" : 20:20:20,
+                    "endtime" : 21:21:21,
+                    "teacherid" : 1,
+                    "roomid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Lecture</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureController.Update(Domain.Models.lecture)">
+             <summary>
+             Update lecture
+             </summary>
+             <remarks>
+             Query Example
+            
+                 Put /Todo
+                 {
+                    "lectureid" : 1
+                    "lecturename" : 1,
+                    "descriiption" : "parallel  cuda programming",
+                    "starttime" : 20:20:20,
+                    "endtime" : 21:21:21,
+                    "teacherid" : 1,
+                    "roomid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Lecture</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureController.Delete(System.Int32)">
+            <summary>
+            Delete lecture by id
+            </summary>
+            <remarks>
+            Enter lecture id
+            </remarks>
+            <param name="model">Lecture</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureGroupsController.GetAll">
+            <summary>
+            GET lectures and groups
+            </summary>
+            <param name="model">Lectures_group</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureGroupsController.GetById(System.Int32)">
+            <summary>
+            GET lectures by group id
+            </summary>
+            <remarks>
+            Enter group id
+            </remarks>
+            <param name="model">Lectures_group</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureGroupsController.Add(Domain.Models.lectures_group)">
+             <summary>
+             Add new lecture to group
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "groupid" : 1,
+                    "lectureid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Lectures_group</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureGroupsController.Update(Domain.Models.lectures_group)">
+             <summary>
+             Update lecture or group
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "groupid" : 1,
+                    "lectureid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Lectures_group</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureGroupsController.Delete(System.Int32)">
+            <summary>
+            Delete lecture by group id
+            </summary>
+            <remarks>
+            enter group id
+            </remarks>
+            <param name="model">Lectures_group</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.NotificatiionController.GetAll">
+            <summary>
+            Get all notifications 
+            </summary>
+            <param name="model">Notificarion</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.NotificatiionController.GetById(System.Int32)">
+            <summary>
+            Get notification by notification id 
+            </summary>
+            <remarks>
+            Enter notification id
+            </remarks>
+            <param name="model">Notificarion</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.NotificatiionController.Add(Domain.Models.notification)">
+             <summary>
+             Add new notificarion to user
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "notificationid" : 1,
+                    "userid" : 1,
+                    "note" : "12123",
+                 }
+            
+             </remarks>
+             <param name="model">Notificarion</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.NotificatiionController.Update(Domain.Models.notification)">
+             <summary>
+             Update notification 
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "notificationid" : 1,
+                    "userid" : 1,
+                    "note" : "12123",
+                 }
+            
+             </remarks>
+             <param name="model">Notificarion</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.NotificatiionController.Delete(System.Int32)">
+            <summary>
+            Delete notification by notification id 
+            </summary>
+            <remarks>
+            Enter notification id
+            </remarks>
+            <param name="model">Notificarion</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.PortfolioController.GetAll">
+            <summary>
+            Get achevement by user id
+            </summary>
+            <param name="model">Portfolio</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.PortfolioController.GetById(System.Int32)">
+            <summary>
+            Get achevement by user id
+            </summary>
+            <remarks>
+            Enter user id
+            </remarks>
+            <param name="model">Portfolio</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.PortfolioController.Add(Domain.Models.portfolio)">
+             <summary>
+             Add new achevement to user
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "userid" : 1,
+                    "achevement" : "12123",
+                 }
+            
+             </remarks>
+             <param name="model">Portfolio</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.PortfolioController.Update(Domain.Models.portfolio)">
+             <summary>
+             Update achevement  
+             </summary>
+             <remarks>
+             Query Example
+                 PUT /Todo
+                 {
+                    "userid" : 1,
+                    "achevement" : "12123",
+                 }
+            
+             </remarks>
+             <param name="model">Portfolio</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.PortfolioController.Delete(System.Int32)">
+            <summary>
+            Update achevement  
+            </summary>
+            <remarks>
+            Enter user id
+            </remarks>
+            <param name="model">Portfolio</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomController.Get">
+            <summary>
+            Get rooms
+            </summary>
+            <param name="model">Rooms</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomController.GetById(System.Int32)">
+            <summary>
+            Get room by id
+            </summary>
+            <remarks>
+            Enter room id
+            </remarks>
+            <param name="model">Rooms</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomController.Create(Domain.Models.room)">
+             <summary>
+             Add new room
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "roomid" : 1,
+                    "roomnumber" : "12123",
+                    "institutionid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Rooms</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomController.Update(Domain.Models.room)">
+             <summary>
+             Add new room
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "roomid" : 1,
+                    "roomnumber" : "12123",
+                    "institutionid" : 1,
+                 }
+            
+             </remarks>
+             <param name="model">Rooms</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomController.Delete(System.Int32)">
+            <summary>
+            Delete room by id
+            </summary>
+            <remarks>
+            Enter room id
+            </remarks>
+            <param name="model">Rooms</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomEquipmentController.Get">
+            <summary>
+            Get rooms equipment
+            </summary>
+            <remarks>
+            Enter room id
+            </remarks>
+            <param name="model">Equipment_Rooms</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomEquipmentController.GetById(System.Int32)">
+            <summary>
+            Get room equipment by room id
+            </summary>
+            <remarks>
+            Enter room id
+            </remarks>
+            <param name="model">Equipment_Rooms</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomEquipmentController.Create(Domain.Models.room_equipment)">
+             <summary>
+             Add equipment to room
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "roomid" : 1,
+                    "equipment" : 1,      
+                 }
+            
+             </remarks>
+             <param name="model">Equipment_Rooms</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomEquipmentController.Update(Domain.Models.room_equipment)">
+             <summary>
+             Add equipment to room
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "roomid" : 1,
+                    "equipment" : 1,      
+                 }
+            
+             </remarks>
+             <param name="model">Equipment_Rooms</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.RoomEquipmentController.Delete(System.Int32)">
+            <summary>
+            Add equipment to room
+            </summary>
+            <remarks>
+            Enter room id
+            </remarks>
+            <param name="model">Equipment_Rooms</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.StudentsGroupController.Get">
+            <summary>
+            Get lecture and group
+            </summary>
+            <param name="model">LectureGroup</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.StudentsGroupController.GetById(System.Int32)">
+            <summary>
+            Get lecture and group by lecture id
+            </summary>
+            <remarks>
+            Enter lectur id
+            </remarks>
+            <param name="model">LectureGroup</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.StudentsGroupController.Create(Domain.Models.students_group)">
+             <summary>
+             Add lecture to group
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "groupid" : 1,
+                    "lectureid" : 1,      
+                 }
+            
+             </remarks>
+             <param name="model">LectureGroup</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.StudentsGroupController.Update(Domain.Models.students_group)">
+             <summary>
+             Update lecture to group
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "groupid" : 1,
+                    "lectureid" : 1,      
+                 }
+            
+             </remarks>
+             <param name="model">LectureGroup</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.StudentsGroupController.Delete(System.Int32)">
+            <summary>
+            Add lecture to group
+            </summary>
+            <remarks>
+            Enter lectur id
+            </remarks>
+            <param name="model">LectureGroup</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.GetAll">
+            <summary>
+            Get user
+            </summary>
+            <param name="model">User</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.GetById(System.Int32)">
+            <summary>
+            Get user by id
+            </summary>
+            <remarks>
+            Enter id
+            </remarks>
+            <param name="model">User</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Add(Domain.Models.user)">
+             <summary>
+             Create new user
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "name" : "Мax",
+                    "surname" : "Morgan",
+                    "avatar" : "pathToImage/",
+                    "patronymic" : "___" nullable,
+                    "email" : "example@mail.ru",
+                    "telephonnumber" : "+79042391023"      
+                    "passwordhash" : "jhdsDHJD-12jda",
+                    "role" : "Student/Teacher/Admin" one of them,
+                    "isactive" : true/false filled in by itself, usually true,
+                    "createdat" : date.now() filled in by itself,        
+                 }
+            
+             </remarks>
+             <param name="model">User</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Update(Domain.Models.user)">
+             <summary>
+             Update user
+             </summary>
+             <remarks>
+             Query Example
+            
+                 PUT /Todo
+                 {
+                    "userid" : 4
+                    "name" : "Мax",
+                    "surname" : "Morgan",
+                    "avatar" : "pathToImage/",
+                    "patronymic" : "___" nullable,
+                    "email" : "example@mail.ru",
+                    "telephonnumber" : "+79042391023"      
+                    "passwordhash" : "jhdsDHJD-12jda",
+                    "role" : "Student/Teacher/Admin" one of them,
+                    "isactive" : true/false filled in by itself, usually true,
+                    "createdat" : date.now() filled in by itself,  
+                 }
+            
+             </remarks>
+             <param name="model">User</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Delete user
+            </summary>
+            <remarks>
+            Enter user id
+            </remarks>
+            <param name="model">User</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

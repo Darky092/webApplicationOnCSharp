@@ -17,33 +17,92 @@ namespace webApplication.Controllers
         {
             _roomService = roomService;
         }
+        /// <summary>
+        /// Get rooms
+        /// </summary>
+        /// <param name="model">Rooms</param>
+        /// <returns></returns>
 
+        // GET api/<RoomController>
         [HttpGet]
         public async Task<IActionResult> Get()
         {
 
             return Ok(await _roomService.GetAll());
         }
+        /// <summary>
+        /// Get room by id
+        /// </summary>
+        /// <remarks>
+        /// Enter room id
+        /// </remarks>
+        /// <param name="model">Rooms</param>
+        /// <returns></returns>
 
+        // GET api/<RoomController>
         [HttpGet("{id}")]
-
         public async Task<IActionResult> GetById(int id) 
         {
             return Ok(await _roomService.GetById(id));
         }
+        /// <summary>
+        /// Add new room
+        /// </summary>
+        /// <remarks>
+        /// Query Example
+        ///
+        ///     POST /Todo
+        ///     {
+        ///        "roomid" : 1,
+        ///        "roomnumber" : "12123",
+        ///        "institutionid" : 1,
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="model">Rooms</param>
+        /// <returns></returns>
 
+        // POST api/<RoomController>
         [HttpPost]
         public async Task<IActionResult> Create(room room) 
         {
             await _roomService.Create(room);
             return Ok();
         }
+        /// <summary>
+        /// Add new room
+        /// </summary>
+        /// <remarks>
+        /// Query Example
+        ///
+        ///     PUT /Todo
+        ///     {
+        ///        "roomid" : 1,
+        ///        "roomnumber" : "12123",
+        ///        "institutionid" : 1,
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="model">Rooms</param>
+        /// <returns></returns>
+
+        // PUT api/<RoomController>
         [HttpPut]
         public async Task<IActionResult> Update(room room) 
         {
             await _roomService.Update(room);
             return Ok();
         }
+        /// <summary>
+        /// Delete room by id
+        /// </summary>
+        /// <remarks>
+        /// Enter room id
+        /// </remarks>
+        /// <param name="model">Rooms</param>
+        /// <returns></returns>
+
+        // DELETE api/<RoomController>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id) 
         {
