@@ -1,8 +1,10 @@
 ﻿using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.group;
 
 namespace webApplication.Controllers
 {
@@ -41,7 +43,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _groupService.GetById(id));
+            var result = await _groupService.GetById(id);
+            var response = result.Adapt<group>();
+            return Ok(response);
         }
         /// <summary>
         /// Add new Group
@@ -64,9 +68,10 @@ namespace webApplication.Controllers
 
         // POST api/<GroupController>
         [HttpPost]
-        public async Task<IActionResult> Add(group group)
+        public async Task<IActionResult> Add(CreateGroupRequest group)
         {
-            await _groupService.Create(group);
+            var request = group.Adapt<group>();
+            await _groupService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -91,9 +96,10 @@ namespace webApplication.Controllers
 
         // PUT api/<GroupController>
         [HttpPut]
-        public async Task<IActionResult> Update(group group)
+        public async Task<IActionResult> Update(UpdateGroupRequest group)
         {
-            await _groupService.Update(group);
+            var request = group.Adapt<group>();
+            await _groupService.Update(request);
             return Ok();
         }
         /// <summary>

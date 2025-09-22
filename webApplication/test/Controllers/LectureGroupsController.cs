@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.lectures_groups;
 
 namespace webApplication.Controllers
 {
@@ -40,7 +42,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _lecturesGropesService.GetById(id));
+            var result = await _lecturesGropesService.GetById(id);
+            var response = result.Adapt<lectures_group>();
+            return Ok(response);
         }
 
         /// <summary>
@@ -61,9 +65,10 @@ namespace webApplication.Controllers
 
         // POST api/<Lectures_groupController>
         [HttpPost]
-        public async Task<IActionResult> Add(lectures_group lectures_group)
+        public async Task<IActionResult> Add(CreateLecturesGroupsRequest lectures_group)
         {
-            await _lecturesGropesService.Create(lectures_group);
+            var request = lectures_group.Adapt<lectures_group>();
+            await _lecturesGropesService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -84,9 +89,10 @@ namespace webApplication.Controllers
 
         // PUT api/<Lectures_groupController>
         [HttpPut]
-        public async Task<IActionResult> Update(lectures_group lectures_group)
+        public async Task<IActionResult> Update(UpdateLectureGroupRequest lectures_group)
         {
-            await _lecturesGropesService.Update(lectures_group);
+            var request = lectures_group.Adapt<lectures_group>();
+            await _lecturesGropesService.Update(request);
             return Ok();
         }
         /// <summary>

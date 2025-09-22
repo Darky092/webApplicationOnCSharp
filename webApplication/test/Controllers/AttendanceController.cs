@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.attendance;
 
 namespace webApplication.Controllers
 {
@@ -42,7 +44,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _attendanceService.GetById(id));
+            var result = await _attendanceService.GetById(id);
+            var response = result.Adapt<GetAttendanceResponse>();
+            return Ok(response);
         }
         /// <summary>
         /// Add attendance to user
@@ -64,9 +68,10 @@ namespace webApplication.Controllers
 
         // POST api/<AttendanceController>
         [HttpPost]
-        public async Task<IActionResult> Add(attendance attendance)
+        public async Task<IActionResult> Add(CreateAttendanceRequest attendance)
         {
-            await _attendanceService.Create(attendance);
+            var request = attendance.Adapt<attendance>();
+            await _attendanceService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -90,9 +95,10 @@ namespace webApplication.Controllers
  
         // PUT api/<AttendanceController>
         [HttpPut]
-        public async Task<IActionResult> Update(attendance attendance)
+        public async Task<IActionResult> Update(UpdateAttendanceRequest attendance)
         {
-            await _attendanceService.Update(attendance);
+            var request = attendance.Adapt<attendance>();
+            await _attendanceService.Update(request);
             return Ok();
         }
         /// <summary>

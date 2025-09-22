@@ -1,7 +1,8 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
-
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.user;
 
 namespace BackendApi.Controllers
 {
@@ -37,7 +38,9 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _userService.GetById(id));
+            var result = await _userService.GetById(id);
+            var response = result.Adapt<GetUserResponse>();
+            return Ok(response);
         }
         /// <summary>
         /// Create new user
@@ -66,9 +69,11 @@ namespace BackendApi.Controllers
         // POST api/<UsersController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(user user)
+        public async Task<IActionResult> Add(CreateUserRequest request)
         {
-            await _userService.Create(user);
+
+            var userDto = request.Adapt<user>();
+            await _userService.Create(userDto);
             return Ok();
         }
 
@@ -99,9 +104,15 @@ namespace BackendApi.Controllers
 
         // PUT api/<UsersController>
         [HttpPut]
-        public async Task<IActionResult> Update(user user)
+        public async Task<IActionResult> Update(UpdateUserRequest request)
         {
-            await _userService.Update(user);
+            var useDto = request.Adapt<user>();
+            useDto.isactive = true;
+            var data = await _userService.GetById(useDto.userid);
+            if (data == null)
+                return NotFound("User not found");
+            useDto.createdat = data.createdat;
+            await _userService.Update(useDto);
             return Ok();
         }
 

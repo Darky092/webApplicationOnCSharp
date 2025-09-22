@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.room_equipment;
 
 namespace webApplication.Controllers
 {
@@ -45,7 +47,9 @@ namespace webApplication.Controllers
 
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _roomEquipmentService.GetById(id));
+            var result = await _roomEquipmentService.GetById(id);
+            var response = result.Adapt<GetRoomEquipmentResponse>();
+            return Ok(response);
         }
 
         /// <summary>
@@ -66,9 +70,10 @@ namespace webApplication.Controllers
 
         // POST api/<EquipmentRoomsController>
         [HttpPost]
-        public async Task<IActionResult> Create(room_equipment room_equipment)
+        public async Task<IActionResult> Create(CreateRoomEquipmentRequest room_equipment)
         {
-            await _roomEquipmentService.Create(room_equipment);
+            var request = room_equipment.Adapt<room_equipment>();
+            await _roomEquipmentService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -88,9 +93,10 @@ namespace webApplication.Controllers
         /// <returns></returns>
         // PUT api/<EquipmentRoomsController>
         [HttpPut]
-        public async Task<IActionResult> Update(room_equipment room_equipment)
+        public async Task<IActionResult> Update(UpdateRoomEquipmentRequest room_equipment)
         {
-            await _roomEquipmentService.Update(room_equipment);
+            var result = room_equipment.Adapt<room_equipment>();
+            await _roomEquipmentService.Update(result);
             return Ok();
         }
         /// <summary>

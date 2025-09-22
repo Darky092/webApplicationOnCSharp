@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.students_group;
 
 namespace webApplication.Controllers
 {
@@ -42,7 +44,10 @@ namespace webApplication.Controllers
 
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _studentsGroupService.GetById(id));
+
+            var result = await _studentsGroupService.GetById(id);
+            var response = result.Adapt<GetStudentsGroupsResponse>();
+            return Ok(response);
         }
         /// <summary>
         /// Add lecture to group
@@ -62,9 +67,10 @@ namespace webApplication.Controllers
 
         // POST api/<StudentsGroupController>
         [HttpPost]
-        public async Task<IActionResult> Create(students_group students_group)
+        public async Task<IActionResult> Create(CreateStudentsGroupsRequest students_group)
         {
-            await _studentsGroupService.Create(students_group);
+            var stuDbo = students_group.Adapt<students_group>();
+            await _studentsGroupService.Create(stuDbo);
             return Ok();
         }
         /// <summary>
@@ -85,9 +91,10 @@ namespace webApplication.Controllers
 
         // PUT api/<StudentsGroupController>
         [HttpPut]
-        public async Task<IActionResult> Update(students_group students_group)
+        public async Task<IActionResult> Update(UpdateStudentsGroupsRequest students_group)
         {
-            await _studentsGroupService.Update(students_group);
+            var stuDbo = students_group.Adapt<students_group>();
+            await _studentsGroupService.Update(stuDbo);
             return Ok();
         }
         /// <summary>

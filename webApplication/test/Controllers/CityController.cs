@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.city;
 
 namespace webApplication.Controllers
 {
@@ -41,7 +43,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _cityService.GetById(id));
+            var result = await _cityService.GetById(id);
+            var response = result.Adapt<GetCityResponse>();
+            return Ok(response);
         }
         /// <summary>
         /// Add new City
@@ -62,9 +66,10 @@ namespace webApplication.Controllers
 
         // POST api/<CityController>
         [HttpPost]
-        public async Task<IActionResult> Add(city city)
+        public async Task<IActionResult> Add(CreateCityRequest city)
         {
-            await _cityService.Create(city);
+            var request = city.Adapt<city>();
+            await _cityService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -87,9 +92,10 @@ namespace webApplication.Controllers
 
         // PUT api/<CityController>
         [HttpPut]
-        public async Task<IActionResult> Update(city city)
+        public async Task<IActionResult> Update(UpdateCityRequest city)
         {
-            await _cityService.Update(city);
+            var request = city.Adapt<city>();
+            await _cityService.Update(request);
             return Ok();
         }
         /// <summary>

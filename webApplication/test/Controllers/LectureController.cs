@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.lecture;
 
 namespace webApplication.Controllers
 {
@@ -40,7 +42,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _lectureService.GetById(id));
+            var result = await _lectureService.GetById(id);
+            var response = result.Adapt<GetLectureResponse>();
+            return Ok(response);
         }
 
         /// <summary>
@@ -65,9 +69,10 @@ namespace webApplication.Controllers
 
         // POST api/<LectureController>
         [HttpPost]
-        public async Task<IActionResult> Add(lecture lecture)
+        public async Task<IActionResult> Add(CreateLectureRequest lecture)
         {
-            await _lectureService.Create(lecture);
+            var request = lecture.Adapt<lecture>();
+            await _lectureService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -93,9 +98,10 @@ namespace webApplication.Controllers
 
         // PUT api/<LectureController>
         [HttpPut]
-        public async Task<IActionResult> Update(lecture lecture)
+        public async Task<IActionResult> Update(UpdateLectureRequest lecture)
         {
-            await _lectureService.Update(lecture);
+            var request = lecture.Adapt<lecture>();
+            await _lectureService.Update(request);
             return Ok();
         }
         /// <summary>

@@ -1,7 +1,10 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.room;
+using webApplication.Contracts.room_equipment;
 
 namespace webApplication.Controllers
 {
@@ -43,7 +46,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id) 
         {
-            return Ok(await _roomService.GetById(id));
+            var result = await _roomService.GetById(id);
+            var response = result.Adapt<GetRoomResponse>();
+            return Ok(response);
         }
         /// <summary>
         /// Add new room
@@ -64,9 +69,10 @@ namespace webApplication.Controllers
 
         // POST api/<RoomController>
         [HttpPost]
-        public async Task<IActionResult> Create(room room) 
+        public async Task<IActionResult> Create(CreateRoomRequest room) 
         {
-            await _roomService.Create(room);
+            var request = room.Adapt<room>();
+            await _roomService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -88,9 +94,10 @@ namespace webApplication.Controllers
 
         // PUT api/<RoomController>
         [HttpPut]
-        public async Task<IActionResult> Update(room room) 
+        public async Task<IActionResult> Update(UpdateRoomRequest room) 
         {
-            await _roomService.Update(room);
+            var request = room.Adapt<room>();
+            await _roomService.Update(request);
             return Ok();
         }
         /// <summary>

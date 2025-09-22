@@ -24,7 +24,7 @@
             <param name="model">attendance</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.AttendanceController.Add(Domain.Models.attendance)">
+        <member name="M:webApplication.Controllers.AttendanceController.Add(webApplication.Contracts.attendance.CreateAttendanceRequest)">
              <summary>
              Add attendance to user
              </summary>
@@ -43,7 +43,7 @@
              <param name="model">attendance</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.AttendanceController.Update(Domain.Models.attendance)">
+        <member name="M:webApplication.Controllers.AttendanceController.Update(webApplication.Contracts.attendance.UpdateAttendanceRequest)">
              <summary>
              Update attendance to user
              </summary>
@@ -90,7 +90,7 @@
             <param name="model">City</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.CityController.Add(Domain.Models.city)">
+        <member name="M:webApplication.Controllers.CityController.Add(webApplication.Contracts.city.CreateCityRequest)">
              <summary>
              Add new City
              </summary>
@@ -108,7 +108,7 @@
              <param name="model">City</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.CityController.Update(Domain.Models.city)">
+        <member name="M:webApplication.Controllers.CityController.Update(webApplication.Contracts.city.UpdateCityRequest)">
              <summary>
              Update City
              </summary>
@@ -154,7 +154,7 @@
             <param name="model">Group</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.GroupController.Add(Domain.Models.group)">
+        <member name="M:webApplication.Controllers.GroupController.Add(webApplication.Contracts.group.CreateGroupRequest)">
              <summary>
              Add new Group
              </summary>
@@ -174,7 +174,7 @@
              <param name="model">Group</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.GroupController.Update(Domain.Models.group)">
+        <member name="M:webApplication.Controllers.GroupController.Update(webApplication.Contracts.group.UpdateGroupRequest)">
              <summary>
              Update Group
              </summary>
@@ -222,7 +222,7 @@
             <param name="model">Institution</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.InstitutonController.Add(Domain.Models.institution)">
+        <member name="M:webApplication.Controllers.InstitutonController.Add(webApplication.Contracts.institution.CreateInstitutionRequest)">
              <summary>
              Add new institution
              </summary>
@@ -242,7 +242,7 @@
              <param name="model">Institution</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.InstitutonController.Update(Domain.Models.institution)">
+        <member name="M:webApplication.Controllers.InstitutonController.Update(webApplication.Contracts.institution.UpdateInstitutionRequest)">
              <summary>
              Update institution
              </summary>
@@ -290,7 +290,7 @@
             <param name="model">Lecture</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.LectureController.Add(Domain.Models.lecture)">
+        <member name="M:webApplication.Controllers.LectureController.Add(webApplication.Contracts.lecture.CreateLectureRequest)">
              <summary>
              Add new lecture
              </summary>
@@ -311,7 +311,7 @@
              <param name="model">Lecture</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.LectureController.Update(Domain.Models.lecture)">
+        <member name="M:webApplication.Controllers.LectureController.Update(webApplication.Contracts.lecture.UpdateLectureRequest)">
              <summary>
              Update lecture
              </summary>
@@ -360,7 +360,7 @@
             <param name="model">Lectures_group</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.LectureGroupsController.Add(Domain.Models.lectures_group)">
+        <member name="M:webApplication.Controllers.LectureGroupsController.Add(webApplication.Contracts.lectures_groups.CreateLecturesGroupsRequest)">
              <summary>
              Add new lecture to group
              </summary>
@@ -377,7 +377,7 @@
              <param name="model">Lectures_group</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.LectureGroupsController.Update(Domain.Models.lectures_group)">
+        <member name="M:webApplication.Controllers.LectureGroupsController.Update(webApplication.Contracts.lectures_groups.UpdateLectureGroupRequest)">
              <summary>
              Update lecture or group
              </summary>
@@ -421,7 +421,7 @@
             <param name="model">Notificarion</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.NotificatiionController.Add(Domain.Models.notification)">
+        <member name="M:webApplication.Controllers.NotificatiionController.Add(webApplication.Contracts.notification.CreateNotificationRequest)">
              <summary>
              Add new notificarion to user
              </summary>
@@ -439,7 +439,7 @@
              <param name="model">Notificarion</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.NotificatiionController.Update(Domain.Models.notification)">
+        <member name="M:webApplication.Controllers.NotificatiionController.Update(webApplication.Contracts.notification.UpdateNotificationRequest)">
              <summary>
              Update notification 
              </summary>
@@ -484,7 +484,7 @@
             <param name="model">Portfolio</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.PortfolioController.Add(Domain.Models.portfolio)">
+        <member name="M:webApplication.Controllers.PortfolioController.Add(webApplication.Contracts.portfolio.CreatePortfolioRequest)">
              <summary>
              Add new achevement to user
              </summary>
@@ -501,7 +501,7 @@
              <param name="model">Portfolio</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.PortfolioController.Update(Domain.Models.portfolio)">
+        <member name="M:webApplication.Controllers.PortfolioController.Update(webApplication.Contracts.portfolio.UpdatePortfolioRequest)">
              <summary>
              Update achevement  
              </summary>
@@ -544,7 +544,7 @@
             <param name="model">Rooms</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.RoomController.Create(Domain.Models.room)">
+        <member name="M:webApplication.Controllers.RoomController.Create(webApplication.Contracts.room.CreateRoomRequest)">
              <summary>
              Add new room
              </summary>
@@ -562,7 +562,7 @@
              <param name="model">Rooms</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.RoomController.Update(Domain.Models.room)">
+        <member name="M:webApplication.Controllers.RoomController.Update(webApplication.Contracts.room.UpdateRoomRequest)">
              <summary>
              Add new room
              </summary>
@@ -610,7 +610,7 @@
             <param name="model">Equipment_Rooms</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.RoomEquipmentController.Create(Domain.Models.room_equipment)">
+        <member name="M:webApplication.Controllers.RoomEquipmentController.Create(webApplication.Contracts.room_equipment.CreateRoomEquipmentRequest)">
              <summary>
              Add equipment to room
              </summary>
@@ -627,7 +627,7 @@
              <param name="model">Equipment_Rooms</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.RoomEquipmentController.Update(Domain.Models.room_equipment)">
+        <member name="M:webApplication.Controllers.RoomEquipmentController.Update(webApplication.Contracts.room_equipment.UpdateRoomEquipmentRequest)">
              <summary>
              Add equipment to room
              </summary>
@@ -671,7 +671,7 @@
             <param name="model">LectureGroup</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.StudentsGroupController.Create(Domain.Models.students_group)">
+        <member name="M:webApplication.Controllers.StudentsGroupController.Create(webApplication.Contracts.students_group.CreateStudentsGroupsRequest)">
              <summary>
              Add lecture to group
              </summary>
@@ -688,7 +688,7 @@
              <param name="model">LectureGroup</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.StudentsGroupController.Update(Domain.Models.students_group)">
+        <member name="M:webApplication.Controllers.StudentsGroupController.Update(webApplication.Contracts.students_group.UpdateStudentsGroupsRequest)">
              <summary>
              Update lecture to group
              </summary>
@@ -732,7 +732,7 @@
             <param name="model">User</param>
             <returns></returns>
         </member>
-        <member name="M:BackendApi.Controllers.UserController.Add(Domain.Models.user)">
+        <member name="M:BackendApi.Controllers.UserController.Add(webApplication.Contracts.user.CreateUserRequest)">
              <summary>
              Create new user
              </summary>
@@ -757,7 +757,7 @@
              <param name="model">User</param>
              <returns></returns>
         </member>
-        <member name="M:BackendApi.Controllers.UserController.Update(Domain.Models.user)">
+        <member name="M:BackendApi.Controllers.UserController.Update(webApplication.Contracts.user.UpdateUserRequest)">
              <summary>
              Update user
              </summary>

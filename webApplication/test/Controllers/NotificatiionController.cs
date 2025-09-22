@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.notification;
 
 namespace webApplication.Controllers
 {
@@ -39,7 +41,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _notificationService.GetById(id));
+            var result = await _notificationService.GetById(id);
+            var response = result.Adapt<GetNotificationResponse>();
+            return Ok(response);
         }
 
         /// <summary>
@@ -61,9 +65,10 @@ namespace webApplication.Controllers
 
         // POST api/<NotificarionController>
         [HttpPost]
-        public async Task<IActionResult> Add(notification notification)
+        public async Task<IActionResult> Add(CreateNotificationRequest notification)
         {
-            await _notificationService.Create(notification);
+            var request = notification.Adapt<notification>();
+            await _notificationService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -86,9 +91,10 @@ namespace webApplication.Controllers
         // PUT api/<NotificarionController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(notification notification)
+        public async Task<IActionResult> Update(UpdateNotificationRequest notification)
         {
-            await _notificationService.Update(notification);
+            var request = notification.Adapt<notification>();
+            await _notificationService.Update(request);
             return Ok();
         }
         /// <summary>

@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.portfolio;
 
 namespace webApplication.Controllers
 {
@@ -40,7 +42,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _portfolioService.GetById(id));
+            var result = await _portfolioService.GetById(id);
+            var response = result.Adapt<GetPortfolioResponse>();
+            return Ok(response);
         }
         /// <summary>
         /// Add new achevement to user
@@ -60,9 +64,10 @@ namespace webApplication.Controllers
 
         // POST api/<PortfolioController>
         [HttpPost]
-        public async Task<IActionResult> Add(portfolio portfolio)
+        public async Task<IActionResult> Add(CreatePortfolioRequest portfolio)
         {
-            await _portfolioService.Create(portfolio);
+            var request = portfolio.Adapt<portfolio>();
+            await _portfolioService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -82,9 +87,10 @@ namespace webApplication.Controllers
 
         // PUT api/<PortfolioController>
         [HttpPut]
-        public async Task<IActionResult> Update(portfolio portfolio)
+        public async Task<IActionResult> Update(UpdatePortfolioRequest portfolio)
         {
-            await _portfolioService.Update(portfolio);
+            var request = portfolio.Adapt<portfolio>();
+            await _portfolioService.Update(request);
             return Ok();
         }
         /// <summary>

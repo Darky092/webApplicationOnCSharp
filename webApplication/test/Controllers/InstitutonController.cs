@@ -1,7 +1,9 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Contracts.institution;
 
 namespace webApplication.Controllers
 {
@@ -40,7 +42,9 @@ namespace webApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _institutionService.GetById(id));
+            var result = await _institutionService.GetById(id);
+            var response = result.Adapt<GetInstitutionResponse>();
+            return Ok(response);
         }
         /// <summary>
         /// Add new institution
@@ -63,9 +67,10 @@ namespace webApplication.Controllers
 
         // POST api/<InstitutionController>
         [HttpPost]
-        public async Task<IActionResult> Add(institution institution)
+        public async Task<IActionResult> Add(CreateInstitutionRequest institution)
         {
-            await _institutionService.Create(institution);
+            var request = institution.Adapt<institution>();
+            await _institutionService.Create(request);
             return Ok();
         }
         /// <summary>
@@ -90,9 +95,10 @@ namespace webApplication.Controllers
 
         // PUT api/<InstitutionController>
         [HttpPut]
-        public async Task<IActionResult> Update(institution institution)
+        public async Task<IActionResult> Update(UpdateInstitutionRequest institution)
         {
-            await _institutionService.Update(institution);
+            var request = institution.Adapt<institution>();
+            await _institutionService.Update(request);
             return Ok();
         }
         /// <summary>

@@ -237,3 +237,5 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\webApplication.xml
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\webApplication.xml
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Mapster.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Mapster.Core.dll

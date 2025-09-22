@@ -1,14 +1,14 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "Интернет-магазин API",
-    "description": "Краткое описание вашего API",
+    "title": "LSM - Learning Management System API",
+    "description": "Learning Management System API It is used to create classes and mark attendance. It can also be used to attend additional classes.",
     "contact": {
-      "name": "Пример контакта",
+      "name": "Contacts",
       "url": "https://example.com/contact"
     },
     "license": {
-      "name": "Пример лицензии",
+      "name": "License",
       "url": "https://example.com/license"
     },
     "version": "v1"
@@ -37,17 +37,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/attendance"
+                "$ref": "#/components/schemas/CreateAttendanceRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/attendance"
+                "$ref": "#/components/schemas/CreateAttendanceRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/attendance"
+                "$ref": "#/components/schemas/CreateAttendanceRequest"
               }
             }
           }
@@ -68,17 +68,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/attendance"
+                "$ref": "#/components/schemas/UpdateAttendanceRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/attendance"
+                "$ref": "#/components/schemas/UpdateAttendanceRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/attendance"
+                "$ref": "#/components/schemas/UpdateAttendanceRequest"
               }
             }
           }
@@ -159,17 +159,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/city"
+                "$ref": "#/components/schemas/CreateCityRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/city"
+                "$ref": "#/components/schemas/CreateCityRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/city"
+                "$ref": "#/components/schemas/CreateCityRequest"
               }
             }
           }
@@ -190,17 +190,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/city"
+                "$ref": "#/components/schemas/UpdateCityRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/city"
+                "$ref": "#/components/schemas/UpdateCityRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/city"
+                "$ref": "#/components/schemas/UpdateCityRequest"
               }
             }
           }
@@ -281,17 +281,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/group"
+                "$ref": "#/components/schemas/CreateGroupRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/group"
+                "$ref": "#/components/schemas/CreateGroupRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/group"
+                "$ref": "#/components/schemas/CreateGroupRequest"
               }
             }
           }
@@ -312,17 +312,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/group"
+                "$ref": "#/components/schemas/UpdateGroupRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/group"
+                "$ref": "#/components/schemas/UpdateGroupRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/group"
+                "$ref": "#/components/schemas/UpdateGroupRequest"
               }
             }
           }
@@ -403,17 +403,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/institution"
+                "$ref": "#/components/schemas/CreateInstitutionRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/institution"
+                "$ref": "#/components/schemas/CreateInstitutionRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/institution"
+                "$ref": "#/components/schemas/CreateInstitutionRequest"
               }
             }
           }
@@ -434,17 +434,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/institution"
+                "$ref": "#/components/schemas/UpdateInstitutionRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/institution"
+                "$ref": "#/components/schemas/UpdateInstitutionRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/institution"
+                "$ref": "#/components/schemas/UpdateInstitutionRequest"
               }
             }
           }
@@ -525,17 +525,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/lecture"
+                "$ref": "#/components/schemas/CreateLectureRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/lecture"
+                "$ref": "#/components/schemas/CreateLectureRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/lecture"
+                "$ref": "#/components/schemas/CreateLectureRequest"
               }
             }
           }
@@ -556,17 +556,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/lecture"
+                "$ref": "#/components/schemas/UpdateLectureRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/lecture"
+                "$ref": "#/components/schemas/UpdateLectureRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/lecture"
+                "$ref": "#/components/schemas/UpdateLectureRequest"
               }
             }
           }
@@ -647,17 +647,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/lectures_group"
+                "$ref": "#/components/schemas/CreateLecturesGroupsRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/lectures_group"
+                "$ref": "#/components/schemas/CreateLecturesGroupsRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/lectures_group"
+                "$ref": "#/components/schemas/CreateLecturesGroupsRequest"
               }
             }
           }
@@ -678,17 +678,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/lectures_group"
+                "$ref": "#/components/schemas/UpdateLectureGroupRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/lectures_group"
+                "$ref": "#/components/schemas/UpdateLectureGroupRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/lectures_group"
+                "$ref": "#/components/schemas/UpdateLectureGroupRequest"
               }
             }
           }
@@ -769,17 +769,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             }
           }
@@ -800,17 +800,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/notification"
+                "$ref": "#/components/schemas/UpdateNotificationRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/notification"
+                "$ref": "#/components/schemas/UpdateNotificationRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/notification"
+                "$ref": "#/components/schemas/UpdateNotificationRequest"
               }
             }
           }
@@ -891,17 +891,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/portfolio"
+                "$ref": "#/components/schemas/CreatePortfolioRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/portfolio"
+                "$ref": "#/components/schemas/CreatePortfolioRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/portfolio"
+                "$ref": "#/components/schemas/CreatePortfolioRequest"
               }
             }
           }
@@ -922,17 +922,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/portfolio"
+                "$ref": "#/components/schemas/UpdatePortfolioRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/portfolio"
+                "$ref": "#/components/schemas/UpdatePortfolioRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/portfolio"
+                "$ref": "#/components/schemas/UpdatePortfolioRequest"
               }
             }
           }
@@ -1013,17 +1013,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/room"
+                "$ref": "#/components/schemas/CreateRoomRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/room"
+                "$ref": "#/components/schemas/CreateRoomRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/room"
+                "$ref": "#/components/schemas/CreateRoomRequest"
               }
             }
           }
@@ -1044,17 +1044,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/room"
+                "$ref": "#/components/schemas/UpdateRoomRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/room"
+                "$ref": "#/components/schemas/UpdateRoomRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/room"
+                "$ref": "#/components/schemas/UpdateRoomRequest"
               }
             }
           }
@@ -1136,17 +1136,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/room_equipment"
+                "$ref": "#/components/schemas/CreateRoomEquipmentRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/room_equipment"
+                "$ref": "#/components/schemas/CreateRoomEquipmentRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/room_equipment"
+                "$ref": "#/components/schemas/CreateRoomEquipmentRequest"
               }
             }
           }
@@ -1167,17 +1167,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/room_equipment"
+                "$ref": "#/components/schemas/UpdateRoomEquipmentRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/room_equipment"
+                "$ref": "#/components/schemas/UpdateRoomEquipmentRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/room_equipment"
+                "$ref": "#/components/schemas/UpdateRoomEquipmentRequest"
               }
             }
           }
@@ -1258,17 +1258,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/students_group"
+                "$ref": "#/components/schemas/CreateStudentsGroupsRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/students_group"
+                "$ref": "#/components/schemas/CreateStudentsGroupsRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/students_group"
+                "$ref": "#/components/schemas/CreateStudentsGroupsRequest"
               }
             }
           }
@@ -1289,17 +1289,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/students_group"
+                "$ref": "#/components/schemas/UpdateStudentsGroupsRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/students_group"
+                "$ref": "#/components/schemas/UpdateStudentsGroupsRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/students_group"
+                "$ref": "#/components/schemas/UpdateStudentsGroupsRequest"
               }
             }
           }
@@ -1380,17 +1380,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/user"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/user"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/user"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             }
           }
@@ -1411,17 +1411,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/user"
+                "$ref": "#/components/schemas/UpdateUserRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/user"
+                "$ref": "#/components/schemas/UpdateUserRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/user"
+                "$ref": "#/components/schemas/UpdateUserRequest"
               }
             }
           }
@@ -1483,7 +1483,271 @@
   },
   "components": {
     "schemas": {
-      "attendance": {
+      "CreateAttendanceRequest": {
+        "type": "object",
+        "properties": {
+          "lectureid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ispresent": {
+            "type": "boolean"
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateCityRequest": {
+        "type": "object",
+        "properties": {
+          "cityname": {
+            "type": "string",
+            "nullable": true
+          },
+          "postalcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateGroupRequest": {
+        "type": "object",
+        "properties": {
+          "groupname": {
+            "type": "string",
+            "nullable": true
+          },
+          "course": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "curatorid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "specialty": {
+            "type": "string",
+            "nullable": true
+          },
+          "institutionid": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateInstitutionRequest": {
+        "type": "object",
+        "properties": {
+          "institutionname": {
+            "type": "string",
+            "nullable": true
+          },
+          "street": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "cityid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateLectureRequest": {
+        "type": "object",
+        "properties": {
+          "lecturename": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "starttime": {
+            "type": "string",
+            "format": "time"
+          },
+          "endtime": {
+            "type": "string",
+            "format": "time"
+          },
+          "teacherid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roomid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateLecturesGroupsRequest": {
+        "type": "object",
+        "properties": {
+          "groupid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lectureid": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateNotificationRequest": {
+        "type": "object",
+        "properties": {
+          "notificationid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isread": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePortfolioRequest": {
+        "type": "object",
+        "properties": {
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "achievement": {
+            "type": "string",
+            "nullable": true
+          },
+          "addedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateRoomEquipmentRequest": {
+        "type": "object",
+        "properties": {
+          "roomid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateRoomRequest": {
+        "type": "object",
+        "properties": {
+          "roomnumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "institutionid": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateStudentsGroupsRequest": {
+        "type": "object",
+        "properties": {
+          "userid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "groupid": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateUserRequest": {
+        "type": "object",
+        "properties": {
+          "avatar": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "patronymic": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "telephonnumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwordhash": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateAttendanceRequest": {
         "type": "object",
         "properties": {
           "attendanceid": {
@@ -1504,22 +1768,11 @@
           "note": {
             "type": "string",
             "nullable": true
-          },
-          "recordedat": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "lecture": {
-            "$ref": "#/components/schemas/lecture"
-          },
-          "user": {
-            "$ref": "#/components/schemas/user"
           }
         },
         "additionalProperties": false
       },
-      "city": {
+      "UpdateCityRequest": {
         "type": "object",
         "properties": {
           "cityid": {
@@ -1537,18 +1790,11 @@
           "country": {
             "type": "string",
             "nullable": true
-          },
-          "institutions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/institution"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "group": {
+      "UpdateGroupRequest": {
         "type": "object",
         "properties": {
           "groupid": {
@@ -1575,24 +1821,11 @@
           "institutionid": {
             "type": "integer",
             "format": "int32"
-          },
-          "curator": {
-            "$ref": "#/components/schemas/user"
-          },
-          "institution": {
-            "$ref": "#/components/schemas/institution"
-          },
-          "lectures": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/lecture"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "institution": {
+      "UpdateInstitutionRequest": {
         "type": "object",
         "properties": {
           "institutionid": {
@@ -1619,28 +1852,25 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
-          },
-          "cityNavigation": {
-            "$ref": "#/components/schemas/city"
-          },
-          "groups": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/group"
-            },
-            "nullable": true
-          },
-          "rooms": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/room"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "lecture": {
+      "UpdateLectureGroupRequest": {
+        "type": "object",
+        "properties": {
+          "groupid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lectureid": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateLectureRequest": {
         "type": "object",
         "properties": {
           "lectureid": {
@@ -1680,51 +1910,11 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
-          },
-          "attendances": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/attendance"
-            },
-            "nullable": true
-          },
-          "room": {
-            "$ref": "#/components/schemas/room"
-          },
-          "teacher": {
-            "$ref": "#/components/schemas/user"
-          },
-          "groups": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/group"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "lectures_group": {
-        "type": "object",
-        "properties": {
-          "groupid": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "lectureid": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "group": {
-            "$ref": "#/components/schemas/group"
-          },
-          "lecture": {
-            "$ref": "#/components/schemas/lecture"
-          }
-        },
-        "additionalProperties": false
-      },
-      "notification": {
+      "UpdateNotificationRequest": {
         "type": "object",
         "properties": {
           "notificationid": {
@@ -1747,14 +1937,11 @@
           "note": {
             "type": "string",
             "nullable": true
-          },
-          "user": {
-            "$ref": "#/components/schemas/user"
           }
         },
         "additionalProperties": false
       },
-      "portfolio": {
+      "UpdatePortfolioRequest": {
         "type": "object",
         "properties": {
           "userid": {
@@ -1769,14 +1956,25 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
-          },
-          "user": {
-            "$ref": "#/components/schemas/user"
           }
         },
         "additionalProperties": false
       },
-      "room": {
+      "UpdateRoomEquipmentRequest": {
+        "type": "object",
+        "properties": {
+          "roomid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateRoomRequest": {
         "type": "object",
         "properties": {
           "roomid": {
@@ -1790,45 +1988,11 @@
           "institutionid": {
             "type": "integer",
             "format": "int32"
-          },
-          "institution": {
-            "$ref": "#/components/schemas/institution"
-          },
-          "lectures": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/lecture"
-            },
-            "nullable": true
-          },
-          "room_equipments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/room_equipment"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "room_equipment": {
-        "type": "object",
-        "properties": {
-          "roomid": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "equipment": {
-            "type": "string",
-            "nullable": true
-          },
-          "room": {
-            "$ref": "#/components/schemas/room"
-          }
-        },
-        "additionalProperties": false
-      },
-      "students_group": {
+      "UpdateStudentsGroupsRequest": {
         "type": "object",
         "properties": {
           "userid": {
@@ -1838,22 +2002,11 @@
           "groupid": {
             "type": "integer",
             "format": "int32"
-          },
-          "enrolledat": {
-            "type": "string",
-            "format": "date",
-            "nullable": true
-          },
-          "group": {
-            "$ref": "#/components/schemas/group"
-          },
-          "user": {
-            "$ref": "#/components/schemas/user"
           }
         },
         "additionalProperties": false
       },
-      "user": {
+      "UpdateUserRequest": {
         "type": "object",
         "properties": {
           "userid": {
@@ -1899,41 +2052,6 @@
           "createdat": {
             "type": "string",
             "format": "date-time",
-            "nullable": true
-          },
-          "attendances": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/attendance"
-            },
-            "nullable": true
-          },
-          "groups": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/group"
-            },
-            "nullable": true
-          },
-          "lectures": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/lecture"
-            },
-            "nullable": true
-          },
-          "notifications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/notification"
-            },
-            "nullable": true
-          },
-          "portfolios": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/portfolio"
-            },
             "nullable": true
           }
         },
