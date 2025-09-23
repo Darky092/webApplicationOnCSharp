@@ -1,26 +1,35 @@
-name: dotnet format
+name: .NET Format and Build Check
 
 on:
   push:
+    branches: [ "**" ]  
     paths:
       - "**.cs"
       - ".editorconfig"
+  pull_request:
+    branches: [ "**" ]  
 
 jobs:
-  check-format:
+  check-code:
     runs-on: windows-latest
 
     steps:
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
+      - name: Checkout code
+        uses: actions/checkout@v4  
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '6.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build project
+        run: dotnet build --no-restore --configuration Release
 
       - name: Install dotnet-format tool
         run: dotnet tool install -g dotnet-format
 
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Run dotnet format
-        run: dotnet-format --folder --check --verbosity diagnostic
+      - name: Check code formatting
+        run: dotnet format --verify-no-changes --severity error
