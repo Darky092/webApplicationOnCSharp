@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-{
-    public interface INotificationService
     {
+    public interface INotificationService
+        {
 
-       
-            Task<List<notification>> GetAll();
-            Task<notification> GetById(int id);
 
-            Task Create(notification model);
-            Task Update(notification model);
-            Task Delete(int id);
+        Task<List<notification>> GetAll();
+        Task<notification> GetById(int id);
 
-        
+        Task Create(notification model);
+        Task Update(notification model);
+        Task Delete(int id);
+
+
+        }
     }
-}

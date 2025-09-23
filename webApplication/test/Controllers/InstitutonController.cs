@@ -6,17 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.institution;
 
 namespace webApplication.Controllers
-{
+    {
     [Route("api/[controller]")]
     [ApiController]
     public class InstitutonController : ControllerBase
-    {
+        {
 
         private IInstitutionService _institutionService;
         public InstitutonController(IInstitutionService institutionService)
-        {
+            {
             _institutionService = institutionService;
-        }
+            }
         /// <summary>
         /// Get institutions
         /// </summary>
@@ -26,9 +26,9 @@ namespace webApplication.Controllers
         // GET api/<InstitutionController>
         [HttpGet]
         public async Task<IActionResult> GetAll()
-        {
+            {
             return Ok(await _institutionService.GetAll());
-        }
+            }
         /// <summary>
         /// Get institution by id
         /// </summary>
@@ -41,11 +41,11 @@ namespace webApplication.Controllers
         // GET api/<InstitutionController>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
-        {
+            {
             var result = await _institutionService.GetById(id);
             var response = result.Adapt<GetInstitutionResponse>();
             return Ok(response);
-        }
+            }
         /// <summary>
         /// Add new institution
         /// </summary>
@@ -68,11 +68,11 @@ namespace webApplication.Controllers
         // POST api/<InstitutionController>
         [HttpPost]
         public async Task<IActionResult> Add(CreateInstitutionRequest institution)
-        {
+            {
             var request = institution.Adapt<institution>();
             await _institutionService.Create(request);
             return Ok();
-        }
+            }
         /// <summary>
         /// Update institution
         /// </summary>
@@ -96,11 +96,11 @@ namespace webApplication.Controllers
         // PUT api/<InstitutionController>
         [HttpPut]
         public async Task<IActionResult> Update(UpdateInstitutionRequest institution)
-        {
+            {
             var request = institution.Adapt<institution>();
             await _institutionService.Update(request);
             return Ok();
-        }
+            }
         /// <summary>
         /// Delete institution
         /// </summary>
@@ -113,9 +113,9 @@ namespace webApplication.Controllers
         // Delete api/<InstitutionController>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
-        {
+            {
             await _institutionService.Delete(id);
             return Ok();
+            }
         }
     }
-}

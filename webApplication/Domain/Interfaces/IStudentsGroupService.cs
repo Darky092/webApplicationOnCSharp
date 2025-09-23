@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-{
-    public interface IStudentsGroupService
     {
+    public interface IStudentsGroupService
+        {
         Task<List<students_group>> GetAll();
 
         Task<students_group> GetById(int id);
         Task Create(students_group model);
         Task Update(students_group model);
         Task Delete(int id);
+        }
     }
-}

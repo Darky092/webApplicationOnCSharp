@@ -5,23 +5,23 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #nullable disable
 
 namespace Domain.Migrations
-{
+    {
     /// <inheritdoc />
     public partial class MigratonName : Migration
-    {
+        {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
-        {
+            {
             migrationBuilder.CreateTable(
                 name: "cities",
                 columns: table => new
-                {
+                    {
                     cityid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     cityname = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     postalcode = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: true),
                     country = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true)
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("cities_pkey", x => x.cityid);
@@ -30,7 +30,7 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "users",
                 columns: table => new
-                {
+                    {
                     userid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     avatar = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true, defaultValueSql: "'/def.png'::character varying"),
@@ -43,7 +43,7 @@ namespace Domain.Migrations
                     role = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     isactive = table.Column<bool>(type: "boolean", nullable: true, defaultValue: true),
                     createdat = table.Column<DateTime>(type: "timestamp without time zone", nullable: true, defaultValueSql: "now()")
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("users_pkey", x => x.userid);
@@ -52,7 +52,7 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "institution",
                 columns: table => new
-                {
+                    {
                     institutionid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     institutionname = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
@@ -61,7 +61,7 @@ namespace Domain.Migrations
                     phone = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: true),
                     website = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     cityid = table.Column<int>(type: "integer", nullable: true)
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("institution_pkey", x => x.institutionid);
@@ -75,14 +75,14 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "notifications",
                 columns: table => new
-                {
+                    {
                     notificationid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     userid = table.Column<int>(type: "integer", nullable: false),
                     createdat = table.Column<DateTime>(type: "timestamp without time zone", nullable: true, defaultValueSql: "now()"),
                     isread = table.Column<bool>(type: "boolean", nullable: true, defaultValue: false),
                     note = table.Column<string>(type: "text", nullable: false)
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("notifications_pkey", x => x.notificationid);
@@ -96,11 +96,11 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "portfolio",
                 columns: table => new
-                {
+                    {
                     userid = table.Column<int>(type: "integer", nullable: false),
                     achievement = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
                     addedat = table.Column<DateTime>(type: "timestamp without time zone", nullable: true, defaultValueSql: "now()")
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("portfolio_pkey", x => new { x.userid, x.achievement });
@@ -114,7 +114,7 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "groups",
                 columns: table => new
-                {
+                    {
                     groupid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     groupname = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
@@ -122,7 +122,7 @@ namespace Domain.Migrations
                     curatorid = table.Column<int>(type: "integer", nullable: false),
                     specialty = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     institutionid = table.Column<int>(type: "integer", nullable: false)
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("groups_pkey", x => x.groupid);
@@ -143,12 +143,12 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "rooms",
                 columns: table => new
-                {
+                    {
                     roomid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     roomnumber = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     institutionid = table.Column<int>(type: "integer", nullable: false)
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("rooms_pkey", x => x.roomid);
@@ -162,11 +162,11 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "students_groups",
                 columns: table => new
-                {
+                    {
                     userid = table.Column<int>(type: "integer", nullable: false),
                     groupid = table.Column<int>(type: "integer", nullable: false),
                     enrolledat = table.Column<DateOnly>(type: "date", nullable: true, defaultValueSql: "CURRENT_DATE")
-                },
+                    },
                 constraints: table =>
                 {
                     table.ForeignKey(
@@ -186,7 +186,7 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "lectures",
                 columns: table => new
-                {
+                    {
                     lectureid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     lecturename = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
@@ -197,7 +197,7 @@ namespace Domain.Migrations
                     roomid = table.Column<int>(type: "integer", nullable: true),
                     isactive = table.Column<bool>(type: "boolean", nullable: true, defaultValue: true),
                     createdat = table.Column<DateTime>(type: "timestamp without time zone", nullable: true, defaultValueSql: "now()")
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("lectures_pkey", x => x.lectureid);
@@ -216,10 +216,10 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "room_equipment",
                 columns: table => new
-                {
+                    {
                     roomid = table.Column<int>(type: "integer", nullable: false),
                     equipment = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false)
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("room_equipment_pkey", x => new { x.roomid, x.equipment });
@@ -234,7 +234,7 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "attendance",
                 columns: table => new
-                {
+                    {
                     attendanceid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     lectureid = table.Column<int>(type: "integer", nullable: false),
@@ -242,7 +242,7 @@ namespace Domain.Migrations
                     ispresent = table.Column<bool>(type: "boolean", nullable: false),
                     note = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: true),
                     recordedat = table.Column<DateTime>(type: "timestamp without time zone", nullable: true, defaultValueSql: "now()")
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("attendance_pkey", x => x.attendanceid);
@@ -263,10 +263,10 @@ namespace Domain.Migrations
             migrationBuilder.CreateTable(
                 name: "lectures_groups",
                 columns: table => new
-                {
+                    {
                     groupid = table.Column<int>(type: "integer", nullable: false),
                     lectureid = table.Column<int>(type: "integer", nullable: false)
-                },
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("lectures_groups_pkey", x => new { x.groupid, x.lectureid });
@@ -285,7 +285,7 @@ namespace Domain.Migrations
             migrationBuilder.CreateIndex(
                 name: "attendance_lectureid_userid_key",
                 table: "attendance",
-                columns: new[] { "lectureid", "userid" },
+                columns: new [] { "lectureid", "userid" },
                 unique: true);
 
             migrationBuilder.CreateIndex(
@@ -342,7 +342,7 @@ namespace Domain.Migrations
             migrationBuilder.CreateIndex(
                 name: "rooms_roomnumber_institutionid_key",
                 table: "rooms",
-                columns: new[] { "roomnumber", "institutionid" },
+                columns: new [] { "roomnumber", "institutionid" },
                 unique: true);
 
             migrationBuilder.CreateIndex(
@@ -360,11 +360,11 @@ namespace Domain.Migrations
                 table: "users",
                 column: "email",
                 unique: true);
-        }
+            }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
-        {
+            {
             migrationBuilder.DropTable(
                 name: "attendance");
 
@@ -400,6 +400,6 @@ namespace Domain.Migrations
 
             migrationBuilder.DropTable(
                 name: "cities");
+            }
         }
     }
-}

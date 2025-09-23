@@ -7,11 +7,11 @@ using Domain.Interfaces;
 using Domain.Models;
 
 namespace DataAcces.Repositories
-{
-    public class NotificationRepository : RepositoryBase<notification>, INotificationRepository
     {
-        public NotificationRepository(LDBContext repositoryContext) : base(repositoryContext)
+    public class NotificationRepository : RepositoryBase<notification>, INotificationRepository
         {
+        public NotificationRepository(LDBContext repositoryContext) : base(repositoryContext)
+            {
+            }
         }
     }
-}

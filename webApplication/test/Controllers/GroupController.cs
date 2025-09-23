@@ -7,16 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.group;
 
 namespace webApplication.Controllers
-{
+    {
     [Route("api/[controller]")]
     [ApiController]
     public class GroupController : ControllerBase
-    {
+        {
         private IGroupService _groupService;
         public GroupController(IGroupService groupService)
-        {
+            {
             _groupService = groupService;
-        }
+            }
         /// <summary>
         /// Get Groups
         /// </summary>
@@ -26,9 +26,9 @@ namespace webApplication.Controllers
         // GET api/<GroupController>
         [HttpGet]
         public async Task<IActionResult> GetAll()
-        {
+            {
             return Ok(await _groupService.GetAll());
-        }
+            }
 
         /// <summary>
         /// Get Group by id
@@ -42,11 +42,11 @@ namespace webApplication.Controllers
         // GET api/<GroupController>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
-        {
+            {
             var result = await _groupService.GetById(id);
             var response = result.Adapt<group>();
             return Ok(response);
-        }
+            }
         /// <summary>
         /// Add new Group
         /// </summary>
@@ -69,11 +69,11 @@ namespace webApplication.Controllers
         // POST api/<GroupController>
         [HttpPost]
         public async Task<IActionResult> Add(CreateGroupRequest group)
-        {
+            {
             var request = group.Adapt<group>();
             await _groupService.Create(request);
             return Ok();
-        }
+            }
         /// <summary>
         /// Update Group
         /// </summary>
@@ -97,11 +97,11 @@ namespace webApplication.Controllers
         // PUT api/<GroupController>
         [HttpPut]
         public async Task<IActionResult> Update(UpdateGroupRequest group)
-        {
+            {
             var request = group.Adapt<group>();
             await _groupService.Update(request);
             return Ok();
-        }
+            }
         /// <summary>
         /// Delete Group by id
         /// </summary>
@@ -114,9 +114,9 @@ namespace webApplication.Controllers
         // DELETE api/<GroupController>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
-        {
+            {
             await _groupService.Delete(id);
             return Ok();
+            }
         }
     }
-}

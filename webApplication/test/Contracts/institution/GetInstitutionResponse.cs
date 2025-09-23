@@ -1,7 +1,7 @@
 ﻿namespace webApplication.Contracts.institution
-{
-    public class GetInstitutionResponse
     {
+    public class GetInstitutionResponse
+        {
         public int institutionid { get; set; }
 
         public string institutionname { get; set; } = null!;
@@ -13,5 +13,5 @@
         public string? website { get; set; }
 
         public int? cityid { get; set; }
+        }
     }
-}

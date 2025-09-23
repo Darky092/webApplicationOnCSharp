@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-{
-    public interface IRoomEquipmentRepository : IRepositoryBase<room_equipment>
     {
+    public interface IRoomEquipmentRepository : IRepositoryBase<room_equipment>
+        {
+        }
     }
-}

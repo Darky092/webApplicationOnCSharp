@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-{
-    public interface IGroupService
     {
+    public interface IGroupService
+        {
         Task<List<group>> GetAll();
 
         Task<group> GetById(int id);
@@ -17,5 +17,5 @@ namespace Domain.Interfaces
         Task Update(group model);
         Task Delete(int id);
 
+        }
     }
-}

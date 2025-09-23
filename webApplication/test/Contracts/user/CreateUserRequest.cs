@@ -1,7 +1,7 @@
 ﻿namespace webApplication.Contracts.user
-{
-    public class CreateUserRequest
     {
+    public class CreateUserRequest
+        {
 
         public string? avatar { get; set; }
 
@@ -19,5 +19,5 @@
 
         public string role { get; set; } = null!;
 
+        }
     }
-}

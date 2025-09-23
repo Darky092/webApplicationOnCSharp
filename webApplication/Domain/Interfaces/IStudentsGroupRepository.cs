@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-{
-    public interface IStudentsGroupRepository : IRepositoryBase<students_group>
     {
+    public interface IStudentsGroupRepository : IRepositoryBase<students_group>
+        {
+        }
     }
-}

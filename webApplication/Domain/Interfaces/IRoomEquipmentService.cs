@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-{
-    public interface IRoomEquipmentService
     {
+    public interface IRoomEquipmentService
+        {
         Task<List<room_equipment>> GetAll();
 
         Task<room_equipment> GetById(int id);
@@ -16,5 +16,5 @@ namespace Domain.Interfaces
         Task Update(room_equipment model);
         Task Delete(int id);
 
+        }
     }
-}

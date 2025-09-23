@@ -7,11 +7,11 @@ using Domain.Interfaces;
 using Domain.Models;
 
 namespace DataAcces.Repositories
-{
-    public class UserRepository : RepositoryBase<user>, IUserRepository
     {
-        public UserRepository(LDBContext repositoryContext) : base(repositoryContext)
+    public class UserRepository : RepositoryBase<user>, IUserRepository
         {
+        public UserRepository(LDBContext repositoryContext) : base(repositoryContext)
+            {
+            }
         }
     }
-}

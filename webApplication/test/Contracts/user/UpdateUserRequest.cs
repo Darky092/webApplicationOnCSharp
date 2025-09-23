@@ -1,7 +1,7 @@
 ﻿namespace webApplication.Contracts.user
-{
-    public class UpdateUserRequest
     {
+    public class UpdateUserRequest
+        {
         public int userid { get; set; }
 
         public string? avatar { get; set; }
@@ -23,5 +23,5 @@
         public bool? isactive { get; set; }
 
         public DateTime? createdat { get; set; }
+        }
     }
-}

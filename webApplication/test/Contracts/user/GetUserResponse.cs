@@ -1,7 +1,7 @@
 ﻿namespace webApplication.Contracts.user
-{
-    public class GetUserResponse
     {
+    public class GetUserResponse
+        {
 
         public int userid { get; set; }
 
@@ -24,5 +24,5 @@
         public bool? isactive { get; set; }
 
         public DateTime? createdat { get; set; }
+        }
     }
-}

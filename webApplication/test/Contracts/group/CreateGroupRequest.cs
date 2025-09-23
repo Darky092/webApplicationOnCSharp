@@ -1,7 +1,7 @@
 ﻿namespace webApplication.Contracts.group
-{
-    public class CreateGroupRequest
     {
+    public class CreateGroupRequest
+        {
 
         public string groupname { get; set; } = null!;
 
@@ -12,5 +12,5 @@
         public string? specialty { get; set; }
 
         public int institutionid { get; set; }
+        }
     }
-}

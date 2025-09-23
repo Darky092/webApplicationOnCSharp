@@ -5,15 +5,15 @@ using Microsoft.EntityFrameworkCore;
 namespace Domain.Models;
 
 public partial class LDBContext : DbContext
-{
-    public LDBContext()
     {
-    }
+    public LDBContext()
+        {
+        }
 
     public LDBContext(DbContextOptions<LDBContext> options)
         : base(options)
-    {
-    }
+        {
+        }
 
     public virtual DbSet<attendance> attendances { get; set; }
 
@@ -42,7 +42,7 @@ public partial class LDBContext : DbContext
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
+        {
         modelBuilder.Entity<attendance>(entity =>
         {
             entity.HasKey(e => e.attendanceid).HasName("attendance_pkey");
@@ -244,7 +244,7 @@ public partial class LDBContext : DbContext
         });
 
         OnModelCreatingPartial(modelBuilder);
-    }
+        }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-}
+    }

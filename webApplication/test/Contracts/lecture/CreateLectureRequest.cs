@@ -1,8 +1,8 @@
 ﻿namespace webApplication.Contracts.lecture
-{
-    public class CreateLectureRequest
     {
-        
+    public class CreateLectureRequest
+        {
+
 
         public string lecturename { get; set; } = null!;
 
@@ -17,5 +17,5 @@
         public int? roomid { get; set; }
 
 
+        }
     }
-}
