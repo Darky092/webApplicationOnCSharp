@@ -32,19 +32,20 @@ namespace BusinessLogic.Services
         public async Task Create(attendance model)
             {
             await _repositoryWrapper.attendance.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Save();
             }
         public async Task Update(attendance model)
             {
             await _repositoryWrapper.attendance.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Save();
             }
 
         public async Task Delete(int id)
             {
             var attendance = await _repositoryWrapper.attendance
                 .FindByCondition(x => x.attendanceid == id);
-            _repositoryWrapper.attendance.Delete(attendance.First());
-            }
+            await _repositoryWrapper.attendance.Delete(attendance.First());
+            await _repositoryWrapper.Save();
+        }
         }
     }

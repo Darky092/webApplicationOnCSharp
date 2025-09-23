@@ -8,39 +8,42 @@ using Domain.Models;
 
 
 namespace BusinessLogic.Services
-    {
+{
     public class InstitutionService : IInstitutionService
-        {
+    {
         private IRepositoryWrapper _repositoryWrapper;
         public InstitutionService(IRepositoryWrapper repositoryWrapper)
-            {
+        {
             _repositoryWrapper = repositoryWrapper;
-            }
+        }
 
         public async Task<List<institution>> GetAll()
-            {
+        {
             return await _repositoryWrapper.institution.FindAll();
-            }
+        }
 
         public async Task<institution> GetById(int id)
-            {
+        {
             var institution = await _repositoryWrapper.institution.
                 FindByCondition(x => x.institutionid == id);
             return institution.First();
-            }
+        }
 
         public async Task Create(institution model)
-            {
+        {
             await _repositoryWrapper.institution.Create(model);
-            }
+            await _repositoryWrapper.Save();
+        }
         public async Task Update(institution model)
-            {
+        {
             await _repositoryWrapper.institution.Update(model);
-            }
+            await _repositoryWrapper.Save();
+        }
         public async Task Delete(int id)
-            {
+        {
             var institution = await _repositoryWrapper.institution.FindByCondition(x => x.institutionid == id);
-            _repositoryWrapper.institution.Delete(institution.First());
-            }
+            await _repositoryWrapper.institution.Delete(institution.First());
+            await _repositoryWrapper.Save();
         }
     }
+}

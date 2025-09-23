@@ -32,15 +32,18 @@ namespace BusinessLogic.Services
         public async Task Create(group model)
             {
             await _repositoryWrapper.group.Create(model);
-            }
+            await _repositoryWrapper.Save();
+        }
         public async Task Update(group model)
             {
             await _repositoryWrapper.group.Update(model);
-            }
+            await _repositoryWrapper.Save();
+        }
         public async Task Delete(int id)
             {
             var group = await _repositoryWrapper.group.FindByCondition(x => x.groupid == id);
-            _repositoryWrapper.group.Delete(group.First());
-            }
+            await _repositoryWrapper.group.Delete(group.First());
+            await _repositoryWrapper.Save();
+        }
         }
     }
