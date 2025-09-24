@@ -41,3 +41,5 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic\obj\De
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic\bin\Debug\net8.0\Domain.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic\bin\Debug\net8.0\Domain.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic\bin\Debug\net8.0\Validators.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic\bin\Debug\net8.0\Validators.pdb

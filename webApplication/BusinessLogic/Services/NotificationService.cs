@@ -31,12 +31,23 @@ namespace BusinessLogic.Services
 
         public async Task Create(notification model)
         {
+            if (model == null)
+                throw new ArgumentNullException(nameof(model));
+
             await _repositoryWrapper.notification.Create(model);
             await _repositoryWrapper.Save();
         }
         public async Task Update(notification model)
         {
-            await _repositoryWrapper.notification.Update(model);
+            if(model == null)
+                throw new ArgumentNullException(nameof(model));
+
+            var notifications = await _repositoryWrapper.notification.FindByConditionTraking(x => x.notificationid == model.notificationid);
+
+            if (notifications.Count == 0)
+                throw new ArgumentException(nameof(notifications));
+
+
             await _repositoryWrapper.Save();
         }
 
@@ -44,6 +55,7 @@ namespace BusinessLogic.Services
         {
             var room = await _repositoryWrapper.notification
                 .FindByCondition(x => x.notificationid == id);
+            
             await _repositoryWrapper.notification.Delete(room.First());
             await _repositoryWrapper.Save();
         }

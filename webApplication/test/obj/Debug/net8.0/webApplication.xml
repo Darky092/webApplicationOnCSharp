@@ -644,7 +644,7 @@
              <param name="model">Equipment_Rooms</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.RoomEquipmentController.Delete(System.Int32)">
+        <member name="M:webApplication.Controllers.RoomEquipmentController.Delete(System.Int32,System.String)">
             <summary>
             Add equipment to room
             </summary>

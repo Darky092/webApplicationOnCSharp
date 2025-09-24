@@ -13,7 +13,7 @@ namespace Domain.Interfaces
         Task<portfolio> GetById(int id);
 
         Task Create(portfolio model);
-        Task Update(portfolio model);
-        Task Delete(int id);
+        
+        Task Delete(int id ,string achievement);
         }
     }

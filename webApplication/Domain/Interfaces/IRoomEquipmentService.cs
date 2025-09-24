@@ -13,8 +13,8 @@ namespace Domain.Interfaces
 
         Task<room_equipment> GetById(int id);
         Task Create(room_equipment model);
-        Task Update(room_equipment model);
-        Task Delete(int id);
+
+        Task Delete(int id , string equipment);
 
         }
     }

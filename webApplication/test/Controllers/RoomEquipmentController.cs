@@ -109,9 +109,9 @@ namespace webApplication.Controllers
         /// <returns></returns>
         // DELETE api/<EquipmentRoomsController>
         [HttpDelete]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id,string equipment)
             {
-            await _roomEquipmentService.Delete(id);
+            await _roomEquipmentService.Delete(id, equipment);
             return Ok();
             }
         }

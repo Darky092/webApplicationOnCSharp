@@ -37,7 +37,18 @@ namespace BusinessLogic.Services
         }
         public async Task Update(room model)
         {
-            await _repositoryWrapper.room.Update(model);
+            var rooms = await _repositoryWrapper.room.FindByConditionTraking(x => x.roomid == model.roomid);
+
+            if (rooms.Count == 0)
+                throw new KeyNotFoundException($"not found {model.roomid}id");
+            if (rooms.Count > 1)
+                throw new InvalidOperationException($"To many rooms was founded: {rooms.Count}");
+            var expected = rooms [0];
+            
+            if (model.institutionid != 0)
+                expected.institutionid = model.institutionid;
+            if (model.roomnumber != null)
+                expected.roomnumber = model.roomnumber;
             await _repositoryWrapper.Save();
         }
 

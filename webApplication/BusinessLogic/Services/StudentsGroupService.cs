@@ -25,24 +25,33 @@ namespace BusinessLogic.Services
 
         public async Task<students_group> GetById(int id)
         {
+            if (id == 0)
+                throw new ArgumentNullException(nameof(id));
             var studentsGroup = await _repositoryWrapper.studentsGroup.
                 FindByCondition(x => x.userid == id);
-            return studentsGroup.First();
+            return studentsGroup.First() ?? throw new KeyNotFoundException(nameof(id));
         }
 
         public async Task Create(students_group model)
         {
+            if (model == null)
+                throw new ArgumentNullException(nameof(model));
             await _repositoryWrapper.studentsGroup.Create(model);
             await _repositoryWrapper.Save();
         }
         public async Task Update(students_group model)
         {
+            if (model == null)
+                throw new ArgumentNullException(nameof(model));
             await _repositoryWrapper.studentsGroup.Update(model);
             await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int id)
         {
+            if (id == 0)
+                throw new ArgumentNullException(nameof(id));
+
             var studentsGroup = await _repositoryWrapper.studentsGroup
                 .FindByCondition(x => x.userid == id);
             await _repositoryWrapper.studentsGroup.Delete(studentsGroup.First());

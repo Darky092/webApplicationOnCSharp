@@ -1,5 +1,7 @@
-﻿using Domain.Interfaces;
+﻿using System.ComponentModel.DataAnnotations;
+using Domain.Interfaces;
 using Domain.Models;
+using Validators.Interefaces;
 
 
 namespace BusinessLogic.Services
@@ -7,10 +9,12 @@ namespace BusinessLogic.Services
     public class UserService : IUserService
     {
         private IRepositoryWrapper _repositoryWrapper;
+        private IUserValidator _userValidator;
 
-        public UserService(IRepositoryWrapper repositoryWrapper)
+        public UserService(IRepositoryWrapper repositoryWrapper, IUserValidator validator)
         {
-            _repositoryWrapper = repositoryWrapper;
+            _repositoryWrapper = repositoryWrapper ?? throw new ArgumentNullException(nameof(repositoryWrapper));
+            _userValidator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         public async Task<List<user>> GetAll()
@@ -20,9 +24,13 @@ namespace BusinessLogic.Services
 
         public async Task<user> GetById(int id)
         {
+            if (id == 0)
+                throw new ArgumentNullException(nameof(id));
+
             var user = await _repositoryWrapper.user
                 .FindByCondition(x => x.userid == id);
-            return user.First();
+
+            return user.FirstOrDefault() ?? throw new KeyNotFoundException($"User with Id {id} not found");
         }
 
         public async Task Create(user model)
@@ -31,9 +39,11 @@ namespace BusinessLogic.Services
             {
                 throw new ArgumentNullException(nameof(model));
             }
-            if (string.IsNullOrEmpty(model.name)) 
+            var valResult = await _userValidator.ValidateAsync(model);
+            if (!valResult.IsValid) 
             {
-                throw new ArgumentException(nameof(model.name));
+                var errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
             }
             await _repositoryWrapper.user.Create(model);
             await _repositoryWrapper.Save();
@@ -41,7 +51,41 @@ namespace BusinessLogic.Services
 
         public async Task Update(user model)
         {
-            await _repositoryWrapper.user.Update(model);
+            if (model == null)
+                throw new ArgumentNullException(nameof(model));
+
+            
+            var valResult = await _userValidator.ValidateAsync(model);
+            if (!valResult.IsValid)
+            {
+                var errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
+            }
+
+            
+            var users = await _repositoryWrapper.user.FindByConditionTraking(x => x.userid == model.userid);
+            
+            if (users == null)
+                throw new KeyNotFoundException($"User with ID {model.userid} not found.");
+            if (users.Count > 1)
+                throw new InvalidOperationException($"Multiple users found with ID {model.userid}. This should not happen.");
+            var existing = users [0];
+
+            if (model.name != null) existing.name = model.name;
+            if (model.surname != null) existing.surname = model.surname;
+            if (model.patronymic != null) existing.patronymic = model.patronymic;
+            if (model.email != null) existing.email = model.email;
+            if (model.passwordhash != null) existing.passwordhash = model.passwordhash;
+            if (model.role != null) existing.role = model.role;
+            if (model.avatar != null) existing.avatar = model.avatar;
+            if (model.telephonnumber != null) existing.telephonnumber = model.telephonnumber;
+
+
+            if (model.isactive.HasValue) existing.isactive = model.isactive.Value;
+
+
+
+
             await _repositoryWrapper.Save();
         }
 

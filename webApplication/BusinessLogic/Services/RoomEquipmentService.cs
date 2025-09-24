@@ -35,17 +35,19 @@ namespace BusinessLogic.Services
             await _repositoryWrapper.roomEquipment.Create(model);
             await _repositoryWrapper.Save();
         }
-        public async Task Update(room_equipment model)
-        {
-            await _repositoryWrapper.roomEquipment.Update(model);
-            await _repositoryWrapper.Save();
-        }
 
-        public async Task Delete(int id)
+
+        public async Task Delete(int id, string equipment)
         {
-            var room = await _repositoryWrapper.roomEquipment
-                .FindByCondition(x => x.roomid == id);
-            await _repositoryWrapper.roomEquipment.Delete(room.First());
+            if (id == 0)
+                throw new ArgumentNullException("\"Room ID cannot be 0.\", nameof(id)");
+
+            var rooms = await _repositoryWrapper.roomEquipment
+                .FindByCondition(x => x.roomid == id && x.equipment == equipment);
+            if (rooms.Count == 0)
+                throw new KeyNotFoundException($"Room equipment '{equipment}' not found for room ID {id}");
+
+            await _repositoryWrapper.roomEquipment.Delete(rooms.Single());
             await _repositoryWrapper.Save();
         }
     }

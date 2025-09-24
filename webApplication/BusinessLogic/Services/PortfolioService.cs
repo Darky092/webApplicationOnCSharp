@@ -34,15 +34,15 @@ namespace BusinessLogic.Services
             await _repositoryWrapper.portfolio.Create(model);
             await _repositoryWrapper.Save();
         }
-        public async Task Update(portfolio model)
+
+        public async Task Delete(int id, string achievement)
         {
-            await _repositoryWrapper.portfolio.Update(model);
-            await _repositoryWrapper.Save();
-        }
-        public async Task Delete(int id)
-        {
-            var institution = await _repositoryWrapper.portfolio.FindByCondition(x => x.userid == id);
-            await _repositoryWrapper.portfolio.Delete(institution.First());
+            
+            var portfolio = await _repositoryWrapper.portfolio.FindByCondition(x => x.userid == id && x.achievement == achievement);
+            if (portfolio.Count == 0)
+                throw new ArgumentNullException($"Room userId:{id} and achievement: {achievement}");
+
+            await _repositoryWrapper.portfolio.Delete(portfolio.Single());
             await _repositoryWrapper.Save();
         }
     }

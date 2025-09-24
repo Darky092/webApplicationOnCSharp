@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LZH2BP3jF/w=",
+  "dgSpecHash": "/nUdFwRoG40=",
   "success": true,
   "projectFilePath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\webApplication.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\purr\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\purr\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\purr\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\purr\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\purr\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
     "C:\\Users\\purr\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",

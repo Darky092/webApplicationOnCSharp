@@ -20,8 +20,10 @@ namespace DataAcces.Repositories
             }
         public async Task<List<T>> FindAll() => await RepositoryContext.Set<T>().AsNoTracking().ToListAsync();
         public async Task<List<T>> FindByCondition(Expression<Func<T, bool>> expression) => await RepositoryContext.Set<T>().Where(expression).AsNoTracking().ToListAsync();
+        //Use This func for Update by id
+        public async Task<List<T>> FindByConditionTraking(Expression<Func<T, bool>> expression) => await RepositoryContext.Set<T>().Where(expression).ToListAsync();
         public async Task Create(T entity) => await RepositoryContext.Set<T>().AddAsync(entity);
-
+        //Update the most rotten func in this frame work do not use this. 
         public async Task Update(T entity) => RepositoryContext.Set<T>().Update(entity);
         public async Task Delete(T entity) => RepositoryContext.Set<T>().Remove(entity);
 

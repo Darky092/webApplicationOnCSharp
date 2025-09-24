@@ -1,0 +1,16 @@
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\bin\Debug\net8.0\Validators.deps.json
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\bin\Debug\net8.0\Validators.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\bin\Debug\net8.0\Validators.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\bin\Debug\net8.0\Domain.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\bin\Debug\net8.0\Domain.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.csproj.AssemblyReference.cache
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.AssemblyInfoInputs.cache
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.AssemblyInfo.cs
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.csproj.CoreCompileInputs.cache
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.sourcelink.json
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.csproj.Up2Date
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\refint\Validators.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\Validators.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Validators\obj\Debug\net8.0\ref\Validators.dll

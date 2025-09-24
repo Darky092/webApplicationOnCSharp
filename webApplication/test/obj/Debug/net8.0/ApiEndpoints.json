@@ -719,6 +719,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "equipment",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

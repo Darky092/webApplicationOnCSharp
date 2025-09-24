@@ -4,10 +4,13 @@ using BusinessLogic.Services;
 using DataAcces.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Npgsql.EntityFrameworkCore;
+using Validators;
+using Validators.Interefaces;
 
 
 
@@ -41,6 +44,9 @@ namespace test
             builder.Services.AddScoped<IRoomEquipmentService, RoomEquipmentService>();
             builder.Services.AddScoped<IStudentsGroupService, StudentsGroupService>();
             builder.Services.AddScoped<ILecturesGroupsService, LectureGroupsService>();
+            builder.Services.AddScoped<IValidator<user>, CreateUserValidator>();
+            builder.Services.AddScoped<IUserValidator, CreateUserValidator>();
+
             builder.Services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
