@@ -42,10 +42,10 @@ namespace webApplication.Controllers
         // GET api/<StudentsGroupController>
         [HttpGet("{id}")]
 
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById(int groupid, int userid)
             {
 
-            var result = await _studentsGroupService.GetById(id);
+            var result = await _studentsGroupService.GetById(groupid, userid);
             var response = result.Adapt<GetStudentsGroupsResponse>();
             return Ok(response);
             }
@@ -108,9 +108,9 @@ namespace webApplication.Controllers
 
         // DELETE api/<StudentsGroupController>
         [HttpDelete]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int groupid, int userid)
             {
-            await _studentsGroupService.Delete(id);
+            await _studentsGroupService.Delete(groupid, userid);
             return Ok();
             }
         }

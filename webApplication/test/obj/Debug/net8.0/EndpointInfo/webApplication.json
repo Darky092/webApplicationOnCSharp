@@ -1258,7 +1258,15 @@
         "description": "Enter lectur id",
         "parameters": [
           {
-            "name": "id",
+            "name": "groupid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "userid",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -1282,12 +1290,27 @@
         "description": "Enter lectur id",
         "parameters": [
           {
+            "name": "groupid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "userid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
             "name": "id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],

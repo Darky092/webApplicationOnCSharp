@@ -33,5 +33,8 @@ namespace Domain.Interfaces
         ILecturesGroupsRepository lecturesGroups { get; }
 
         Task Save();
+        Task BeginTransactionAsync();
+        Task CommitTransactionAsync();
+        Task RollbackTransactionAsync();
         }
     }

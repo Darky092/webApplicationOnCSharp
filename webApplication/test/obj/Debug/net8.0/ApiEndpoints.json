@@ -757,7 +757,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "groupid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userid",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -773,8 +778,18 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "groupid",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],

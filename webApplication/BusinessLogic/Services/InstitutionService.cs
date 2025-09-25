@@ -22,16 +22,20 @@ namespace BusinessLogic.Services
             return await _repositoryWrapper.institution.FindAll();
         }
 
-        public async Task<institution> GetById(int id)
+        public async Task<institution> GetById(int institutionId)
         {
-            if (id == 0)
-                throw new ArgumentNullException(nameof(id));
+            if (institutionId <= 0)
+                throw new ArgumentNullException(nameof(institutionId));
 
             var institution = await _repositoryWrapper.institution.
-                FindByCondition(x => x.institutionid == id);
+                FindByCondition(x => x.institutionid == institutionId);
 
             if (institution.Count == 0)
-                throw new KeyNotFoundException(nameof(institution));
+                throw new KeyNotFoundException($"Did not found institution with institutionId: {institutionId} ");
+
+            if (institution.Count > 1)
+                throw new InvalidOperationException("Found more then one institution");
+
             return institution.First();
         }
 
@@ -49,18 +53,22 @@ namespace BusinessLogic.Services
 
             var institutions = await _repositoryWrapper.institution.FindByConditionTraking(x => x.institutionid == model.institutionid);
             var institution = institutions.Single(); 
+
             if(institutions.Count == 0)
-                throw new KeyNotFoundException(nameof(institutions));
+                throw new KeyNotFoundException($"Did not found institution with institutionId: {model.institutionid}");
             if (institutions.Count > 1)
-                throw new KeyNotFoundException(nameof(institutions));
+                throw new InvalidOperationException("Found more then one institution");
+
             if(model.institutionname != null) institution.institutionname = model.institutionname;
             if(model.street != null) institution.street = model.street;
             if(model.phone != null) institution.phone = model.phone;
             if(model.website != null) institution.website = model.website;
             if(model.cityid != null) institution.cityid = model.cityid;
+
             var tryKeepCityId = await _repositoryWrapper.city.FindByCondition(x => x.cityid == model.cityid);
+
             if (tryKeepCityId.Count == 0)
-                throw new KeyNotFoundException(nameof(tryKeepCityId));
+                throw new KeyNotFoundException($"Did not found institution with institutionId: {model.cityid}");
 
 
             await _repositoryWrapper.Save();
@@ -69,9 +77,14 @@ namespace BusinessLogic.Services
         {
             if(id == 0)
                 throw new ArgumentNullException(nameof(id));
+
             var institution = await _repositoryWrapper.institution.FindByCondition(x => x.institutionid == id);
+
             if (institution.Count == 0)
                 throw new KeyNotFoundException(nameof(institution));
+            if (institution.Count > 1)
+                throw new InvalidOperationException("Found more then one institution");
+
             await _repositoryWrapper.institution.Delete(institution.First());
             await _repositoryWrapper.Save();
         }

@@ -23,14 +23,14 @@ namespace BusinessLogic.Services
             return await _repositoryWrapper.city.FindAll();
         }
 
-        public async Task<city> GetById(int id)
+        public async Task<city> GetById(int cityid)
         {
-            if (id == 0)
-                throw new ArgumentNullException(nameof(id));
+            if (cityid <= 0)
+                throw new ArgumentNullException(nameof(cityid));
             var city = await _repositoryWrapper.city
-                .FindByCondition(x => x.cityid == id);
+                .FindByCondition(x => x.cityid == cityid);
             if(city.Count == 0)
-                throw new  KeyNotFoundException(nameof(city));
+                throw new  KeyNotFoundException($"Did not found cities with id {cityid}");
             return city.First();
         }
 
@@ -50,9 +50,10 @@ namespace BusinessLogic.Services
             var cities = await _repositoryWrapper.city.FindByConditionTraking(x =>x.cityid ==model.cityid);
 
             if (cities.Count == 0)
-                throw new KeyNotFoundException(nameof(cities));
+                throw new KeyNotFoundException($"Did not found cities with id {model.cityid}");
             if (cities.Count > 1)
-                throw new InvalidOperationException(nameof(cities));
+                throw new InvalidOperationException("found more then one city");
+
             var city = cities.Single();
 
             if (model.cityname != null)  city.cityname = model.cityname;
@@ -62,14 +63,16 @@ namespace BusinessLogic.Services
             await _repositoryWrapper.Save();
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(int cityid)
         {
-            if (id == 0)
-                throw new ArgumentNullException(nameof(id));
+            if (cityid <= 0)
+                throw new ArgumentNullException(nameof(cityid));
 
-            var city = await _repositoryWrapper.city.FindByCondition(x => x.cityid == id);
+            var city = await _repositoryWrapper.city.FindByCondition(x => x.cityid == cityid);
             if (city.Count == 0)
-                throw new KeyNotFoundException(nameof(city));
+                throw new KeyNotFoundException($"Did not found cities with id {cityid}");
+            if (city.Count > 1)
+                throw new InvalidOperationException("found more then one city");
 
             await _repositoryWrapper.city.Delete(city.Single());
             await _repositoryWrapper.Save();

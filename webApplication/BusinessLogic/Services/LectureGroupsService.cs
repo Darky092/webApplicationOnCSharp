@@ -22,15 +22,20 @@ namespace BusinessLogic.Services
             return await _repositoryWrapper.lecturesGroups.FindAll();
         }
 
-        public async Task<lectures_group> GetById(int id)
+        public async Task<lectures_group> GetById(int lectureid)
         {
-            if (id == 0)
-                throw new ArgumentNullException(nameof(id));
+            if (lectureid <= 0)
+                throw new ArgumentNullException(nameof(lectureid));
+
             var lectures_group = await _repositoryWrapper.lecturesGroups.
-                FindByCondition(x => x.lectureid == id);
+                FindByCondition(x => x.lectureid == lectureid);
+
             if (lectures_group.Count == 0)
-                throw new KeyNotFoundException(nameof(lectures_group));
-            return lectures_group.First();
+                throw new KeyNotFoundException($"Did not found objects with lectured: {lectureid}");
+            if (lectures_group.Count > 1)
+                throw new InvalidOperationException("Found more then one objects");
+
+            return lectures_group.Single();
         }
 
         public async Task Create(lectures_group model)
@@ -44,17 +49,18 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int lectureid, int groupid)
         {
-            if(lectureid == 0)
+            if(lectureid <= 0)
                 throw new ArgumentNullException(nameof(lectureid));
-            if (groupid == 0)
+            if (groupid <= 0)
                 throw new ArgumentNullException(nameof(groupid));
 
             var lectures_group = await _repositoryWrapper.lecturesGroups
                 .FindByCondition(x => x.lectureid == lectureid && x.groupid == groupid);
+
             if (lectures_group.Count == 0)
-                throw new KeyNotFoundException(nameof(lectures_group));
+                throw new KeyNotFoundException($"Did not found objects with lectured: {lectureid} and groupid: {groupid}");
             if (lectures_group.Count > 1)
-                throw new KeyNotFoundException(nameof(lectures_group));
+                throw new InvalidOperationException("Found more then one objects"); ;
 
 
             await _repositoryWrapper.lecturesGroups.Delete(lectures_group.Single());

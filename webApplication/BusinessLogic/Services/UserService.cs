@@ -24,16 +24,16 @@ namespace BusinessLogic.Services
 
         public async Task<user> GetById(int id)
         {
-            if (id == 0)
+            if (id <= 0)
                 throw new ArgumentNullException(nameof(id));
 
             var user = await _repositoryWrapper.user
                 .FindByCondition(x => x.userid == id);
 
             if(user.Count == 0)
-                throw new KeyNotFoundException(nameof(user));
+                throw new KeyNotFoundException($"User with ID {id} not found.");
 
-            return user.FirstOrDefault() ?? throw new KeyNotFoundException($"User with Id {id} not found");
+            return user.Single();
         }
 
         public async Task Create(user model)
@@ -60,7 +60,7 @@ namespace BusinessLogic.Services
             var valResult = await _userValidator.ValidateAsync(model);
             if (!valResult.IsValid)
             {
-                var errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
                 throw new ArgumentException($"{errors}");
             }
 
@@ -71,6 +71,7 @@ namespace BusinessLogic.Services
                 throw new KeyNotFoundException($"User with ID {model.userid} not found.");
             if (users.Count > 1)
                 throw new InvalidOperationException($"Multiple users found with ID {model.userid}. This should not happen.");
+
             var existing = users.Single();
 
             if (model.name != null) existing.name = model.name;
@@ -93,17 +94,19 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int id)
         {
-            if (id == 0)
-                throw new ArgumentNullException(nameof(id));
+            if (id <= 0)
+                throw new ArgumentNullException(nameof(id), "User ID is required.");
 
             var user = await _repositoryWrapper.user
                 .FindByCondition(x => x.userid == id);
 
             if (user.Count == 0)
-                throw new KeyNotFoundException(nameof(user));
+                throw new KeyNotFoundException($"User with ID {id} not found.");
 
+            if (user.Count > 1)
+                throw new InvalidOperationException($"Finded more then one user with ID: {id}");
 
-            await _repositoryWrapper.user.Delete(user.First());
+            await _repositoryWrapper.user.Delete(user.Single());
             await _repositoryWrapper.Save();
         }
     }

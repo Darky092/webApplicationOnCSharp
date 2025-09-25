@@ -23,14 +23,14 @@ namespace BusinessLogic.Services
             return await _repositoryWrapper.group.FindAll();
         }
 
-        public async Task<group> GetById(int id)
+        public async Task<group> GetById(int groupid)
         {
-            if (id == 0)
-                throw new ArgumentNullException(nameof(id));
+            if (groupid <= 0)
+                throw new ArgumentNullException(nameof(groupid));
 
             var group = await _repositoryWrapper.group.
-                FindByCondition(x => x.groupid == id);
-            return group.First();
+                FindByCondition(x => x.groupid == groupid);
+            return group.Single();
         }
 
         public async Task Create(group model)
@@ -49,10 +49,10 @@ namespace BusinessLogic.Services
             var groups = await _repositoryWrapper.group.FindByConditionTraking(x => x.groupid == model.groupid);
 
             if (groups.Count == 0)
-                throw new KeyNotFoundException(nameof(groups));
+                throw new KeyNotFoundException($"Did not found groups with groupId: {model.groupid}");
 
             if (groups.Count > 1)
-                throw new KeyNotFoundException(nameof(groups));
+                throw new InvalidOperationException("found more then one group");
 
             var group = groups.Single();
             if (model.groupname != null) group.groupname = model.groupname;
@@ -73,15 +73,17 @@ namespace BusinessLogic.Services
 
             await _repositoryWrapper.Save();
         }
-        public async Task Delete(int id)
+        public async Task Delete(int groupid)
         {
-            if (id == 0)
-                throw new KeyNotFoundException(nameof(id));
+            if (groupid <= 0)
+                throw new ArgumentNullException(nameof(groupid));
 
-            var group = await _repositoryWrapper.group.FindByCondition(x => x.groupid == id);
+            var group = await _repositoryWrapper.group.FindByCondition(x => x.groupid == groupid);
 
             if(group.Count == 0)
-                throw new KeyNotFoundException(nameof(group));
+                throw new KeyNotFoundException($"Did not found groups with groupId: {groupid}");
+            if (group.Count > 1)
+                throw new InvalidOperationException("found more then one group");
 
             await _repositoryWrapper.group.Delete(group.Single());
             await _repositoryWrapper.Save();

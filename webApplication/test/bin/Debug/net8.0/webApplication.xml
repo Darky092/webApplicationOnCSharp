@@ -608,7 +608,7 @@
             <param name="model">LectureGroup</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.StudentsGroupController.GetById(System.Int32)">
+        <member name="M:webApplication.Controllers.StudentsGroupController.GetById(System.Int32,System.Int32)">
             <summary>
             Get lecture and group by lecture id
             </summary>
@@ -652,7 +652,7 @@
              <param name="model">LectureGroup</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.StudentsGroupController.Delete(System.Int32)">
+        <member name="M:webApplication.Controllers.StudentsGroupController.Delete(System.Int32,System.Int32)">
             <summary>
             Add lecture to group
             </summary>

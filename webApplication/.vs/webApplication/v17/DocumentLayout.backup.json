@@ -3,116 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\ilecturegroupvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\ilecturegroupvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\ilecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\ilecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iinstitutionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iinstitutionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\studentsgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\studentsgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\igroupvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\igroupvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\icityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\icityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iattendancevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iattendancevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\institutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\institutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\inotificationvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\inotificationvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\lecturegroupsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\lecturegroupsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iportfoliovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iportfoliovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\lectureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\lectureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iroomequipmentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iroomequipmentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iroomvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iroomvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\portfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\portfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\istudentgroupvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\istudentgroupvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\roomequipmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\roomequipmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\ilecturesgroupsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\ilecturesgroupsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\lecturegroupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\lecturegroupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\roomequipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\roomequipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\iroomequipmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iroomequipmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\iportfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iportfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\dataacces\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\dataacces\\repositories\\lecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\repositories\\lecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\dataacces\\repositories\\roomequipmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\repositories\\roomequipmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\dataacces\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\updateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\updateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,365 +58,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "attendance.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\attendance.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\attendance.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\attendance.cs",
-              "RelativeToolTip": "Domain\\Models\\attendance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T02:35:17.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AttendanceService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AttendanceService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AttendanceService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AttendanceService.cs*",
-              "RelativeToolTip": "BusinessLogic\\Services\\AttendanceService.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T02:27:28.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CityService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\CityService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\CityService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\CityService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\CityService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwEUAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T01:55:35.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GroupService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\GroupService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\GroupService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\GroupService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\GroupService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwDsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T00:44:02.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InstitutionService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\InstitutionService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\InstitutionService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\InstitutionService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\InstitutionService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwEkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T00:14:12.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LectureGroupsController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\LectureGroupsController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\LectureGroupsController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\LectureGroupsController.cs",
-              "RelativeToolTip": "test\\Controllers\\LectureGroupsController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwBQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T00:02:46.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ILecturesGroupsService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\ILecturesGroupsService.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\ILecturesGroupsService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\ILecturesGroupsService.cs*",
-              "RelativeToolTip": "Domain\\Interfaces\\ILecturesGroupsService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T00:01:49.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LectureGroupsService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\LectureGroupsService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\LectureGroupsService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\LectureGroupsService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\LectureGroupsService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwB8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T23:52:22.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "lecture.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\lecture.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\lecture.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\lecture.cs",
-              "RelativeToolTip": "Domain\\Models\\lecture.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T23:26:18.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LectureService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\LectureService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\LectureService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\LectureService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\LectureService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T23:00:21.352Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PortfolioController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\PortfolioController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\PortfolioController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\PortfolioController.cs",
-              "RelativeToolTip": "test\\Controllers\\PortfolioController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBUAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IAttendanceValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IAttendanceValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\IAttendanceValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IAttendanceValidator.cs",
+              "RelativeToolTip": "Validators\\Interefaces\\IAttendanceValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T22:53:17.71Z",
+              "WhenOpened": "2025-09-25T19:31:00.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICityValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ICityValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\ICityValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ICityValidator.cs",
+              "RelativeToolTip": "Validators\\Interefaces\\ICityValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:27:10.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StudentsGroupService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\StudentsGroupService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\StudentsGroupService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\StudentsGroupService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\StudentsGroupService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAkwDwAAAAFAAAAAAAAAA==",
+              "Title": "IGroupValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IGroupValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\IGroupValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IGroupValidator.cs",
+              "RelativeToolTip": "Validators\\Interefaces\\IGroupValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T22:06:46.22Z",
+              "WhenOpened": "2025-09-25T19:27:00.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IInstitutionValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IInstitutionValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\IInstitutionValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IInstitutionValidator.cs",
+              "RelativeToolTip": "Validators\\Interefaces\\IInstitutionValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:23:30.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ILectureGroupValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ILectureGroupValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\ILectureGroupValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ILectureGroupValidator.cs",
+              "RelativeToolTip": "Validators\\Interefaces\\ILectureGroupValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:23:14.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ILectureValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ILectureValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\ILectureValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ILectureValidator.cs",
+              "RelativeToolTip": "Validators\\Interefaces\\ILectureValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:21:07.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "INotificationValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\INotificationValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\INotificationValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\INotificationValidator.cs*",
+              "RelativeToolTip": "Validators\\Interefaces\\INotificationValidator.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:20:34.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPortfolioValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IPortfolioValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\IPortfolioValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IPortfolioValidator.cs*",
+              "RelativeToolTip": "Validators\\Interefaces\\IPortfolioValidator.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:20:01.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRoomEquipmentValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IRoomEquipmentValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\IRoomEquipmentValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IRoomEquipmentValidator.cs",
+              "RelativeToolTip": "Validators\\Interefaces\\IRoomEquipmentValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:14:39.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\NotificationService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\NotificationService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\NotificationService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\NotificationService.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwEcAAABHAAAAAAAAAA==",
+              "Title": "IRoomValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IRoomValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\IRoomValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IRoomValidator.cs*",
+              "RelativeToolTip": "Validators\\Interefaces\\IRoomValidator.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:35:11.188Z",
+              "WhenOpened": "2025-09-25T19:14:15.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "PortfolioService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\PortfolioService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\PortfolioService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\PortfolioService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\PortfolioService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Title": "IStudentGroupValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IStudentGroupValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\IStudentGroupValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IStudentGroupValidator.cs*",
+              "RelativeToolTip": "Validators\\Interefaces\\IStudentGroupValidator.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:14:59.198Z",
+              "WhenOpened": "2025-09-25T19:14:00.812Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IPortfolioService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IPortfolioService.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IPortfolioService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IPortfolioService.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IPortfolioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:14:05.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RoomEquipmentController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\RoomEquipmentController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\RoomEquipmentController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\RoomEquipmentController.cs",
-              "RelativeToolTip": "test\\Controllers\\RoomEquipmentController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:01:10.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IRoomEquipmentService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IRoomEquipmentService.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IRoomEquipmentService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IRoomEquipmentService.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IRoomEquipmentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T20:34:59.254Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "RoomEquipmentService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\RoomEquipmentService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\RoomEquipmentService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\RoomEquipmentService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\RoomEquipmentService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwDoAAAAFAAAAAAAAAA==",
+              "Title": "IUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IUserValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Interefaces\\IUserValidator.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IUserValidator.cs",
+              "RelativeToolTip": "Validators\\Interefaces\\IUserValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T20:25:58.808Z",
+              "WhenOpened": "2025-09-25T19:13:16.83Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LectureRepository.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\LectureRepository.cs",
-              "RelativeDocumentMoniker": "DataAcces\\Repositories\\LectureRepository.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\LectureRepository.cs",
-              "RelativeToolTip": "DataAcces\\Repositories\\LectureRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T20:25:47.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RoomEquipmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\RoomEquipmentRepository.cs",
-              "RelativeDocumentMoniker": "DataAcces\\Repositories\\RoomEquipmentRepository.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\RoomEquipmentRepository.cs",
-              "RelativeToolTip": "DataAcces\\Repositories\\RoomEquipmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T20:17:14.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\RoomService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\RoomService.cs*",
-              "RelativeToolTip": "BusinessLogic\\Services\\RoomService.cs*",
-              "ViewState": "AgIAACQAAAAAAAAAAAA5wEMAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T19:57:42.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IRepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IRepositoryBase.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IRepositoryBase.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IRepositoryBase.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IRepositoryBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T19:52:58.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RepositoryWrapper.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Wrapper\\RepositoryWrapper.cs",
-              "RelativeDocumentMoniker": "DataAcces\\Wrapper\\RepositoryWrapper.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Wrapper\\RepositoryWrapper.cs",
-              "RelativeToolTip": "DataAcces\\Wrapper\\RepositoryWrapper.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAMMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T19:46:40.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "DataAcces\\Repositories\\RepositoryBase.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\RepositoryBase.cs",
-              "RelativeToolTip": "DataAcces\\Repositories\\RepositoryBase.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T18:45:34.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UpdateUserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateUserValidator.cs",
-              "RelativeDocumentMoniker": "Validators\\Validators\\UpdateUserValidator.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateUserValidator.cs",
-              "RelativeToolTip": "Validators\\Validators\\UpdateUserValidator.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADEAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T17:51:35.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\UserServiceTest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic.Tests\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\UserServiceTest.cs",
-              "RelativeToolTip": "BusinessLogic.Tests\\UserServiceTest.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAcwLUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:46:36.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\UserService.cs*",
-              "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:35:44.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CreateUserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateUserValidator.cs",
-              "RelativeDocumentMoniker": "Validators\\Validators\\CreateUserValidator.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateUserValidator.cs",
-              "RelativeToolTip": "Validators\\Validators\\CreateUserValidator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:21:05.343Z"
             }
           ]
         }
