@@ -24,8 +24,12 @@ namespace BusinessLogic.Services
 
         public async Task<notification> GetById(int id)
         {
+            if(id == 0)
+                throw new ArgumentNullException(nameof(id));
             var room = await _repositoryWrapper.notification.
                 FindByCondition(x => x.notificationid == id);
+            if (room.Count == 0)
+                throw new KeyNotFoundException(nameof(id));
             return room.First();
         }
 
@@ -45,17 +49,26 @@ namespace BusinessLogic.Services
             var notifications = await _repositoryWrapper.notification.FindByConditionTraking(x => x.notificationid == model.notificationid);
 
             if (notifications.Count == 0)
-                throw new ArgumentException(nameof(notifications));
+                throw new KeyNotFoundException(nameof(notifications));
+            var OneNotification = notifications.First();
 
+            if(model.userid != 0) OneNotification.userid = model.userid;
+            if(model.note != null) OneNotification.note = model.note;
+            if(model.isread.HasValue) OneNotification.isread = model.isread.Value;
+             
+            
 
             await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int id)
         {
+            if(id == 0)
+                throw new ArgumentNullException(nameof(id));
             var room = await _repositoryWrapper.notification
                 .FindByCondition(x => x.notificationid == id);
-            
+            if(room.Count == 0)
+                throw new KeyNotFoundException(nameof(room));
             await _repositoryWrapper.notification.Delete(room.First());
             await _repositoryWrapper.Save();
         }

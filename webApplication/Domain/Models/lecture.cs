@@ -11,9 +11,9 @@ public partial class lecture
 
     public string? description { get; set; }
 
-    public TimeOnly starttime { get; set; }
+    public TimeOnly? starttime { get; set; }
 
-    public TimeOnly endtime { get; set; }
+    public TimeOnly? endtime { get; set; }
 
     public int teacherid { get; set; }
 

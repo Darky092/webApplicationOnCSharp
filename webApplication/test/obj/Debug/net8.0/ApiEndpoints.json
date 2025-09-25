@@ -397,22 +397,6 @@
   },
   {
     "ContainingType": "webApplication.Controllers.LectureGroupsController",
-    "Method": "Update",
-    "RelativePath": "api/LectureGroups",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "lectures_group",
-        "Type": "webApplication.Contracts.lectures_groups.UpdateLectureGroupRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "webApplication.Controllers.LectureGroupsController",
     "Method": "Delete",
     "RelativePath": "api/LectureGroups",
     "HttpMethod": "DELETE",
@@ -420,7 +404,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "lectureid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "groupid",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -545,22 +534,6 @@
   },
   {
     "ContainingType": "webApplication.Controllers.PortfolioController",
-    "Method": "Update",
-    "RelativePath": "api/Portfolio",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "portfolio",
-        "Type": "webApplication.Contracts.portfolio.UpdatePortfolioRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "webApplication.Controllers.PortfolioController",
     "Method": "Delete",
     "RelativePath": "api/Portfolio",
     "HttpMethod": "DELETE",
@@ -570,6 +543,11 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "achievement",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -686,22 +664,6 @@
       {
         "Name": "room_equipment",
         "Type": "webApplication.Contracts.room_equipment.CreateRoomEquipmentRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "webApplication.Controllers.RoomEquipmentController",
-    "Method": "Update",
-    "RelativePath": "api/RoomEquipment",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "room_equipment",
-        "Type": "webApplication.Contracts.room_equipment.UpdateRoomEquipmentRequest",
         "IsRequired": true
       }
     ],

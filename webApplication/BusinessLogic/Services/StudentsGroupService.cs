@@ -51,9 +51,10 @@ namespace BusinessLogic.Services
         {
             if (id == 0)
                 throw new ArgumentNullException(nameof(id));
-
             var studentsGroup = await _repositoryWrapper.studentsGroup
                 .FindByCondition(x => x.userid == id);
+            if(studentsGroup.Count == 0)
+                throw new KeyNotFoundException(nameof(id));
             await _repositoryWrapper.studentsGroup.Delete(studentsGroup.First());
             await _repositoryWrapper.Save();
         }

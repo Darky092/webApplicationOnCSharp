@@ -644,6 +644,7 @@
         "summary": "Add new lecture to group",
         "description": "Query Example\r\n            \r\n    POST /Todo\r\n    {\r\n       \"groupid\" : 1,\r\n       \"lectureid\" : 1,\r\n    }",
         "requestBody": {
+          "description": "Lectures_group",
           "content": {
             "application/json": {
               "schema": {
@@ -658,37 +659,6 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/CreateLecturesGroupsRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "LectureGroups"
-        ],
-        "summary": "Update lecture or group",
-        "description": "Query Example\r\n            \r\n    PUT /Todo\r\n    {\r\n       \"groupid\" : 1,\r\n       \"lectureid\" : 1,\r\n    }",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateLectureGroupRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateLectureGroupRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateLectureGroupRequest"
               }
             }
           }
@@ -707,8 +677,18 @@
         "description": "enter group id",
         "parameters": [
           {
-            "name": "id",
+            "name": "lectureid",
             "in": "query",
+            "description": "Lectures_group",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "groupid",
+            "in": "query",
+            "description": "Lectures_group",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -733,6 +713,7 @@
           {
             "name": "id",
             "in": "path",
+            "description": "Lectures_group",
             "required": true,
             "schema": {
               "type": "integer",
@@ -888,6 +869,7 @@
         "summary": "Add new achevement to user",
         "description": "Query Example\r\n            \r\n    POST /Todo\r\n    {\r\n       \"userid\" : 1,\r\n       \"achevement\" : \"12123\",\r\n    }",
         "requestBody": {
+          "description": "Portfolio",
           "content": {
             "application/json": {
               "schema": {
@@ -902,37 +884,6 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/CreatePortfolioRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Portfolio"
-        ],
-        "summary": "Update achevement",
-        "description": "Query Example\r\n    PUT /Todo\r\n    {\r\n       \"userid\" : 1,\r\n       \"achevement\" : \"12123\",\r\n    }",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdatePortfolioRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdatePortfolioRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdatePortfolioRequest"
               }
             }
           }
@@ -947,15 +898,24 @@
         "tags": [
           "Portfolio"
         ],
-        "summary": "Update achevement",
+        "summary": "Delete achevement  by id",
         "description": "Enter user id",
         "parameters": [
           {
             "name": "id",
             "in": "query",
+            "description": "Portfolio",
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "achievement",
+            "in": "query",
+            "description": "Portfolio",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -977,6 +937,7 @@
           {
             "name": "id",
             "in": "path",
+            "description": "Portfolio",
             "required": true,
             "schema": {
               "type": "integer",
@@ -1119,7 +1080,6 @@
           "RoomEquipment"
         ],
         "summary": "Get rooms equipment",
-        "description": "Enter room id",
         "responses": {
           "200": {
             "description": "OK"
@@ -1133,6 +1093,7 @@
         "summary": "Add equipment to room",
         "description": "Query Example\r\n            \r\n    POST /Todo\r\n    {\r\n       \"roomid\" : 1,\r\n       \"equipment\" : 1,      \r\n    }",
         "requestBody": {
+          "description": "Equipment_Rooms",
           "content": {
             "application/json": {
               "schema": {
@@ -1147,37 +1108,6 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/CreateRoomEquipmentRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "RoomEquipment"
-        ],
-        "summary": "Add equipment to room",
-        "description": "Query Example\r\n            \r\n    PUT /Todo\r\n    {\r\n       \"roomid\" : 1,\r\n       \"equipment\" : 1,      \r\n    }",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateRoomEquipmentRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateRoomEquipmentRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateRoomEquipmentRequest"
               }
             }
           }
@@ -1198,6 +1128,7 @@
           {
             "name": "id",
             "in": "query",
+            "description": "Equipment_Rooms",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -1206,6 +1137,7 @@
           {
             "name": "equipment",
             "in": "query",
+            "description": "Equipment_Rooms",
             "schema": {
               "type": "string"
             }
@@ -1229,6 +1161,7 @@
           {
             "name": "id",
             "in": "path",
+            "description": "Equipment_Rooms",
             "required": true,
             "schema": {
               "type": "integer",
@@ -1863,20 +1796,6 @@
         },
         "additionalProperties": false
       },
-      "UpdateLectureGroupRequest": {
-        "type": "object",
-        "properties": {
-          "groupid": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "lectureid": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
       "UpdateLectureRequest": {
         "type": "object",
         "properties": {
@@ -1942,39 +1861,6 @@
             "nullable": true
           },
           "note": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UpdatePortfolioRequest": {
-        "type": "object",
-        "properties": {
-          "userid": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "achievement": {
-            "type": "string",
-            "nullable": true
-          },
-          "addedat": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UpdateRoomEquipmentRequest": {
-        "type": "object",
-        "properties": {
-          "roomid": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "equipment": {
             "type": "string",
             "nullable": true
           }

@@ -19,7 +19,6 @@ namespace webApplication.Controllers
         /// <summary>
         /// GET lectures and groups
         /// </summary>
-        /// <param name="model">Lectures_group</param>
         /// <returns></returns>
 
         // GET api/<Lectures_groupController>
@@ -35,7 +34,7 @@ namespace webApplication.Controllers
         /// <remarks>
         /// Enter group id
         /// </remarks>
-        /// <param name="model">Lectures_group</param>
+        /// <param name="id">Lectures_group</param>
         /// <returns></returns>
 
         // GET api/<Lectures_groupController>
@@ -60,7 +59,7 @@ namespace webApplication.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="model">Lectures_group</param>
+        /// <param name="lectures_group">Lectures_group</param>
         /// <returns></returns>
 
         // POST api/<Lectures_groupController>
@@ -72,43 +71,20 @@ namespace webApplication.Controllers
             return Ok();
             }
         /// <summary>
-        /// Update lecture or group
-        /// </summary>
-        /// <remarks>
-        /// Query Example
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///        "groupid" : 1,
-        ///        "lectureid" : 1,
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="model">Lectures_group</param>
-        /// <returns></returns>
-
-        // PUT api/<Lectures_groupController>
-        [HttpPut]
-        public async Task<IActionResult> Update(UpdateLectureGroupRequest lectures_group)
-            {
-            var request = lectures_group.Adapt<lectures_group>();
-            await _lecturesGropesService.Update(request);
-            return Ok();
-            }
-        /// <summary>
         /// Delete lecture by group id
         /// </summary>
         /// <remarks>
         /// enter group id
         /// </remarks>
-        /// <param name="model">Lectures_group</param>
+        /// <param name="groupid">Lectures_group</param>
+        /// <param name="lectureid">Lectures_group</param>
         /// <returns></returns>
 
         // DELETE api/<Lectures_groupController>
         [HttpDelete]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int lectureid,int groupid)
             {
-            await _lecturesGropesService.Delete(id);
+            await _lecturesGropesService.Delete(lectureid, groupid);
             return Ok();
             }
         }

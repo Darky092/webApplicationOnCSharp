@@ -13,7 +13,6 @@ namespace Domain.Interfaces
         Task<lectures_group> GetById(int id);
 
         Task Create(lectures_group model);
-        Task Update(lectures_group model);
-        Task Delete(int id);
+        Task Delete(int lectureId, int groupId );
         }
     }

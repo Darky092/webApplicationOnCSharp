@@ -24,23 +24,32 @@ namespace BusinessLogic.Services
 
         public async Task<portfolio> GetById(int id)
         {
+            if (id == 0) 
+                throw new ArgumentNullException(nameof(id));
             var portfolio = await _repositoryWrapper.portfolio.
                 FindByCondition(x => x.userid == id);
-            return portfolio.First();
+            if (portfolio.Count == 0)
+                throw new KeyNotFoundException(nameof(id));
+            return portfolio.Single();
         }
 
         public async Task Create(portfolio model)
         {
+            if (model == null)
+                throw new KeyNotFoundException(nameof(model));
             await _repositoryWrapper.portfolio.Create(model);
             await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int id, string achievement)
         {
-            
+            if(id == 0)
+                throw new ArgumentNullException(nameof(id));
+            if (achievement == null)
+                throw new ArgumentNullException(nameof(achievement));
             var portfolio = await _repositoryWrapper.portfolio.FindByCondition(x => x.userid == id && x.achievement == achievement);
             if (portfolio.Count == 0)
-                throw new ArgumentNullException($"Room userId:{id} and achievement: {achievement}");
+                throw new KeyNotFoundException($"Room userId:{id} and achievement: {achievement}");
 
             await _repositoryWrapper.portfolio.Delete(portfolio.Single());
             await _repositoryWrapper.Save();

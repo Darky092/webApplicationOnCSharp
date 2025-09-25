@@ -30,19 +30,21 @@ namespace BusinessLogic.Services
             var user = await _repositoryWrapper.user
                 .FindByCondition(x => x.userid == id);
 
+            if(user.Count == 0)
+                throw new KeyNotFoundException(nameof(user));
+
             return user.FirstOrDefault() ?? throw new KeyNotFoundException($"User with Id {id} not found");
         }
 
         public async Task Create(user model)
         {
             if (model == null) 
-            {
                 throw new ArgumentNullException(nameof(model));
-            }
+
             var valResult = await _userValidator.ValidateAsync(model);
             if (!valResult.IsValid) 
             {
-                var errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
                 throw new ArgumentException($"{errors}");
             }
             await _repositoryWrapper.user.Create(model);
@@ -65,11 +67,11 @@ namespace BusinessLogic.Services
             
             var users = await _repositoryWrapper.user.FindByConditionTraking(x => x.userid == model.userid);
             
-            if (users == null)
+            if (users.Count == 0)
                 throw new KeyNotFoundException($"User with ID {model.userid} not found.");
             if (users.Count > 1)
                 throw new InvalidOperationException($"Multiple users found with ID {model.userid}. This should not happen.");
-            var existing = users [0];
+            var existing = users.Single();
 
             if (model.name != null) existing.name = model.name;
             if (model.surname != null) existing.surname = model.surname;
@@ -91,8 +93,15 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int id)
         {
+            if (id == 0)
+                throw new ArgumentNullException(nameof(id));
+
             var user = await _repositoryWrapper.user
                 .FindByCondition(x => x.userid == id);
+
+            if (user.Count == 0)
+                throw new KeyNotFoundException(nameof(user));
+
 
             await _repositoryWrapper.user.Delete(user.First());
             await _repositoryWrapper.Save();

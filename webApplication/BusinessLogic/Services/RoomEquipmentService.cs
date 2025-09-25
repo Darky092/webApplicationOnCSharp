@@ -25,13 +25,19 @@ namespace BusinessLogic.Services
 
         public async Task<room_equipment> GetById(int id)
         {
+            if (id == 0) 
+                throw new ArgumentNullException(nameof(id));
             var roomEquipment = await _repositoryWrapper.roomEquipment.
                 FindByCondition(x => x.roomid == id);
+            if (roomEquipment.Count == 0)
+                throw new KeyNotFoundException(nameof(roomEquipment));
             return roomEquipment.First();
         }
 
         public async Task Create(room_equipment model)
         {
+            if (model == null)
+                throw new ArgumentNullException(nameof(model));
             await _repositoryWrapper.roomEquipment.Create(model);
             await _repositoryWrapper.Save();
         }

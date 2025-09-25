@@ -347,7 +347,6 @@
             <summary>
             GET lectures and groups
             </summary>
-            <param name="model">Lectures_group</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.LectureGroupsController.GetById(System.Int32)">
@@ -357,7 +356,7 @@
             <remarks>
             Enter group id
             </remarks>
-            <param name="model">Lectures_group</param>
+            <param name="id">Lectures_group</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.LectureGroupsController.Add(webApplication.Contracts.lectures_groups.CreateLecturesGroupsRequest)">
@@ -374,34 +373,18 @@
                  }
             
              </remarks>
-             <param name="model">Lectures_group</param>
+             <param name="lectures_group">Lectures_group</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.LectureGroupsController.Update(webApplication.Contracts.lectures_groups.UpdateLectureGroupRequest)">
-             <summary>
-             Update lecture or group
-             </summary>
-             <remarks>
-             Query Example
-            
-                 PUT /Todo
-                 {
-                    "groupid" : 1,
-                    "lectureid" : 1,
-                 }
-            
-             </remarks>
-             <param name="model">Lectures_group</param>
-             <returns></returns>
-        </member>
-        <member name="M:webApplication.Controllers.LectureGroupsController.Delete(System.Int32)">
+        <member name="M:webApplication.Controllers.LectureGroupsController.Delete(System.Int32,System.Int32)">
             <summary>
             Delete lecture by group id
             </summary>
             <remarks>
             enter group id
             </remarks>
-            <param name="model">Lectures_group</param>
+            <param name="groupid">Lectures_group</param>
+            <param name="lectureid">Lectures_group</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.NotificatiionController.GetAll">
@@ -471,7 +454,6 @@
             <summary>
             Get achevement by user id
             </summary>
-            <param name="model">Portfolio</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.PortfolioController.GetById(System.Int32)">
@@ -481,7 +463,7 @@
             <remarks>
             Enter user id
             </remarks>
-            <param name="model">Portfolio</param>
+            <param name="id">Portfolio</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.PortfolioController.Add(webApplication.Contracts.portfolio.CreatePortfolioRequest)">
@@ -498,33 +480,18 @@
                  }
             
              </remarks>
-             <param name="model">Portfolio</param>
+             <param name="portfolio">Portfolio</param>
              <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.PortfolioController.Update(webApplication.Contracts.portfolio.UpdatePortfolioRequest)">
-             <summary>
-             Update achevement  
-             </summary>
-             <remarks>
-             Query Example
-                 PUT /Todo
-                 {
-                    "userid" : 1,
-                    "achevement" : "12123",
-                 }
-            
-             </remarks>
-             <param name="model">Portfolio</param>
-             <returns></returns>
-        </member>
-        <member name="M:webApplication.Controllers.PortfolioController.Delete(System.Int32)">
+        <member name="M:webApplication.Controllers.PortfolioController.Delete(System.Int32,System.String)">
             <summary>
-            Update achevement  
+            Delete achevement  by id
             </summary>
             <remarks>
             Enter user id
             </remarks>
-            <param name="model">Portfolio</param>
+            <param name="achievement">Portfolio</param>
+            <param name="id">Portfolio</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.RoomController.Get">
@@ -594,10 +561,6 @@
             <summary>
             Get rooms equipment
             </summary>
-            <remarks>
-            Enter room id
-            </remarks>
-            <param name="model">Equipment_Rooms</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.RoomEquipmentController.GetById(System.Int32)">
@@ -607,7 +570,7 @@
             <remarks>
             Enter room id
             </remarks>
-            <param name="model">Equipment_Rooms</param>
+            <param name="id">Equipment_Rooms</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.RoomEquipmentController.Create(webApplication.Contracts.room_equipment.CreateRoomEquipmentRequest)">
@@ -624,24 +587,7 @@
                  }
             
              </remarks>
-             <param name="model">Equipment_Rooms</param>
-             <returns></returns>
-        </member>
-        <member name="M:webApplication.Controllers.RoomEquipmentController.Update(webApplication.Contracts.room_equipment.UpdateRoomEquipmentRequest)">
-             <summary>
-             Add equipment to room
-             </summary>
-             <remarks>
-             Query Example
-            
-                 PUT /Todo
-                 {
-                    "roomid" : 1,
-                    "equipment" : 1,      
-                 }
-            
-             </remarks>
-             <param name="model">Equipment_Rooms</param>
+             <param name="room_equipment">Equipment_Rooms</param>
              <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.RoomEquipmentController.Delete(System.Int32,System.String)">
@@ -651,7 +597,8 @@
             <remarks>
             Enter room id
             </remarks>
-            <param name="model">Equipment_Rooms</param>
+            <param name="id">Equipment_Rooms</param>
+            <param name="equipment">Equipment_Rooms</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.StudentsGroupController.Get">

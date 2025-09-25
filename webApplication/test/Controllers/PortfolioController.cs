@@ -19,7 +19,6 @@ namespace webApplication.Controllers
         /// <summary>
         /// Get achevement by user id
         /// </summary>
-        /// <param name="model">Portfolio</param>
         /// <returns></returns>
 
         // GET api/<PortfolioController>
@@ -34,7 +33,7 @@ namespace webApplication.Controllers
         /// <remarks>
         /// Enter user id
         /// </remarks>
-        /// <param name="model">Portfolio</param>
+        /// <param name="id">Portfolio</param>
         /// <returns></returns>
 
         // GET api/<PortfolioController>
@@ -59,7 +58,7 @@ namespace webApplication.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="model">Portfolio</param>
+        /// <param name="portfolio">Portfolio</param>
         /// <returns></returns>
 
         // POST api/<PortfolioController>
@@ -70,44 +69,23 @@ namespace webApplication.Controllers
             await _portfolioService.Create(request);
             return Ok();
             }
-        /// <summary>
-        /// Update achevement  
-        /// </summary>
-        /// <remarks>
-        /// Query Example
-        ///     PUT /Todo
-        ///     {
-        ///        "userid" : 1,
-        ///        "achevement" : "12123",
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="model">Portfolio</param>
-        /// <returns></returns>
 
-        // PUT api/<PortfolioController>
-        [HttpPut]
-        public async Task<IActionResult> Update(UpdatePortfolioRequest portfolio)
-            {
-            var request = portfolio.Adapt<portfolio>();
-            await _portfolioService.Update(request);
-            return Ok();
-            }
         /// <summary>
-        /// Update achevement  
+        /// Delete achevement  by id
         /// </summary>
         /// <remarks>
         /// Enter user id
         /// </remarks>
-        /// <param name="model">Portfolio</param>
+        /// <param name="achievement">Portfolio</param>
+        /// <param name="id">Portfolio</param>
         /// <returns></returns>
 
         // DELETE api/<PortfolioController>
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id, string achievement)
             {
-            await _portfolioService.Delete(id);
+            await _portfolioService.Delete(id, achievement);
             return Ok();
             }
         }

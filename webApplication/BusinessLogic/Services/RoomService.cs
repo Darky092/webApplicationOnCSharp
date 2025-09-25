@@ -24,13 +24,21 @@ namespace BusinessLogic.Services
 
         public async Task<room> GetById(int id)
         {
+            if (id == 0)
+                throw new ArgumentNullException(nameof(id));
+                
             var room = await _repositoryWrapper.room.
                 FindByCondition(x => x.roomid == id);
+            if (room.Count == 0)
+                throw new KeyNotFoundException(nameof(room));
             return room.First();
         }
 
         public async Task Create(room model)
         {
+            if(model == null)
+                throw new ArgumentNullException("model");
+
             await _repositoryWrapper.room.Create(model);
             await _repositoryWrapper.Save();
 
@@ -43,7 +51,7 @@ namespace BusinessLogic.Services
                 throw new KeyNotFoundException($"not found {model.roomid}id");
             if (rooms.Count > 1)
                 throw new InvalidOperationException($"To many rooms was founded: {rooms.Count}");
-            var expected = rooms [0];
+            var expected = rooms.Single();
             
             if (model.institutionid != 0)
                 expected.institutionid = model.institutionid;
@@ -56,7 +64,9 @@ namespace BusinessLogic.Services
         {
             var room = await _repositoryWrapper.room
                 .FindByCondition(x => x.roomid == id);
-            await _repositoryWrapper.room.Delete(room.First());
+            if (room.Count == 0)
+                throw new KeyNotFoundException(nameof(room));
+            await _repositoryWrapper.room.Delete(room.First());            
             await _repositoryWrapper.Save();
         }
     }
