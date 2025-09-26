@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
+using FluentValidation.Results;
 using Moq;
 using Validators.Interefaces;
-using FluentValidation.Results;
-using System.Linq.Expressions;
 
 namespace BusinessLogic.Tests
 {

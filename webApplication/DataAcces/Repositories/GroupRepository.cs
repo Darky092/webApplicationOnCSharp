@@ -7,11 +7,11 @@ using Domain.Interfaces;
 using Domain.Models;
 
 namespace DataAcces.Repositories
-    {
+{
     public class GroupRepository : RepositoryBase<group>, IGroupReposiitory
-        {
+    {
         public GroupRepository(LDBContext repositoryContext) : base(repositoryContext)
-            {
-            }
+        {
         }
     }
+}

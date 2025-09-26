@@ -3,20 +3,20 @@
 #nullable disable
 
 namespace Domain.Migrations
-    {
+{
     /// <inheritdoc />
     public partial class AddLecturesGroupEntity : Migration
-        {
+    {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
-            {
+        {
             migrationBuilder.CreateTable(
                 name: "grouplecture",
                 columns: table => new
-                    {
+                {
                     groupsgroupid = table.Column<int>(type: "integer", nullable: false),
                     lectureslectureid = table.Column<int>(type: "integer", nullable: false)
-                    },
+                },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_grouplecture", x => new { x.groupsgroupid, x.lectureslectureid });
@@ -38,13 +38,13 @@ namespace Domain.Migrations
                 name: "IX_grouplecture_lectureslectureid",
                 table: "grouplecture",
                 column: "lectureslectureid");
-            }
+        }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
-            {
+        {
             migrationBuilder.DropTable(
                 name: "grouplecture");
-            }
         }
     }
+}

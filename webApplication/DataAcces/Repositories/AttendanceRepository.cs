@@ -7,12 +7,12 @@ using Domain.Interfaces;
 using Domain.Models;
 
 namespace DataAcces.Repositories
-    {
+{
     public class AttendanceRepository : RepositoryBase<attendance>, IAttendanceRepository
-        {
+    {
 
         public AttendanceRepository(LDBContext repostoryContext) : base(repostoryContext)
-            {
-            }
+        {
         }
     }
+}

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Domain.Models;
 
 public partial class attendance
-    {
+{
     public int attendanceid { get; set; }
 
     public int lectureid { get; set; }
@@ -20,4 +20,4 @@ public partial class attendance
     public virtual lecture lecture { get; set; } = null!;
 
     public virtual user user { get; set; } = null!;
-    }
+}

@@ -198,7 +198,7 @@ namespace DataAcces.Wrapper
         //backup implementations of methods just in case
         //(ef core does not support transaction mode,
         //but you can use your own queries and implement them later)
-        
+
 
         public async Task BeginTransactionAsync()
         {

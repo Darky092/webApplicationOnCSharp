@@ -7,9 +7,9 @@ using Domain.Interfaces;
 using Domain.Models;
 
 namespace DataAcces.Repositories
-    {
+{
     public class RoomRepository : RepositoryBase<room>, IRoomRepository
-        {
+    {
         public RoomRepository(LDBContext repositoryContext) : base(repositoryContext) { }
-        }
     }
+}

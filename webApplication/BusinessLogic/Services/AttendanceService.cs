@@ -63,7 +63,7 @@ namespace BusinessLogic.Services
             if (model == null)
                 throw new ArgumentNullException(nameof(model));
 
-            var valResult = await _attendanceValidator.ValidateAsync(model); 
+            var valResult = await _attendanceValidator.ValidateAsync(model);
             if (!valResult.IsValid)
             {
                 string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));

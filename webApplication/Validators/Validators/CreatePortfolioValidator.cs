@@ -1,7 +1,7 @@
 ﻿using Domain.Models;
 using FluentValidation;
-using Validators.Interefaces;
 using FluentValidation.Results;
+using Validators.Interefaces;
 
 namespace Validators.Validators
 {

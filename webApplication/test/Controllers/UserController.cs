@@ -5,16 +5,16 @@ using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.user;
 
 namespace BackendApi.Controllers
-    {
+{
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
-        {
+    {
         private IUserService _userService;
         public UserController(IUserService userService)
-            {
+        {
             _userService = userService;
-            }
+        }
         /// <summary>
         /// Get user
         /// </summary>
@@ -22,9 +22,9 @@ namespace BackendApi.Controllers
         // Get api/<UsersController>
         [HttpGet]
         public async Task<IActionResult> GetAll()
-            {
+        {
             return Ok(await _userService.GetAll());
-            }
+        }
         /// <summary>
         /// Get user by id
         /// </summary>
@@ -36,11 +36,11 @@ namespace BackendApi.Controllers
         // Get api/<UsersController>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
-            {
+        {
             var result = await _userService.GetById(id);
             var response = result.Adapt<GetUserResponse>();
             return Ok(response);
-            }
+        }
         /// <summary>
         /// Create new user
         /// </summary>
@@ -69,12 +69,12 @@ namespace BackendApi.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Add(CreateUserRequest request)
-            {
+        {
 
             var userDto = request.Adapt<user>();
             await _userService.Create(userDto);
             return Ok();
-            }
+        }
 
         /// <summary>
         /// Update user
@@ -104,7 +104,7 @@ namespace BackendApi.Controllers
         // PUT api/<UsersController>
         [HttpPut]
         public async Task<IActionResult> Update(UpdateUserRequest request)
-            {
+        {
             var useDto = request.Adapt<user>();
             useDto.isactive = true;
             var data = await _userService.GetById(useDto.userid);
@@ -113,7 +113,7 @@ namespace BackendApi.Controllers
             useDto.createdat = data.createdat;
             await _userService.Update(useDto);
             return Ok();
-            }
+        }
 
         /// <summary>
         /// Delete user
@@ -126,9 +126,9 @@ namespace BackendApi.Controllers
         // Delete api/<UsersController>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
-            {
+        {
             await _userService.Delete(id);
             return Ok();
-            }
         }
     }
+}

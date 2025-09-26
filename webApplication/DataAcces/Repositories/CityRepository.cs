@@ -7,11 +7,11 @@ using Domain.Interfaces;
 using Domain.Models;
 
 namespace DataAcces.Repositories
-    {
+{
     public class CityRepository : RepositoryBase<city>, ICityRepository
-        {
+    {
         public CityRepository(LDBContext repositoryContext) : base(repositoryContext)
-            {
-            }
+        {
         }
     }
+}

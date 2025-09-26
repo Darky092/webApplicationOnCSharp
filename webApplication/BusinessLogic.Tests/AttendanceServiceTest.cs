@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
+using FluentValidation.Results;
 using Moq;
 using Validators.Interefaces;
-using FluentValidation.Results;
-using System.Linq.Expressions;
 
 namespace BusinessLogic.Tests
 {
@@ -30,7 +30,7 @@ namespace BusinessLogic.Tests
             lectureRepositoryMoq = new Mock<ILectureRepository>();
             userRepositoryMoq = new Mock<IUserRepository>();
 
-           
+
             userRepositoryMoq
                 .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<user, bool>>>()))
                 .ReturnsAsync(new List<user>());
@@ -39,7 +39,7 @@ namespace BusinessLogic.Tests
                 .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<lecture, bool>>>()))
                 .ReturnsAsync(new List<lecture>());
 
-            
+
             repositoryWrapperMoq.Setup(x => x.attendance).Returns(attendanceRepositoryMoq.Object);
             repositoryWrapperMoq.Setup(x => x.lecture).Returns(lectureRepositoryMoq.Object);
             repositoryWrapperMoq.Setup(x => x.user).Returns(userRepositoryMoq.Object);
@@ -217,8 +217,8 @@ namespace BusinessLogic.Tests
             var updateAttendance = new attendance
             {
                 attendanceid = 10,
-                lectureid = 11,   
-                userid = 999      
+                lectureid = 11,
+                userid = 999
             };
 
             var existingAttendance = new attendance
@@ -235,12 +235,12 @@ namespace BusinessLogic.Tests
             attendanceValidatorMoq.Setup(x => x.ValidateAsync(updateAttendance))
                 .ReturnsAsync(new ValidationResult());
 
-            
+
             lectureRepositoryMoq
                 .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<lecture, bool>>>()))
                 .ReturnsAsync(new List<lecture> { new lecture { lectureid = 15 } });
 
-            
+
             userRepositoryMoq
                 .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<user, bool>>>()))
                 .ReturnsAsync(new List<user>());

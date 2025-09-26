@@ -1,7 +1,7 @@
 ﻿namespace webApplication.Contracts.lecture
-    {
+{
     public class GetLectureResponse
-        {
+    {
         public int lectureid { get; set; }
 
         public string lecturename { get; set; } = null!;
@@ -19,5 +19,5 @@
         public bool? isactive { get; set; }
 
         public DateTime? createdat { get; set; }
-        }
     }
+}

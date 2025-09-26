@@ -30,7 +30,7 @@ namespace BusinessLogic.Services
             var user = await _repositoryWrapper.user
                 .FindByCondition(x => x.userid == id);
 
-            if(user.Count == 0)
+            if (user.Count == 0)
                 throw new KeyNotFoundException($"User with ID {id} not found.");
 
             return user.Single();
@@ -38,11 +38,11 @@ namespace BusinessLogic.Services
 
         public async Task Create(user model)
         {
-            if (model == null) 
+            if (model == null)
                 throw new ArgumentNullException(nameof(model));
 
             var valResult = await _userValidator.ValidateAsync(model);
-            if (!valResult.IsValid) 
+            if (!valResult.IsValid)
             {
                 string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
                 throw new ArgumentException($"{errors}");
@@ -56,7 +56,7 @@ namespace BusinessLogic.Services
             if (model == null)
                 throw new ArgumentNullException(nameof(model));
 
-            
+
             var valResult = await _userValidator.ValidateAsync(model);
             if (!valResult.IsValid)
             {
@@ -64,9 +64,9 @@ namespace BusinessLogic.Services
                 throw new ArgumentException($"{errors}");
             }
 
-            
+
             var users = await _repositoryWrapper.user.FindByConditionTraking(x => x.userid == model.userid);
-            
+
             if (users.Count == 0)
                 throw new KeyNotFoundException($"User with ID {model.userid} not found.");
             if (users.Count > 1)

@@ -22,7 +22,7 @@ namespace DataAcces.Repositories
         {
             int deleted = await RepositoryContext.students_groups
                 .Where(predicate)
-                .ExecuteDeleteAsync(); 
+                .ExecuteDeleteAsync();
             return deleted;
         }
     }

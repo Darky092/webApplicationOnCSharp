@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Domain.Models;
 
 public partial class group
-    {
+{
     public int groupid { get; set; }
 
     public string groupname { get; set; } = null!;
@@ -22,4 +22,4 @@ public partial class group
     public virtual institution institution { get; set; } = null!;
 
     public virtual ICollection<lecture> lectures { get; set; } = new List<lecture>();
-    }
+}

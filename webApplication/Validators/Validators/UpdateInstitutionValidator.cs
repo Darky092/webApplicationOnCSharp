@@ -1,7 +1,7 @@
 ﻿using Domain.Models;
 using FluentValidation;
-using Validators.Interefaces;
 using FluentValidation.Results;
+using Validators.Interefaces;
 
 namespace Validators.Validators
 {
@@ -9,7 +9,7 @@ namespace Validators.Validators
     {
         public UpdateInstitutionValidator()
         {
-            
+
             RuleFor(x => x.institutionname)
                 .MaximumLength(256).WithMessage("Institution name cannot exceed 256 characters");
 

@@ -44,7 +44,7 @@ namespace BusinessLogic.Services
         public async Task Create(portfolio model)
         {
             if (model == null)
-                throw new ArgumentNullException(nameof(model)); 
+                throw new ArgumentNullException(nameof(model));
 
             var valResult = await _portfolioValidator.ValidateAsync(model);
             if (!valResult.IsValid)

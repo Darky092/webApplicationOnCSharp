@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-    {
+{
     public interface IAttendanceService
-        {
+    {
         Task<List<attendance>> GetAll();
 
         Task<attendance> GetById(int id);
@@ -16,5 +16,5 @@ namespace Domain.Interfaces
         Task Create(attendance model);
         Task Update(attendance model);
         Task Delete(int id);
-        }
     }
+}

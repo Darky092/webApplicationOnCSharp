@@ -42,7 +42,7 @@ namespace Domain.Migrations
             migrationBuilder.AddPrimaryKey(
                 name: "PK_students_groups",
                 table: "students_groups",
-                columns: new[] { "userid", "groupid" });
+                columns: new [] { "userid", "groupid" });
         }
 
         /// <inheritdoc />

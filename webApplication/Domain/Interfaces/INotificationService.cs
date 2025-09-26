@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-    {
+{
     public interface INotificationService
-        {
+    {
 
 
         Task<List<notification>> GetAll();
@@ -20,5 +20,5 @@ namespace Domain.Interfaces
         Task Delete(int id);
 
 
-        }
     }
+}

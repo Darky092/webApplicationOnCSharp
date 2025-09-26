@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Models;
 using FluentValidation;
-using Validators.Interefaces;
 using FluentValidation.Results;
+using Validators.Interefaces;
 
 namespace Validators.Validators
 {

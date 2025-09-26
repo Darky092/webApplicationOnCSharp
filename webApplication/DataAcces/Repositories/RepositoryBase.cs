@@ -26,7 +26,7 @@ namespace DataAcces.Repositories
         //Update the most rotten func in this frame work do not use this. 
         public async Task Update(T entity) => RepositoryContext.Set<T>().Update(entity);
         public async Task Delete(T entity) => RepositoryContext.Set<T>().Remove(entity);
-    
+
 
 
     }

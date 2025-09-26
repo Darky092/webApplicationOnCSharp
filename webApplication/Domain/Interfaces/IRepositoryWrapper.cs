@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Domain.Interfaces;
 
 namespace Domain.Interfaces
-    {
+{
     public interface IRepositoryWrapper
-        {
+    {
         IUserRepository user { get; }
         ICityRepository city { get; }
 
@@ -36,5 +36,5 @@ namespace Domain.Interfaces
         Task BeginTransactionAsync();
         Task CommitTransactionAsync();
         Task RollbackTransactionAsync();
-        }
     }
+}

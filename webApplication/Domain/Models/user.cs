@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Domain.Models;
 
 public partial class user
-    {
+{
     public int userid { get; set; }
 
     public string? avatar { get; set; }
@@ -36,4 +36,4 @@ public partial class user
     public virtual ICollection<notification> notifications { get; set; } = new List<notification>();
 
     public virtual ICollection<portfolio> portfolios { get; set; } = new List<portfolio>();
-    }
+}

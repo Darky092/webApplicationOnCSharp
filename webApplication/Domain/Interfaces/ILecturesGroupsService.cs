@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Domain.Models;
 
 namespace Domain.Interfaces
-    {
+{
     public interface ILecturesGroupsService
-        {
+    {
         Task<List<lectures_group>> GetAll();
         Task<lectures_group> GetById(int id);
 
         Task Create(lectures_group model);
-        Task Delete(int lectureId, int groupId );
-        }
+        Task Delete(int lectureId, int groupId);
     }
+}
