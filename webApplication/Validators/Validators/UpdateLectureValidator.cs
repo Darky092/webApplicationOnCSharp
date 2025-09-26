@@ -16,7 +16,7 @@ namespace Validators.Validators
                 .GreaterThan(0).WithMessage("Teacher ID is required and must be greater than 0");
 
         }
-        
+        //test actions
 
         ValidationResult ILectureValidator.Validate(lecture lecture)
         {

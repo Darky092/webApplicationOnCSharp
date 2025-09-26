@@ -31,15 +31,20 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore
-
+        working-directory: webApplication
+  
       - name: Install dotnet-format tool
         run: dotnet tool install -g dotnet-format
+        working-directory: webApplication
 
       - name: Check code formatting
         run: dotnet format --verify-no-changes --severity error
+        working-directory: webApplication
 
       - name: Build project (Release)
         run: dotnet build --no-restore --configuration Release
+        working-directory: webApplication
 
       - name: Run tests
         run: dotnet test --no-restore --configuration Release --collect:"XPlat Code Coverage" --logger "console;verbosity=detailed"
+        working-directory: webApplication

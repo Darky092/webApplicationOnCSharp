@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\updatelecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\updatelecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\createlecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\createlecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iportfoliovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iportfoliovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\studentsgroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\studentsgroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic.tests\\cityservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\cityservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\createcityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,10 +123,6 @@
       "RelativeMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\lecturesgroupsservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\createlecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\createlecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\inotificationvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\inotificationvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -145,10 +153,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\updatelecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\updatelecturevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\createnotificationvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -193,10 +197,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\createstudentgroupvaldator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\createstudentgroupvaldator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iportfoliovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iportfoliovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\createroomequipmentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -286,11 +286,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 46,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "test\\Controllers\\UserController.cs",
@@ -298,16 +302,11 @@
               "RelativeToolTip": "test\\Controllers\\UserController.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAcwH8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T01:07:09.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-09-26T01:07:09.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "AttendanceService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AttendanceService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\AttendanceService.cs",
@@ -319,19 +318,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "CityService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\CityService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\CityService.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\CityService.cs",
               "RelativeToolTip": "BusinessLogic\\Services\\CityService.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAwwGcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAIwGcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T23:59:41.757Z"
+              "WhenOpened": "2025-09-25T23:59:41.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\GroupService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\GroupService.cs",
@@ -343,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "InstitutionService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\InstitutionService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\InstitutionService.cs",
@@ -355,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "LectureGroupsService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\LectureGroupsService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\LectureGroupsService.cs",
@@ -367,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "LectureService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\LectureService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\LectureService.cs",
@@ -379,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "UpdateNotificationRequest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Contracts\\notification\\UpdateNotificationRequest.cs",
               "RelativeDocumentMoniker": "test\\Contracts\\notification\\UpdateNotificationRequest.cs",
@@ -391,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "NotificatiionController.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\NotificatiionController.cs",
               "RelativeDocumentMoniker": "test\\Controllers\\NotificatiionController.cs",
@@ -403,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "CreateNotificationRequest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Contracts\\notification\\CreateNotificationRequest.cs",
               "RelativeDocumentMoniker": "test\\Contracts\\notification\\CreateNotificationRequest.cs",
@@ -415,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\NotificationService.cs",
@@ -427,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "CreatePortfolioRequest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Contracts\\portfolio\\CreatePortfolioRequest.cs",
               "RelativeDocumentMoniker": "test\\Contracts\\portfolio\\CreatePortfolioRequest.cs",
@@ -439,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "PortfolioService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\PortfolioService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\PortfolioService.cs",
@@ -475,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "RoomEquipmentService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\RoomEquipmentService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\RoomEquipmentService.cs",
@@ -487,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "RoomService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\RoomService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\RoomService.cs",
@@ -499,13 +499,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "StudentsGroupController.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\StudentsGroupController.cs",
               "RelativeDocumentMoniker": "test\\Controllers\\StudentsGroupController.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\StudentsGroupController.cs",
               "RelativeToolTip": "test\\Controllers\\StudentsGroupController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T21:34:09.249Z",
               "EditorCaption": ""
@@ -548,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Program.cs",
               "RelativeDocumentMoniker": "test\\Program.cs",
@@ -560,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "StudentsGroupService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\StudentsGroupService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\StudentsGroupService.cs",
@@ -596,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AttendanceServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\AttendanceServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\AttendanceServiceTest.cs",
@@ -604,12 +604,11 @@
               "RelativeToolTip": "BusinessLogic.Tests\\AttendanceServiceTest.cs",
               "ViewState": "AgIAAN8AAAAAAAAAAAAwwOUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:29:26.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:29:26.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "CityServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\CityServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\CityServiceTest.cs",
@@ -621,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "GroupServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\GroupServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\GroupServiceTest.cs",
@@ -633,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "InstitutionServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\InstitutionServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\InstitutionServiceTest.cs",
@@ -645,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "LectureServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\LectureServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\LectureServiceTest.cs",
@@ -657,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "LecturesGroupsServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\LecturesGroupsServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\LecturesGroupsServiceTest.cs",
@@ -669,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "NotificationServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\NotificationServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\NotificationServiceTest.cs",
@@ -681,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "PortfoliioServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\PortfoliioServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\PortfoliioServiceTest.cs",
@@ -729,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "UpdateAttendanceValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateAttendanceValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\UpdateAttendanceValidator.cs",
@@ -741,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CreateAttendanceValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateAttendanceValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreateAttendanceValidator.cs",
@@ -753,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "UpdateCityValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateCityValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\UpdateCityValidator.cs",
@@ -765,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "CreateCityValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateCityValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreateCityValidator.cs",
@@ -777,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "CreateGroupValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateGroupValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreateGroupValidator.cs",
@@ -789,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "CreateInstitutionValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateInstitutionValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreateInstitutionValidator.cs",
@@ -801,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "UpdateInstitutionValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateInstitutionValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\UpdateInstitutionValidator.cs",
@@ -813,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "UpdateLecturGroupValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateLecturGroupValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\UpdateLecturGroupValidator.cs",
@@ -825,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "CreateLecturGroupValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateLecturGroupValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreateLecturGroupValidator.cs",
@@ -837,31 +836,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 0,
               "Title": "UpdateLectureValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateLectureValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\UpdateLectureValidator.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateLectureValidator.cs",
               "RelativeToolTip": "Validators\\Validators\\UpdateLectureValidator.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBEAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:17:47.502Z"
+              "WhenOpened": "2025-09-25T20:17:47.502Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 1,
               "Title": "CreateLectureValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateLectureValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreateLectureValidator.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateLectureValidator.cs",
               "RelativeToolTip": "Validators\\Validators\\CreateLectureValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:17:38.62Z"
+              "WhenOpened": "2025-09-25T20:17:38.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "UpdateNotificationValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateNotificationValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\UpdateNotificationValidator.cs",
@@ -873,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "CreateNotificationValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateNotificationValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreateNotificationValidator.cs",
@@ -897,7 +898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "CreatePortfolioValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreatePortfolioValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreatePortfolioValidator.cs",
@@ -957,7 +958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "CreateStudentGroupValdator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateStudentGroupValdator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\CreateStudentGroupValdator.cs",
@@ -981,7 +982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "IAttendanceValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IAttendanceValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\IAttendanceValidator.cs",
@@ -993,7 +994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ICityValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ICityValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\ICityValidator.cs",
@@ -1005,7 +1006,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "IGroupValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IGroupValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\IGroupValidator.cs",
@@ -1017,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "IInstitutionValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IInstitutionValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\IInstitutionValidator.cs",
@@ -1029,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "ILectureGroupValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ILectureGroupValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\ILectureGroupValidator.cs",
@@ -1041,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "ILectureValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\ILectureValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\ILectureValidator.cs",
@@ -1053,7 +1054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "INotificationValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\INotificationValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\INotificationValidator.cs",
@@ -1065,7 +1066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 2,
               "Title": "IPortfolioValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IPortfolioValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\IPortfolioValidator.cs",
@@ -1073,7 +1074,8 @@
               "RelativeToolTip": "Validators\\Interefaces\\IPortfolioValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:20:01.256Z"
+              "WhenOpened": "2025-09-25T19:20:01.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
