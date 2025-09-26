@@ -5,24 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
 using Domain.Models;
+using Validators.Interefaces;
 
 namespace BusinessLogic.Services
 {
     public class StudentsGroupService : IStudentsGroupService
     {
-
         private IRepositoryWrapper _repositoryWrapper;
+        private IStudentGroupValidator _studentGroupValidator;
 
-        public StudentsGroupService(IRepositoryWrapper repositoryWrapper)
+        public StudentsGroupService(IRepositoryWrapper repositoryWrapper, IStudentGroupValidator validator)
         {
-            _repositoryWrapper = repositoryWrapper;
+            _repositoryWrapper = repositoryWrapper ?? throw new ArgumentNullException(nameof(repositoryWrapper));
+            _studentGroupValidator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         public async Task<List<students_group>> GetAll()
         {
             return await _repositoryWrapper.studentsGroup.FindAll();
         }
-
 
         public async Task<students_group> GetById(int groupId, int userId)
         {
@@ -48,17 +49,18 @@ namespace BusinessLogic.Services
             if (model == null)
                 throw new ArgumentNullException(nameof(model));
 
+            var valResult = await _studentGroupValidator.ValidateAsync(model);
+            if (!valResult.IsValid)
+            {
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
+            }
+
             await _repositoryWrapper.studentsGroup.Create(model);
             await _repositoryWrapper.Save();
         }
-        public async Task Update(students_group model)
-        {
-            if (model == null)
-                throw new ArgumentNullException(nameof(model));
 
-            await _repositoryWrapper.studentsGroup.Update(model);
-            await _repositoryWrapper.Save();
-        }
+
 
         public async Task Delete(int groupId, int userId)
         {
@@ -66,8 +68,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException("Require groupid", nameof(groupId));
             if (userId <= 0)
                 throw new ArgumentNullException("Require userid", nameof(userId));
-            var student_group = await GetById(groupId, userId);
 
+            var student_group = await GetById(groupId, userId);
             await _repositoryWrapper.studentsGroup.Delete(student_group);
             await _repositoryWrapper.Save();
         }

@@ -5,17 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
 using Domain.Models;
+using Validators.Interefaces;
 
 namespace BusinessLogic.Services
 {
     public class RoomEquipmentService : IRoomEquipmentService
     {
-
         private IRepositoryWrapper _repositoryWrapper;
+        private IRoomEquipmentValidator _roomEquipmentValidator;
 
-        public RoomEquipmentService(IRepositoryWrapper repositoryWrapper)
+        public RoomEquipmentService(IRepositoryWrapper repositoryWrapper, IRoomEquipmentValidator validator)
         {
-            _repositoryWrapper = repositoryWrapper;
+            _repositoryWrapper = repositoryWrapper ?? throw new ArgumentNullException(nameof(repositoryWrapper));
+            _roomEquipmentValidator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         public async Task<List<room_equipment>> GetAll()
@@ -23,9 +25,9 @@ namespace BusinessLogic.Services
             return await _repositoryWrapper.roomEquipment.FindAll();
         }
 
-        public async Task<room_equipment> GetById(int roomId)
+        public async Task<List<room_equipment>> GetById(int roomId)
         {
-            if (roomId <= 0) 
+            if (roomId <= 0)
                 throw new ArgumentNullException(nameof(roomId));
 
             var roomEquipment = await _repositoryWrapper.roomEquipment.
@@ -34,8 +36,7 @@ namespace BusinessLogic.Services
             if (roomEquipment.Count == 0)
                 throw new KeyNotFoundException($"Did not found room with roomId: {roomId}");
 
-
-            return roomEquipment.First();
+            return roomEquipment;
         }
 
         public async Task Create(room_equipment model)
@@ -43,10 +44,16 @@ namespace BusinessLogic.Services
             if (model == null)
                 throw new ArgumentNullException(nameof(model));
 
+            var valResult = await _roomEquipmentValidator.ValidateAsync(model);
+            if (!valResult.IsValid)
+            {
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
+            }
+
             await _repositoryWrapper.roomEquipment.Create(model);
             await _repositoryWrapper.Save();
         }
-
 
         public async Task Delete(int id, string equipment)
         {

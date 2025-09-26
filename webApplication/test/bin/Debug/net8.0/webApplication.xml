@@ -413,9 +413,8 @@
             
                  POST /Todo
                  {
-                    "notificationid" : 1,
                     "userid" : 1,
-                    "note" : "12123",
+                    "note" : "12123"
                  }
             
              </remarks>
@@ -626,23 +625,6 @@
              Query Example
             
                  POST /Todo
-                 {
-                    "groupid" : 1,
-                    "lectureid" : 1,      
-                 }
-            
-             </remarks>
-             <param name="model">LectureGroup</param>
-             <returns></returns>
-        </member>
-        <member name="M:webApplication.Controllers.StudentsGroupController.Update(webApplication.Contracts.students_group.UpdateStudentsGroupsRequest)">
-             <summary>
-             Update lecture to group
-             </summary>
-             <remarks>
-             Query Example
-            
-                 PUT /Todo
                  {
                     "groupid" : 1,
                     "lectureid" : 1,      

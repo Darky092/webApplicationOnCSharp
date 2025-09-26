@@ -39,12 +39,12 @@ namespace webApplication.Controllers
         /// <param name="id">Equipment_Rooms</param>
         /// <returns></returns>
         // GET api/<EquipmentRoomsController>
-        [HttpGet("{id}")]
+        [HttpGet("{roomId}")]
 
-        public async Task<IActionResult> GetById(int id)
+        public async Task<ActionResult<List<GetRoomEquipmentResponse>>> GetById(int roomId)
         {
-            var result = await _roomEquipmentService.GetById(id);
-            var response = result.Adapt<GetRoomEquipmentResponse>();
+            var result = await _roomEquipmentService.GetById(roomId);
+            var response = result.Adapt<List<GetRoomEquipmentResponse>>();
             return Ok(response);
         }
 

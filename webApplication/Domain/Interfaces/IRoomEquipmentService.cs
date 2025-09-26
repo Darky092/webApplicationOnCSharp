@@ -11,7 +11,7 @@ namespace Domain.Interfaces
         {
         Task<List<room_equipment>> GetAll();
 
-        Task<room_equipment> GetById(int id);
+        Task<List<room_equipment>> GetById(int id);
         Task Create(room_equipment model);
 
         Task Delete(int id , string equipment);

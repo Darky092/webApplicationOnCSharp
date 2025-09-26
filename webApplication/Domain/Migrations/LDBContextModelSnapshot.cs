@@ -30,7 +30,7 @@ namespace Domain.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("attendanceid"));
 
-                    b.Property<bool>("ispresent")
+                    b.Property<bool?>("ispresent")
                         .HasColumnType("boolean");
 
                     b.Property<int>("lectureid")
@@ -178,7 +178,7 @@ namespace Domain.Migrations
                     b.Property<string>("description")
                         .HasColumnType("text");
 
-                    b.Property<TimeOnly>("endtime")
+                    b.Property<TimeOnly?>("endtime")
                         .HasColumnType("time without time zone");
 
                     b.Property<bool?>("isactive")
@@ -194,7 +194,7 @@ namespace Domain.Migrations
                     b.Property<int?>("roomid")
                         .HasColumnType("integer");
 
-                    b.Property<TimeOnly>("starttime")
+                    b.Property<TimeOnly?>("starttime")
                         .HasColumnType("time without time zone");
 
                     b.Property<int>("teacherid")
@@ -323,20 +323,20 @@ namespace Domain.Migrations
 
             modelBuilder.Entity("Domain.Models.students_group", b =>
                 {
+                    b.Property<int>("userid")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("groupid")
+                        .HasColumnType("integer");
+
                     b.Property<DateOnly?>("enrolledat")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("date")
                         .HasDefaultValueSql("CURRENT_DATE");
 
-                    b.Property<int>("groupid")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("userid")
-                        .HasColumnType("integer");
+                    b.HasKey("userid", "groupid");
 
                     b.HasIndex("groupid");
-
-                    b.HasIndex("userid");
 
                     b.ToTable("students_groups");
                 });

@@ -54,9 +54,8 @@ namespace webApplication.Controllers
         ///
         ///     POST /Todo
         ///     {
-        ///        "notificationid" : 1,
         ///        "userid" : 1,
-        ///        "note" : "12123",
+        ///        "note" : "12123"
         ///     }
         ///
         /// </remarks>

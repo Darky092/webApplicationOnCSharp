@@ -5,16 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
 using Domain.Models;
+using Validators.Interefaces;
 
 namespace BusinessLogic.Services
 {
     public class AttendanceService : IAttendanceService
     {
         private IRepositoryWrapper _repositoryWrapper;
+        private IAttendanceValidator _attendanceValidator;
 
-        public AttendanceService(IRepositoryWrapper repositoryWrapper)
+        public AttendanceService(IRepositoryWrapper repositoryWrapper, IAttendanceValidator validator)
         {
-            _repositoryWrapper = repositoryWrapper;
+            _repositoryWrapper = repositoryWrapper ?? throw new ArgumentNullException(nameof(repositoryWrapper));
+            _attendanceValidator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         public async Task<List<attendance>> GetAll()
@@ -30,23 +33,45 @@ namespace BusinessLogic.Services
             var attendance = await _repositoryWrapper.attendance.
                 FindByCondition(x => x.attendanceid == attendanceid);
 
+            if (attendance.Count == 0)
+                throw new KeyNotFoundException($"Did not found attendance with attendanceid: {attendanceid}");
+
+            if (attendance.Count > 1)
+                throw new InvalidOperationException("Found more then one attendance");
+
             return attendance.Single();
         }
 
         public async Task Create(attendance model)
         {
-            if(model == null)
+            if (model == null)
                 throw new ArgumentNullException(nameof(model));
+
+            var valResult = await _attendanceValidator.ValidateAsync(model);
+            if (!valResult.IsValid)
+            {
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
+            }
 
             await _repositoryWrapper.attendance.Create(model);
             await _repositoryWrapper.Save();
         }
+
         public async Task Update(attendance model)
         {
             if (model == null)
                 throw new ArgumentNullException(nameof(model));
 
+            var valResult = await _attendanceValidator.ValidateAsync(model); 
+            if (!valResult.IsValid)
+            {
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
+            }
+
             var attendances = await _repositoryWrapper.attendance.FindByConditionTraking(x => x.attendanceid == model.attendanceid);
+
             if (attendances.Count == 0)
                 throw new KeyNotFoundException($"Did not found attendance with attendanceid: {model.attendanceid}");
 
@@ -60,27 +85,34 @@ namespace BusinessLogic.Services
             if (model.ispresent.HasValue) attendance.ispresent = model.ispresent.Value;
             if (model.note != null) attendance.note = model.note;
 
-            var tryGetLectureId = await _repositoryWrapper.lecture.FindByCondition(x => x.lectureid == model.lectureid);
-            var tryGetUserId = await _repositoryWrapper.user.FindByCondition(x => x.userid == model.userid);
+            if (model.lectureid != 0)
+            {
+                var tryGetLectureId = await _repositoryWrapper.lecture.FindByCondition(x => x.lectureid == model.lectureid);
+                if (tryGetLectureId.Count == 0)
+                    throw new KeyNotFoundException($"Did not found lecture with lectureId: {model.lectureid}");
+            }
 
-            if (tryGetLectureId.Count == 0)
-                throw new KeyNotFoundException($"Did not found attendance with attendanceid: {model.lectureid}");
-            if (tryGetUserId.Count == 0)
-                throw new KeyNotFoundException($"Did not found attendance with attendanceid: {model.userid}");
-
+            if (model.userid != 0)
+            {
+                var tryGetUserId = await _repositoryWrapper.user.FindByCondition(x => x.userid == model.userid);
+                if (tryGetUserId.Count == 0)
+                    throw new KeyNotFoundException($"Did not found user with userId: {model.userid}");
+            }
 
             await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int attendanceid)
         {
-            if(attendanceid <= 0)
+            if (attendanceid <= 0)
                 throw new ArgumentNullException(nameof(attendanceid));
 
             var attendance = await _repositoryWrapper.attendance
                 .FindByCondition(x => x.attendanceid == attendanceid);
+
             if (attendance.Count == 0)
                 throw new KeyNotFoundException($"Did not found attendance with attendanceid: {attendanceid}");
+
             if (attendance.Count > 1)
                 throw new InvalidOperationException("Found more then one attendance");
 

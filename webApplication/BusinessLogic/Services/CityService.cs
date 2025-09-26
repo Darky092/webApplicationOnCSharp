@@ -5,18 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
 using Domain.Models;
+using Validators.Interefaces;
 
 namespace BusinessLogic.Services
 {
     public class CityService : ICityService
     {
         private IRepositoryWrapper _repositoryWrapper;
+        private ICityValidator _cityValidator;
 
-        public CityService(IRepositoryWrapper repositoryWrapper)
+        public CityService(IRepositoryWrapper repositoryWrapper, ICityValidator validator)
         {
-            _repositoryWrapper = repositoryWrapper;
+            _repositoryWrapper = repositoryWrapper ?? throw new ArgumentNullException(nameof(repositoryWrapper));
+            _cityValidator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
-
 
         public async Task<List<city>> GetAll()
         {
@@ -27,17 +29,28 @@ namespace BusinessLogic.Services
         {
             if (cityid <= 0)
                 throw new ArgumentNullException(nameof(cityid));
+
             var city = await _repositoryWrapper.city
                 .FindByCondition(x => x.cityid == cityid);
-            if(city.Count == 0)
-                throw new  KeyNotFoundException($"Did not found cities with id {cityid}");
+
+            if (city.Count == 0)
+                throw new KeyNotFoundException($"Did not found cities with id {cityid}");
+
             return city.First();
         }
 
         public async Task Create(city model)
         {
-            if(model == null)
+            if (model == null)
                 throw new ArgumentNullException(nameof(model));
+
+            var valResult = await _cityValidator.ValidateAsync(model);
+            if (!valResult.IsValid)
+            {
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
+            }
+
             await _repositoryWrapper.city.Create(model);
             await _repositoryWrapper.Save();
         }
@@ -47,16 +60,24 @@ namespace BusinessLogic.Services
             if (model == null)
                 throw new ArgumentNullException(nameof(model));
 
-            var cities = await _repositoryWrapper.city.FindByConditionTraking(x =>x.cityid ==model.cityid);
+            var valResult = await _cityValidator.ValidateAsync(model); // ← ✅ ТОТ ЖЕ ВАЛИДАТОР!
+            if (!valResult.IsValid)
+            {
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
+            }
+
+            var cities = await _repositoryWrapper.city.FindByConditionTraking(x => x.cityid == model.cityid);
 
             if (cities.Count == 0)
                 throw new KeyNotFoundException($"Did not found cities with id {model.cityid}");
+
             if (cities.Count > 1)
                 throw new InvalidOperationException("found more then one city");
 
             var city = cities.Single();
 
-            if (model.cityname != null)  city.cityname = model.cityname;
+            if (model.cityname != null) city.cityname = model.cityname;
             if (model.postalcode != null) city.postalcode = model.postalcode;
             if (model.country != null) city.country = model.country;
 
@@ -69,8 +90,10 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(cityid));
 
             var city = await _repositoryWrapper.city.FindByCondition(x => x.cityid == cityid);
+
             if (city.Count == 0)
                 throw new KeyNotFoundException($"Did not found cities with id {cityid}");
+
             if (city.Count > 1)
                 throw new InvalidOperationException("found more then one city");
 

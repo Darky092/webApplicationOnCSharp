@@ -6,6 +6,5 @@
 
         public string achievement { get; set; } = null!;
 
-        public DateTime? addedat { get; set; }
         }
     }

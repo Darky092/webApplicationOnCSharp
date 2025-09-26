@@ -5,16 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
 using Domain.Models;
+using Validators.Interefaces;
 
 namespace BusinessLogic.Services
 {
     public class LectureGroupsService : ILecturesGroupsService
     {
         private IRepositoryWrapper _repositoryWrapper;
+        private ILectureGroupValidator _lectureGroupValidator;
 
-        public LectureGroupsService(IRepositoryWrapper repositoryWrapper)
+        public LectureGroupsService(IRepositoryWrapper repositoryWrapper, ILectureGroupValidator validator)
         {
-            _repositoryWrapper = repositoryWrapper;
+            _repositoryWrapper = repositoryWrapper ?? throw new ArgumentNullException(nameof(repositoryWrapper));
+            _lectureGroupValidator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         public async Task<List<lectures_group>> GetAll()
@@ -40,16 +43,23 @@ namespace BusinessLogic.Services
 
         public async Task Create(lectures_group model)
         {
-            if(model == null)
+            if (model == null)
                 throw new ArgumentNullException(nameof(model));
+
+            var valResult = await _lectureGroupValidator.ValidateAsync(model);
+            if (!valResult.IsValid)
+            {
+                string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
+                throw new ArgumentException($"{errors}");
+            }
+
             await _repositoryWrapper.lecturesGroups.Create(model);
             await _repositoryWrapper.Save();
         }
 
-
         public async Task Delete(int lectureid, int groupid)
         {
-            if(lectureid <= 0)
+            if (lectureid <= 0)
                 throw new ArgumentNullException(nameof(lectureid));
             if (groupid <= 0)
                 throw new ArgumentNullException(nameof(groupid));
@@ -60,8 +70,7 @@ namespace BusinessLogic.Services
             if (lectures_group.Count == 0)
                 throw new KeyNotFoundException($"Did not found objects with lectured: {lectureid} and groupid: {groupid}");
             if (lectures_group.Count > 1)
-                throw new InvalidOperationException("Found more then one objects"); ;
-
+                throw new InvalidOperationException("Found more then one objects");
 
             await _repositoryWrapper.lecturesGroups.Delete(lectures_group.Single());
             await _repositoryWrapper.Save();

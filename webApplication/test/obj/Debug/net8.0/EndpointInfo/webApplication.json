@@ -745,7 +745,7 @@
           "Notificatiion"
         ],
         "summary": "Add new notificarion to user",
-        "description": "Query Example\r\n            \r\n    POST /Todo\r\n    {\r\n       \"notificationid\" : 1,\r\n       \"userid\" : 1,\r\n       \"note\" : \"12123\",\r\n    }",
+        "description": "Query Example\r\n            \r\n    POST /Todo\r\n    {\r\n       \"userid\" : 1,\r\n       \"note\" : \"12123\"\r\n    }",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1150,7 +1150,7 @@
         }
       }
     },
-    "/api/RoomEquipment/{id}": {
+    "/api/RoomEquipment/{roomId}": {
       "get": {
         "tags": [
           "RoomEquipment"
@@ -1159,9 +1159,8 @@
         "description": "Enter room id",
         "parameters": [
           {
-            "name": "id",
+            "name": "roomId",
             "in": "path",
-            "description": "Equipment_Rooms",
             "required": true,
             "schema": {
               "type": "integer",
@@ -1171,7 +1170,33 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetRoomEquipmentResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetRoomEquipmentResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetRoomEquipmentResponse"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1209,37 +1234,6 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/CreateStudentsGroupsRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "StudentsGroup"
-        ],
-        "summary": "Update lecture to group",
-        "description": "Query Example\r\n            \r\n    PUT /Todo\r\n    {\r\n       \"groupid\" : 1,\r\n       \"lectureid\" : 1,      \r\n    }",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateStudentsGroupsRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateStudentsGroupsRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateStudentsGroupsRequest"
               }
             }
           }
@@ -1587,22 +1581,9 @@
       "CreateNotificationRequest": {
         "type": "object",
         "properties": {
-          "notificationid": {
-            "type": "integer",
-            "format": "int32"
-          },
           "userid": {
             "type": "integer",
             "format": "int32"
-          },
-          "createdat": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isread": {
-            "type": "boolean",
-            "nullable": true
           },
           "note": {
             "type": "string",
@@ -1620,11 +1601,6 @@
           },
           "achievement": {
             "type": "string",
-            "nullable": true
-          },
-          "addedat": {
-            "type": "string",
-            "format": "date-time",
             "nullable": true
           }
         },
@@ -1704,6 +1680,20 @@
             "nullable": true
           },
           "role": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetRoomEquipmentResponse": {
+        "type": "object",
+        "properties": {
+          "roomid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipment": {
             "type": "string",
             "nullable": true
           }
@@ -1874,11 +1864,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "createdat": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
           "isread": {
             "type": "boolean",
             "nullable": true
@@ -1902,20 +1887,6 @@
             "nullable": true
           },
           "institutionid": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "UpdateStudentsGroupsRequest": {
-        "type": "object",
-        "properties": {
-          "userid": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "groupid": {
             "type": "integer",
             "format": "int32"
           }

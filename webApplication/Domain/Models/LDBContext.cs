@@ -208,15 +208,17 @@ public partial class LDBContext : DbContext
 
         modelBuilder.Entity<students_group>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(sg => new { sg.userid, sg.groupid }); 
 
             entity.Property(e => e.enrolledat).HasDefaultValueSql("CURRENT_DATE");
 
-            entity.HasOne(d => d.group).WithMany()
+            entity.HasOne(d => d.group)
+                .WithMany()
                 .HasForeignKey(d => d.groupid)
                 .HasConstraintName("students_groups_groupid_fkey");
 
-            entity.HasOne(d => d.user).WithMany()
+            entity.HasOne(d => d.user)
+                .WithMany()
                 .HasForeignKey(d => d.userid)
                 .HasConstraintName("students_groups_userid_fkey");
         });

@@ -73,30 +73,7 @@ namespace webApplication.Controllers
             await _studentsGroupService.Create(stuDbo);
             return Ok();
             }
-        /// <summary>
-        /// Update lecture to group
-        /// </summary>
-        /// <remarks>
-        /// Query Example
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///        "groupid" : 1,
-        ///        "lectureid" : 1,      
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="model">LectureGroup</param>
-        /// <returns></returns>
 
-        // PUT api/<StudentsGroupController>
-        [HttpPut]
-        public async Task<IActionResult> Update(UpdateStudentsGroupsRequest students_group)
-            {
-            var stuDbo = students_group.Adapt<students_group>();
-            await _studentsGroupService.Update(stuDbo);
-            return Ok();
-            }
         /// <summary>
         /// Add lecture to group
         /// </summary>

@@ -109,5 +109,7 @@ namespace BusinessLogic.Services
             await _repositoryWrapper.user.Delete(user.Single());
             await _repositoryWrapper.Save();
         }
+
     }
+
 }

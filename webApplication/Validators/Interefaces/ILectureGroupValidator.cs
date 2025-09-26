@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Domain.Models;
 using FluentValidation.Results;
 
@@ -10,7 +6,7 @@ namespace Validators.Interefaces
 {
     public interface ILectureGroupValidator
     {
-        ValidationResult Validate(lecture lecture);
-        Task<ValidationResult> ValidateAsync(lecture lecture);
+        ValidationResult Validate(lectures_group lectures_group);
+        Task<ValidationResult> ValidateAsync(lectures_group lectures_group);
     }
 }
