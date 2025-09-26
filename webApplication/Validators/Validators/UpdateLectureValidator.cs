@@ -15,10 +15,8 @@ namespace Validators.Validators
             RuleFor(x => x.teacherid)
                 .GreaterThan(0).WithMessage("Teacher ID is required and must be greater than 0");
 
-            // Дополнительно: если в Update ты хочешь, чтобы isactive был указан — добавь:
-            // RuleFor(x => x.isactive)
-            //     .NotNull().WithMessage("IsActive is required on update");
         }
+        
 
         ValidationResult ILectureValidator.Validate(lecture lecture)
         {
