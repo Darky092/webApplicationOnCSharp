@@ -255,10 +255,6 @@
       "RelativeMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\studentgroupservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20250925212855_FixStudentsGroupCompositeKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Migrations\\20250925212855_FixStudentsGroupCompositeKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\updatestudentgroupvaldator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\updatestudentgroupvaldator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -273,6 +269,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\interefaces\\iuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\interefaces\\iuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\migrations\\20250925212855_fixstudentsgroupcompositekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\migrations\\20250925212855_fixstudentsgroupcompositekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -298,8 +298,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\AttendanceService.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAowHoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T00:12:52.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T00:12:52.172Z"
             },
             {
               "$type": "Document",
@@ -311,8 +310,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\CityService.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAwwGcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T23:59:41.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T23:59:41.757Z"
             },
             {
               "$type": "Document",
@@ -324,8 +322,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\GroupService.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAwwHkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T23:42:44.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T23:42:44.01Z"
             },
             {
               "$type": "Document",
@@ -337,8 +334,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\InstitutionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T23:35:25.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T23:35:25.039Z"
             },
             {
               "$type": "Document",
@@ -350,8 +346,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\LectureGroupsService.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAIwE4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T23:23:37.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T23:23:37.912Z"
             },
             {
               "$type": "Document",
@@ -363,8 +358,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\LectureService.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAcwHcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T23:10:33.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T23:10:33.827Z"
             },
             {
               "$type": "Document",
@@ -376,8 +370,7 @@
               "RelativeToolTip": "test\\Contracts\\notification\\UpdateNotificationRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T23:01:16.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T23:01:16.963Z"
             },
             {
               "$type": "Document",
@@ -389,8 +382,7 @@
               "RelativeToolTip": "test\\Controllers\\NotificatiionController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAIwE4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T23:00:38.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T23:00:38.235Z"
             },
             {
               "$type": "Document",
@@ -402,8 +394,7 @@
               "RelativeToolTip": "test\\Contracts\\notification\\CreateNotificationRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T22:58:51.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T22:58:51.847Z"
             },
             {
               "$type": "Document",
@@ -415,8 +406,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\NotificationService.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAYwGgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T22:56:33.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T22:56:33.268Z"
             },
             {
               "$type": "Document",
@@ -428,8 +418,7 @@
               "RelativeToolTip": "test\\Contracts\\portfolio\\CreatePortfolioRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T22:51:44.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T22:51:44.256Z"
             },
             {
               "$type": "Document",
@@ -441,8 +430,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\PortfolioService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T22:46:41.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T22:46:41.269Z"
             },
             {
               "$type": "Document",
@@ -454,8 +442,7 @@
               "RelativeToolTip": "test\\Controllers\\RoomEquipmentController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAIwCwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T22:20:21.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T22:20:21.654Z"
             },
             {
               "$type": "Document",
@@ -467,8 +454,7 @@
               "RelativeToolTip": "Domain\\Interfaces\\IRoomEquipmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T22:12:54.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T22:12:54.931Z"
             },
             {
               "$type": "Document",
@@ -480,8 +466,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\RoomEquipmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T22:05:11.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T22:05:11.527Z"
             },
             {
               "$type": "Document",
@@ -493,8 +478,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\RoomService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T21:52:12.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T21:52:12.873Z"
             },
             {
               "$type": "Document",
@@ -506,8 +490,7 @@
               "RelativeToolTip": "test\\Controllers\\StudentsGroupController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T21:34:09.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T21:34:09.249Z"
             },
             {
               "$type": "Document",
@@ -519,12 +502,11 @@
               "RelativeToolTip": "Domain\\Interfaces\\IStudentsGroupService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T21:34:01.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T21:34:01.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 67,
               "Title": "20250925212855_FixStudentsGroupCompositeKey.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20250925212855_FixStudentsGroupCompositeKey.cs",
               "RelativeDocumentMoniker": "Domain\\Migrations\\20250925212855_FixStudentsGroupCompositeKey.cs",
@@ -532,8 +514,7 @@
               "RelativeToolTip": "Domain\\Migrations\\20250925212855_FixStudentsGroupCompositeKey.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T21:28:55.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T21:28:55.248Z"
             },
             {
               "$type": "Document",
@@ -545,8 +526,7 @@
               "RelativeToolTip": "Domain\\Models\\LDBContext.cs",
               "ViewState": "AgIAAMcAAAAAAAAAAAAAANUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T21:23:49.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T21:23:49.675Z"
             },
             {
               "$type": "Document",
@@ -558,8 +538,7 @@
               "RelativeToolTip": "test\\Program.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAiwEsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T21:15:17.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T21:15:17.014Z"
             },
             {
               "$type": "Document",
@@ -571,12 +550,11 @@
               "RelativeToolTip": "BusinessLogic\\Services\\StudentsGroupService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T21:13:00.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T21:13:00.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
@@ -584,12 +562,11 @@
               "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAADwv3IAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:57:28.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:57:28.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "UserServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\UserServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\UserServiceTest.cs",
@@ -597,8 +574,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\UserServiceTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:29:47.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:29:47.751Z"
             },
             {
               "$type": "Document",
@@ -608,7 +584,7 @@
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\AttendanceServiceTest.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\AttendanceServiceTest.cs",
               "RelativeToolTip": "BusinessLogic.Tests\\AttendanceServiceTest.cs",
-              "ViewState": "AgIAANQAAAAAAAAAAAAowOYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAwwOUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T20:29:26.174Z",
               "EditorCaption": ""
@@ -623,8 +599,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\CityServiceTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:29:06.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:29:06.606Z"
             },
             {
               "$type": "Document",
@@ -636,8 +611,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\GroupServiceTest.cs",
               "ViewState": "AgIAAFMBAAAAAAAAAIAwwBwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:28:17.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:28:17.02Z"
             },
             {
               "$type": "Document",
@@ -649,8 +623,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\InstitutionServiceTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:27:26.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:27:26.075Z"
             },
             {
               "$type": "Document",
@@ -662,8 +635,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\LectureServiceTest.cs",
               "ViewState": "AgIAANkAAAAAAAAAAAAgwGYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:26:39.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:26:39.014Z"
             },
             {
               "$type": "Document",
@@ -675,8 +647,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\LecturesGroupsServiceTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:26:26.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:26:26.844Z"
             },
             {
               "$type": "Document",
@@ -688,8 +659,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\NotificationServiceTest.cs",
               "ViewState": "AgIAALAAAAAAAAAAAAAwwAcBAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:26:07.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:26:07.13Z"
             },
             {
               "$type": "Document",
@@ -701,8 +671,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\PortfoliioServiceTest.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAIwNMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:25:23.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:25:23.404Z"
             },
             {
               "$type": "Document",
@@ -714,8 +683,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\RoomServiceTest.cs",
               "ViewState": "AgIAAPsAAAAAAAAAAAAAABEBAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:24:28.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:24:28.164Z"
             },
             {
               "$type": "Document",
@@ -727,8 +695,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\RoomEquipmentServiceTest.cs",
               "ViewState": "AgIAAGMAAAAAAAAAAAAWwHwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:23:48.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:23:48.01Z"
             },
             {
               "$type": "Document",
@@ -740,8 +707,7 @@
               "RelativeToolTip": "BusinessLogic.Tests\\StudentGroupServiceTest.cs",
               "ViewState": "AgIAAMEAAAAAAAAAAAAqwCMAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:23:31.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:23:31.58Z"
             },
             {
               "$type": "Document",
@@ -753,8 +719,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateAttendanceValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:20:29.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:20:29.623Z"
             },
             {
               "$type": "Document",
@@ -766,8 +731,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateAttendanceValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:20:13.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:20:13.685Z"
             },
             {
               "$type": "Document",
@@ -779,8 +743,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateCityValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:19:58.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:19:58.676Z"
             },
             {
               "$type": "Document",
@@ -792,8 +755,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateCityValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:19:48.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:19:48.921Z"
             },
             {
               "$type": "Document",
@@ -805,8 +767,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateGroupValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:19:21.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:19:21.709Z"
             },
             {
               "$type": "Document",
@@ -818,8 +779,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateInstitutionValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:19:08.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:19:08.012Z"
             },
             {
               "$type": "Document",
@@ -831,8 +791,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateInstitutionValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:18:55.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:18:55.618Z"
             },
             {
               "$type": "Document",
@@ -844,8 +803,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateLecturGroupValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:18:22.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:18:22.82Z"
             },
             {
               "$type": "Document",
@@ -857,8 +815,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateLecturGroupValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:18:14.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:18:14.541Z"
             },
             {
               "$type": "Document",
@@ -870,8 +827,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateLectureValidator.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwBEAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:17:47.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:17:47.502Z"
             },
             {
               "$type": "Document",
@@ -883,8 +839,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateLectureValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:17:38.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:17:38.62Z"
             },
             {
               "$type": "Document",
@@ -896,8 +851,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateNotificationValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:16:50.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:16:50.661Z"
             },
             {
               "$type": "Document",
@@ -909,8 +863,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateNotificationValidator.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:16:36.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:16:36.11Z"
             },
             {
               "$type": "Document",
@@ -922,8 +875,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdatePortfolioValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:16:21.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:16:21.278Z"
             },
             {
               "$type": "Document",
@@ -935,8 +887,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreatePortfolioValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:16:06.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:16:06.167Z"
             },
             {
               "$type": "Document",
@@ -948,8 +899,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateRoomEquipmentValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:15:48.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:15:48.86Z"
             },
             {
               "$type": "Document",
@@ -961,8 +911,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateRoomEquipmentValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:15:25.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:15:25.434Z"
             },
             {
               "$type": "Document",
@@ -974,8 +923,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateRoomValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:15:02.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:15:02.144Z"
             },
             {
               "$type": "Document",
@@ -987,8 +935,7 @@
               "RelativeToolTip": "Validators\\Validators\\CreateRoomValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:14:50.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:14:50.913Z"
             },
             {
               "$type": "Document",
@@ -1000,12 +947,11 @@
               "RelativeToolTip": "Validators\\Validators\\CreateStudentGroupValdator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:03:42.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:03:42.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "UpdateStudentGroupValdator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\UpdateStudentGroupValdator.cs",
               "RelativeDocumentMoniker": "Validators\\Validators\\UpdateStudentGroupValdator.cs",
@@ -1013,8 +959,7 @@
               "RelativeToolTip": "Validators\\Validators\\UpdateStudentGroupValdator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:03:25.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T20:03:25.726Z"
             },
             {
               "$type": "Document",
@@ -1026,8 +971,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\IAttendanceValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:31:00.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:31:00.473Z"
             },
             {
               "$type": "Document",
@@ -1039,8 +983,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\ICityValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:27:10.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:27:10.019Z"
             },
             {
               "$type": "Document",
@@ -1052,8 +995,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\IGroupValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:27:00.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:27:00.389Z"
             },
             {
               "$type": "Document",
@@ -1065,8 +1007,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\IInstitutionValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:23:30.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:23:30.34Z"
             },
             {
               "$type": "Document",
@@ -1078,8 +1019,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\ILectureGroupValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:23:14.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:23:14.623Z"
             },
             {
               "$type": "Document",
@@ -1091,8 +1031,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\ILectureValidator.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:21:07.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:21:07.286Z"
             },
             {
               "$type": "Document",
@@ -1104,8 +1043,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\INotificationValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:20:34.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:20:34.747Z"
             },
             {
               "$type": "Document",
@@ -1117,8 +1055,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\IPortfolioValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:20:01.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:20:01.256Z"
             },
             {
               "$type": "Document",
@@ -1130,8 +1067,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\IRoomEquipmentValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:14:39.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:14:39.088Z"
             },
             {
               "$type": "Document",
@@ -1143,8 +1079,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\IRoomValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:14:15.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:14:15.955Z"
             },
             {
               "$type": "Document",
@@ -1156,12 +1091,11 @@
               "RelativeToolTip": "Validators\\Interefaces\\IStudentGroupValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:14:00.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:14:00.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "IUserValidator.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Interefaces\\IUserValidator.cs",
               "RelativeDocumentMoniker": "Validators\\Interefaces\\IUserValidator.cs",
@@ -1169,8 +1103,7 @@
               "RelativeToolTip": "Validators\\Interefaces\\IUserValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T19:13:16.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T19:13:16.83Z"
             }
           ]
         }

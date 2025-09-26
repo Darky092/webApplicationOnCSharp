@@ -227,7 +227,7 @@ namespace BusinessLogic.Tests
                 lectureid = 10,
                 userid = 5
             };
-
+            //test
             attendanceRepositoryMoq
                 .Setup(x => x.FindByConditionTraking(It.IsAny<Expression<Func<attendance, bool>>>()))
                 .ReturnsAsync(new List<attendance> { existingAttendance });
