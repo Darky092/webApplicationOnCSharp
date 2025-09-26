@@ -1,19 +1,19 @@
-name: .NET Format and Build Check
+name: .NET Format and Build Check with Tests
 
 on:
   push:
-    branches: [ "**" ]  
+    branches: [ main, develop ] 
     paths:
       - "**.cs"
       - ".editorconfig"
-      - "**.csproj"  
-      - "*.sln"      
+      - "**.csproj"
+      - "*.sln"
   pull_request:
-    branches: [ "**" ]  
-    paths :
+    branches: [ main, develop ]  
+    paths:
       - "**.cs"
       - ".editorconfig"
-      - "**.csproj"  
+      - "**.csproj"
       - "*.sln"
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  
+        uses: actions/checkout@v4
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
@@ -32,11 +32,14 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build project
-        run: dotnet build --no-restore --configuration Release
-
       - name: Install dotnet-format tool
         run: dotnet tool install -g dotnet-format
 
       - name: Check code formatting
         run: dotnet format --verify-no-changes --severity error
+
+      - name: Build project (Release)
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Run tests
+        run: dotnet test --no-restore --configuration Release --collect:"XPlat Code Coverage" --logger "console;verbosity=detailed"
