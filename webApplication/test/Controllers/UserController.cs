@@ -18,7 +18,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Get user
         /// </summary>
-        /// <param name="model">User</param>
         /// <returns></returns>
         // Get api/<UsersController>
         [HttpGet]
@@ -32,7 +31,7 @@ namespace BackendApi.Controllers
         /// <remarks>
         /// Enter id
         /// </remarks>
-        /// <param name="model">User</param>
+        /// <param name="id">User</param>
         /// <returns></returns>
         // Get api/<UsersController>
         [HttpGet("{id}")]
@@ -63,7 +62,7 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="model">User</param>
+        /// <param name="request">User</param>
         /// <returns></returns>
 
         // POST api/<UsersController>
@@ -99,7 +98,7 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="model">User</param>
+        /// <param name="request">User</param>
         /// <returns></returns>
 
         // PUT api/<UsersController>
@@ -122,7 +121,7 @@ namespace BackendApi.Controllers
         /// <remarks>
         /// Enter user id
         /// </remarks>
-        /// <param name="model">User</param>
+        /// <param name="id">User</param>
         /// <returns></returns>
         // Delete api/<UsersController>
         [HttpDelete]
