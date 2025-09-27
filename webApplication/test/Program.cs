@@ -86,6 +86,8 @@ namespace test
 
             var app = builder.Build();
 
+            app.UseCors(builder => builder.WithOrigins(new [] { "https://localhost:7174", }).AllowAnyHeader().AllowAnyMethod());
+
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -93,12 +95,12 @@ namespace test
                 context.Database.Migrate();
             }
 
-                // Configure the HTTP request pipeline.
-                if (app.Environment.IsDevelopment())
-                {
-                    app.UseSwagger();
-                    app.UseSwaggerUI();
-                }
+            // Configure the HTTP request pipeline.
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
 
             app.UseHttpsRedirection();
 
