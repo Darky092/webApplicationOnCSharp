@@ -30,7 +30,7 @@ namespace test
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<LDBContext>(
-                options => options.UseNpgsql("Host=localhost;Port=5432;Database=LDB;Username=postgres;Password=root;"));
+                options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -86,12 +86,19 @@ namespace test
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            using (var scope = app.Services.CreateScope())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<LDBContext>();
+                context.Database.Migrate();
             }
+
+                // Configure the HTTP request pipeline.
+                if (app.Environment.IsDevelopment())
+                {
+                    app.UseSwagger();
+                    app.UseSwaggerUI();
+                }
 
             app.UseHttpsRedirection();
 

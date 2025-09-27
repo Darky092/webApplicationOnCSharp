@@ -648,7 +648,6 @@
             <summary>
             Get user
             </summary>
-            <param name="model">User</param>
             <returns></returns>
         </member>
         <member name="M:BackendApi.Controllers.UserController.GetById(System.Int32)">
@@ -658,7 +657,7 @@
             <remarks>
             Enter id
             </remarks>
-            <param name="model">User</param>
+            <param name="id">User</param>
             <returns></returns>
         </member>
         <member name="M:BackendApi.Controllers.UserController.Add(webApplication.Contracts.user.CreateUserRequest)">
@@ -683,7 +682,7 @@
                  }
             
              </remarks>
-             <param name="model">User</param>
+             <param name="request">User</param>
              <returns></returns>
         </member>
         <member name="M:BackendApi.Controllers.UserController.Update(webApplication.Contracts.user.UpdateUserRequest)">
@@ -709,7 +708,7 @@
                  }
             
              </remarks>
-             <param name="model">User</param>
+             <param name="request">User</param>
              <returns></returns>
         </member>
         <member name="M:BackendApi.Controllers.UserController.Delete(System.Int32)">
@@ -719,7 +718,7 @@
             <remarks>
             Enter user id
             </remarks>
-            <param name="model">User</param>
+            <param name="id">User</param>
             <returns></returns>
         </member>
     </members>

@@ -1334,6 +1334,7 @@
         "summary": "Create new user",
         "description": "Query Example\r\n            \r\n    POST /Todo\r\n    {\r\n       \"name\" : \"Мax\",\r\n       \"surname\" : \"Morgan\",\r\n       \"avatar\" : \"pathToImage/\",\r\n       \"patronymic\" : \"___\" nullable,\r\n       \"email\" : \"example@mail.ru\",\r\n       \"telephonnumber\" : \"+79042391023\"      \r\n       \"passwordhash\" : \"jhdsDHJD-12jda\",\r\n       \"role\" : \"Student/Teacher/Admin\" one of them,\r\n       \"isactive\" : true/false filled in by itself, usually true,\r\n       \"createdat\" : date.now() filled in by itself,        \r\n    }",
         "requestBody": {
+          "description": "User",
           "content": {
             "application/json": {
               "schema": {
@@ -1365,6 +1366,7 @@
         "summary": "Update user",
         "description": "Query Example\r\n            \r\n    PUT /Todo\r\n    {\r\n       \"userid\" : 4\r\n       \"name\" : \"Мax\",\r\n       \"surname\" : \"Morgan\",\r\n       \"avatar\" : \"pathToImage/\",\r\n       \"patronymic\" : \"___\" nullable,\r\n       \"email\" : \"example@mail.ru\",\r\n       \"telephonnumber\" : \"+79042391023\"      \r\n       \"passwordhash\" : \"jhdsDHJD-12jda\",\r\n       \"role\" : \"Student/Teacher/Admin\" one of them,\r\n       \"isactive\" : true/false filled in by itself, usually true,\r\n       \"createdat\" : date.now() filled in by itself,  \r\n    }",
         "requestBody": {
+          "description": "User",
           "content": {
             "application/json": {
               "schema": {
@@ -1399,6 +1401,7 @@
           {
             "name": "id",
             "in": "query",
+            "description": "User",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -1423,6 +1426,7 @@
           {
             "name": "id",
             "in": "path",
+            "description": "User",
             "required": true,
             "schema": {
               "type": "integer",
