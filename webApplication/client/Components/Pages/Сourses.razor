@@ -1,0 +1,75 @@
+﻿@page "/courses"
+@inject NavigationManager Navigation
+
+<h2>Выберите курс обучения</h2>
+
+@if (Courses == null)
+{
+    <p>Загрузка...</p>
+}
+else if (Courses.Count == 0)
+{
+    <p>На данный момент нет доступных курсов.</p>
+}
+else
+{
+    <div class="courses-grid">
+        @foreach (var course in Courses)
+        {
+            <div class="course-card">
+                <h3>@course.Title</h3>
+                <p>@course.Description</p>
+                <p><strong>Продолжительность:</strong> @course.Duration</p>
+                <button class="btn btn-select" @onclick="() => SelectCourse(course.Id)">
+                    Выбрать курс
+                </button>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    public class Course
+    {
+        public int Id { get; set; }
+        public string Title { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string Duration { get; set; } = "";
+    }
+
+    private List<Course> Courses = new();
+    private string? ErrorMessage;
+
+    protected override void OnInitialized()
+    {
+        Courses = new()
+        {
+            new Course
+            {
+                Id = 1,
+                Title = "Основы C# и .NET",
+                Description = "Изучите базовые принципы программирования на C#, работу с переменными, циклами и методами.",
+                Duration = "4 недели"
+            },
+            new Course
+            {
+                Id = 2,
+                Title = "Blazor WebAssembly",
+                Description = "Создавайте современные веб-приложения на C# без JavaScript. Практика с реальными проектами.",
+                Duration = "6 недель"
+            },
+            new Course
+            {
+                Id = 3,
+                Title = "SQL и базы данных",
+                Description = "Научитесь работать с базами данных, писать запросы, проектировать таблицы и оптимизировать производительность.",
+                Duration = "3 недели"
+            }
+        };
+    }
+
+    private void SelectCourse(int courseId)
+    {
+        Navigation.NavigateTo($"/course/{courseId}");
+    }
+}

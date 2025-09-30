@@ -1,0 +1,90 @@
+﻿@page "/registration"
+
+<h3>Registration</h3>
+
+<div class="login-form">
+    <div class="form-group">
+        <label for="Name">Имя</label>
+        <input @bind="Name" id="Name" type="Name" placeholder="youre name" />
+    </div>
+
+    <div class="form-group">
+        <label for="Surname">Фамилия</label>
+        <input @bind="Surname" id="Surname" type="Surname" />
+    </div>
+
+
+    <div class="form-group">
+        <label for="Patronymic">Отчество</label>
+        <input @bind="Patronymic" id="Patronymic" type="Patronymic" />
+    </div>
+
+    <div class="form-group">
+        <label for="Email">Адрес электронной почты</label>
+        <input @bind="Email" id="Email" type="Email" placeholder="your@email.com" />
+    </div>
+
+    <div class="form-group">
+        <label for="telephonnumber">Номер телефона</label>
+        <input @bind="telephonnumber" id="telephonnumber" type="telephonnumber" placeholder="+73931232345" />
+    </div>
+
+
+    <div class="form-group">
+        <label for="password">Выберите кем вы являетесь</label>
+        <input @bind="role" id="role" type="radio" name="one" />Студент
+        <input @bind="role" id="role" type="radio" name="one" />Учитель
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="role">Пароль</label>
+        <input @bind="role" id="role" type="role"  />
+    </div>
+
+    <button class="btn btn-primary" @onclick="Logins">Зарегистрироваться</button>
+
+    <p class="signup-link">
+       Есть аккаунт?  <NavLink href="/login">Войти</NavLink>
+    </p>
+
+    @if (!string.IsNullOrEmpty(ErrorMessage))
+    {
+        <div class="error-message">@ErrorMessage</div>
+    }
+</div>
+
+@code {
+    private string Email = "";
+    private string Password = "";
+    private string ErrorMessage = "";
+    private string Name = "";
+    private string Surname = "";
+    private string Patronymic = "";
+    private string telephonnumber = "";
+    private string role = "";
+
+    private void Logins()
+    {
+
+        if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
+        {
+            ErrorMessage = "Пожалуйста, заполните все поля.";
+            return;
+        }
+
+
+        if (Email == "test@example.com" && Password == "123456")
+        {
+
+            ErrorMessage = "Вход выполнен успешно!";
+
+
+        }
+        else
+        {
+            ErrorMessage = "Неверный email или пароль.";
+        }
+    }
+}

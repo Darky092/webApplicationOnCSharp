@@ -660,6 +660,17 @@
             <param name="id">User</param>
             <returns></returns>
         </member>
+        <member name="M:BackendApi.Controllers.UserController.GetByNameAndPassword(System.Object)">
+            <summary>
+            Get user by password and email
+            </summary>
+            <remarks>
+            Enter id
+            </remarks>
+            <param name="password">User</param>
+            <param name="email">User</param>
+            <returns></returns>
+        </member>
         <member name="M:BackendApi.Controllers.UserController.Add(webApplication.Contracts.user.CreateUserRequest)">
              <summary>
              Create new user

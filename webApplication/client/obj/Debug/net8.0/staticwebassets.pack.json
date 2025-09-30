@@ -1,60 +1,52 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Client.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Client.3z7ryayev2.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\client.styles.css",
-      "PackagePath": "staticwebassets\\client.styles.css"
+      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\wwwroot\\css\\app.css",
-      "PackagePath": "staticwebassets\\css\\app.css"
+      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\wwwroot\\icon-192.png",
-      "PackagePath": "staticwebassets\\icon-192.png"
-    },
-    {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\wwwroot\\index.html",
+      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+      "Id": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.client.props",
-      "PackagePath": "build\\client.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.client.props",
-      "PackagePath": "buildMultiTargeting\\client.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.client.props",
-      "PackagePath": "buildTransitive\\client.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.client.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Client.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Client.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Client.props",
+      "PackagePath": "build\\Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Client.props",
+      "PackagePath": "buildMultiTargeting\\Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Client.props",
+      "PackagePath": "buildTransitive\\Client.props"
     }
   ],
   "ElementsToRemove": []

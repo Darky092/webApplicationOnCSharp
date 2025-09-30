@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Security.Cryptography;
+using System.Text;
 using Domain.Interfaces;
 using Domain.Models;
 using Validators.Interefaces;
@@ -36,6 +38,31 @@ namespace BusinessLogic.Services
             return user.Single();
         }
 
+        public async Task<user> GetByNameAndPassword(string password, string email)
+        {
+            if (password == null)
+                throw new ArgumentNullException("Require password", nameof(password));
+
+            if (email == null)
+                throw new ArgumentNullException("Require password", nameof(email));
+
+            var mD5 = MD5.Create();
+            byte [] hash = mD5.ComputeHash(Encoding.UTF8.GetBytes(password));
+            string passwordHash = Convert.ToBase64String(hash);
+
+            var user = await _repositoryWrapper.user
+
+                .FindByCondition(x => x.email == email && x.passwordhash == passwordHash);
+
+            if (user.Count == 0)
+                throw new KeyNotFoundException($"User with password {password} or email {email} not found.");
+
+            if (user.Count > 1)
+                throw new InvalidOperationException("Multiple users found.");
+
+            return user.Single();
+        }
+
         public async Task Create(user model)
         {
             if (model == null)
@@ -47,6 +74,11 @@ namespace BusinessLogic.Services
                 string errors = string.Join("; ", valResult.Errors.Select(e => e.ErrorMessage));
                 throw new ArgumentException($"{errors}");
             }
+            var mD5 = MD5.Create();
+            byte [] hash = mD5.ComputeHash(Encoding.UTF8.GetBytes(model.passwordhash));
+            string passwordHash = Convert.ToBase64String(hash);
+            model.passwordhash = passwordHash;
+
             await _repositoryWrapper.user.Create(model);
             await _repositoryWrapper.Save();
         }

@@ -41,6 +41,24 @@ namespace BackendApi.Controllers
             var response = result.Adapt<GetUserResponse>();
             return Ok(response);
         }
+
+        /// <summary>
+        /// Get user by password and email
+        /// </summary>
+        /// <remarks>
+        /// Enter id
+        /// </remarks>
+        /// <param name="password">User</param>
+        /// <param name="email">User</param>
+        /// <returns></returns>
+        // POST api/<UsersController>
+        [HttpPost("login")]
+        public async Task<IActionResult> GetByNameAndPassword([FromBody]dynamic jsonObj)
+        {
+            var result = await _userService.GetByNameAndPassword(jsonObj.password, jsonObj.email);
+            var response = result.Adapt<GetUserResponse>();
+            return Ok(response);
+        }
         /// <summary>
         /// Create new user
         /// </summary>
