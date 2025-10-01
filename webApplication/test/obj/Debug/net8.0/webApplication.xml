@@ -660,15 +660,14 @@
             <param name="id">User</param>
             <returns></returns>
         </member>
-        <member name="M:BackendApi.Controllers.UserController.GetByNameAndPassword(System.Object)">
+        <member name="M:BackendApi.Controllers.UserController.GetByNameAndPassword(webApplication.reauests.GetUserByPasswordAndEmailRequest)">
             <summary>
             Get user by password and email
             </summary>
             <remarks>
             Enter id
             </remarks>
-            <param name="password">User</param>
-            <param name="email">User</param>
+            <param name="request">User</param>
             <returns></returns>
         </member>
         <member name="M:BackendApi.Controllers.UserController.Add(webApplication.Contracts.user.CreateUserRequest)">

@@ -1449,15 +1449,22 @@
         "summary": "Get user by password and email",
         "description": "Enter id",
         "requestBody": {
+          "description": "User",
           "content": {
             "application/json": {
-              "schema": { }
+              "schema": {
+                "$ref": "#/components/schemas/GetUserByPasswordAndEmailRequest"
+              }
             },
             "text/json": {
-              "schema": { }
+              "schema": {
+                "$ref": "#/components/schemas/GetUserByPasswordAndEmailRequest"
+              }
             },
             "application/*+json": {
-              "schema": { }
+              "schema": {
+                "$ref": "#/components/schemas/GetUserByPasswordAndEmailRequest"
+              }
             }
           }
         },
@@ -1725,6 +1732,20 @@
             "format": "int32"
           },
           "equipment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetUserByPasswordAndEmailRequest": {
+        "type": "object",
+        "properties": {
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
             "type": "string",
             "nullable": true
           }

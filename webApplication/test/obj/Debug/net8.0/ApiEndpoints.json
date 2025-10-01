@@ -872,8 +872,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "jsonObj",
-        "Type": "System.Object",
+        "Name": "request",
+        "Type": "webApplication.reauests.GetUserByPasswordAndEmailRequest",
         "IsRequired": true
       }
     ],

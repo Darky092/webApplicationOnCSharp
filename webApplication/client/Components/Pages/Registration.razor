@@ -31,7 +31,7 @@
 
 
     <div class="form-group">
-        <label for="password">Выберите кем вы являетесь</label>
+        <label for="role">Выберите кем вы являетесь</label>
         <input @bind="role" id="role" type="radio" name="one" />Студент
         <input @bind="role" id="role" type="radio" name="one" />Учитель
     </div>
@@ -39,8 +39,8 @@
 
 
     <div class="form-group">
-        <label for="role">Пароль</label>
-        <input @bind="role" id="role" type="role"  />
+        <label for="Password">Пароль</label>
+        <input @bind="Password" id="Password" type="Password" />
     </div>
 
     <button class="btn btn-primary" @onclick="Logins">Зарегистрироваться</button>

@@ -1,0 +1,10 @@
+﻿@page "/user/{id}"
+@layout Client.Components.Layout.MainLayout
+
+<CascadingValue Value="@id">
+    <h3>Профиль: @id</h3>
+</CascadingValue>
+
+@code {
+    [Parameter] public string? id { get; set; }
+}

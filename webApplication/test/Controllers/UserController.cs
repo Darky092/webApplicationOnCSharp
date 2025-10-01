@@ -3,6 +3,7 @@ using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.user;
+using webApplication.reauests;
 
 namespace BackendApi.Controllers
 {
@@ -48,14 +49,14 @@ namespace BackendApi.Controllers
         /// <remarks>
         /// Enter id
         /// </remarks>
-        /// <param name="password">User</param>
-        /// <param name="email">User</param>
+        /// <param name="request">User</param>
         /// <returns></returns>
         // POST api/<UsersController>
         [HttpPost("login")]
-        public async Task<IActionResult> GetByNameAndPassword([FromBody]dynamic jsonObj)
+        public async Task<IActionResult> GetByNameAndPassword([FromBody] GetUserByPasswordAndEmailRequest request)
         {
-            var result = await _userService.GetByNameAndPassword(jsonObj.password, jsonObj.email);
+
+            var result = await _userService.GetByNameAndPassword(request.password,request.email);
             var response = result.Adapt<GetUserResponse>();
             return Ok(response);
         }

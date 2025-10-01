@@ -2,7 +2,7 @@
 {
     public class GetUserByPasswordAndEmailRequest
     {
-       public string password;
-        public string email;
+       public string password { get; set; }
+        public string email { get; set; }
     }
 }

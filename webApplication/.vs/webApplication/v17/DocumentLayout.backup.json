@@ -3,24 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\userhome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\userhome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\usercourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\usercourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\\u0441ourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\\u0441ourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\layout\\anonymouslayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\layout\\anonymouslayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\bodies\\userbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\bodies\\userbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\reauests\\getuserbypasswordandemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\reauests\\getuserbypasswordandemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\lectures.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\lectures.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\userattendance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\userattendance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\request\\getuserbypasswordandemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\request\\getuserbypasswordandemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,11 +87,167 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Registration.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\Registration.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Pages\\Registration.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\Registration.razor",
+              "RelativeToolTip": "Client\\Components\\Pages\\Registration.razor",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAACQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T01:07:05.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Client\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T01:03:17.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AnonymousLayout.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Layout\\AnonymousLayout.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Layout\\AnonymousLayout.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Layout\\AnonymousLayout.razor",
+              "RelativeToolTip": "Client\\Components\\Layout\\AnonymousLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T00:54:29.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserBody.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\bodies\\UserBody.cs",
+              "RelativeDocumentMoniker": "Client\\Components\\bodies\\UserBody.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\bodies\\UserBody.cs",
+              "RelativeToolTip": "Client\\Components\\bodies\\UserBody.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T23:48:20.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Lectures.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\Lectures.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Pages\\Lectures.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\Lectures.razor",
+              "RelativeToolTip": "Client\\Components\\Pages\\Lectures.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T23:12:59.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserAttendance.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\UserAttendance.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Pages\\UserAttendance.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\UserAttendance.razor",
+              "RelativeToolTip": "Client\\Components\\Pages\\UserAttendance.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T22:50:04.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserCourses.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\UserCourses.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Pages\\UserCourses.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\UserCourses.razor",
+              "RelativeToolTip": "Client\\Components\\Pages\\UserCourses.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T22:49:50.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "\u0421ourses.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\\u0421ourses.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Pages\\\u0421ourses.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\\u0421ourses.razor",
+              "RelativeToolTip": "Client\\Components\\Pages\\\u0421ourses.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T22:48:01.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Routes.razor",
+              "RelativeToolTip": "Client\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T22:27:45.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Client\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T22:01:30.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Client\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T21:38:56.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserHome.razor",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\UserHome.razor",
+              "RelativeDocumentMoniker": "Client\\Components\\Pages\\UserHome.razor",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\UserHome.razor",
+              "RelativeToolTip": "Client\\Components\\Pages\\UserHome.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T21:24:03.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "GetUserByPasswordAndEmailRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\reauests\\GetUserByPasswordAndEmailRequest.cs",
-              "RelativeDocumentMoniker": "test\\reauests\\GetUserByPasswordAndEmailRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\reauests\\GetUserByPasswordAndEmailRequest.cs",
-              "RelativeToolTip": "test\\reauests\\GetUserByPasswordAndEmailRequest.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\request\\GetUserByPasswordAndEmailRequest.cs",
+              "RelativeDocumentMoniker": "test\\request\\GetUserByPasswordAndEmailRequest.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\request\\GetUserByPasswordAndEmailRequest.cs",
+              "RelativeToolTip": "test\\request\\GetUserByPasswordAndEmailRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-30T00:48:26.51Z",
@@ -51,52 +255,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Program.cs",
               "RelativeDocumentMoniker": "Client\\Program.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Program.cs",
               "RelativeToolTip": "Client\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB4AAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAcwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T23:54:36.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "test\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\UserController.cs",
               "RelativeToolTip": "test\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDcAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T22:01:04.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\UserService.cs",
               "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAswJIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAswJIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T21:33:33.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "Client\\Components\\Pages\\Login.razor",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Client\\Components\\Pages\\Login.razor",
               "RelativeToolTip": "Client\\Components\\Pages\\Login.razor",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-29T20:30:45.791Z",
               "EditorCaption": ""

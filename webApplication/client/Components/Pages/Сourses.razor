@@ -1,4 +1,4 @@
-﻿@page "/courses"
+﻿@page "/{id}/courses/choose"
 @inject NavigationManager Navigation
 
 <h2>Выберите курс обучения</h2>
@@ -29,6 +29,18 @@ else
 }
 
 @code {
+
+        [Parameter]
+        public string? id { get; set; }
+        protected override void OnParametersSet()
+        {
+
+            var test = id;
+        }
+ 
+
+
+
     public class Course
     {
         public int Id { get; set; }

@@ -1,12 +1,39 @@
-﻿@inherits LayoutComponentBase
+﻿
+@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Components.Routing
 
 <div class="page">
-
-
+    <div class="sidebar">
+        <NavMenu UserId="@GetUserIdFromRoute()" />
+    </div>
     <main>
-
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
+
+@code {
+    private string? GetUserIdFromRoute()
+    {
+        var uri = NavigationManager.Uri;
+        var path = NavigationManager.ToBaseRelativePath(uri);
+
+        
+        var segments = path.Split('/', StringSplitOptions.RemoveEmptyEntries);
+
+        if (segments.Length >= 2 && segments[0] == "user")
+        {
+            var id = segments[1];
+            
+            if (int.TryParse(id, out _))
+            {
+                return id;
+            }
+        }
+
+        return null;
+    }
+
+    [Inject] NavigationManager NavigationManager { get; set; } = default!;
+}

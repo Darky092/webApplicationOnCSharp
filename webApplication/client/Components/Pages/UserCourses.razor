@@ -1,0 +1,11 @@
+﻿@page "/user/{id}/courses"
+@layout Client.Components.Layout.MainLayout
+
+<CascadingValue Value="@id">
+    <h2>Ваши курсы</h2>
+  
+</CascadingValue>
+
+@code {
+    [Parameter] public string? id { get; set; }
+}

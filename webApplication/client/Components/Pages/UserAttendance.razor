@@ -1,0 +1,14 @@
+﻿@page "/attendance/{id}"
+
+<h3>UserAttendabnce</h3>
+
+@code
+{
+	[Parameter]
+	public string? id { get; set; }
+	protected override void OnParametersSet()
+	{
+
+		var test = id;
+	}
+}

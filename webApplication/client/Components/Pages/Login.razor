@@ -1,7 +1,10 @@
 ﻿@page "/login"
+@layout Client.Components.Layout.AnonymousLayout
 @using Microsoft.AspNetCore.Components.Web
 @rendermode RenderMode.InteractiveServer
-
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+@using Client.Components.bodies
 
 <h2>Войти в LEARN KIT</h2>
 
@@ -10,7 +13,6 @@
 		<label for="email">Email</label>
 		<input @bind="Email" id="email" type="email" placeholder="your@email.com" />
 	</div>
-	<p>привет @result.name</p>
 	<div class="form-group">
 		<label for="password">Пароль</label>
 		<input @bind="Password" id="password" type="password" placeholder="••••••••" />
@@ -25,10 +27,14 @@
 	</p>
 
 
+
 	@if (!string.IsNullOrEmpty(ErrorMessage))
 	{
-		<div class="error-message">@ErrorMessage</div>
+		<div class="error-message">@ErrorMessage.</div>
 	}
+
+
+
 </div>
 
 @code {
@@ -36,47 +42,35 @@
 	private string Email = "";
 	private string Password = "";
 	private string ErrorMessage = "";
-	public int sum = 0;
-
-	public async Task onClick()
-	{
-		sum += 1;	
-	}
 
 
 	public User? result = new User { };
 
-	public Dictionary<string, string> values = new Dictionary<string, string>();
 	protected async Task Logins()
 	{
 
-		values.Add("password", Password);
-		values.Add("email", Email);
-
-		StringContent sc = new StringContent(System.Text.Json.JsonSerializer.Serialize(values));
-
+		UserReq val = new UserReq();
+		val.password = Password;
+		val.email = Email;
 
 
-		var client = new HttpClient();
-		client.BaseAddress = new Uri("http://localhost:5000/");
-		var response = await client.PostAsync("api/User/login", sc);
+
+
+		var response = await Http.PostAsJsonAsync("api/User/login", val);
 		result = await response.Content.ReadFromJsonAsync<User>();
-		
 
+		if (result.name == null)
+			ErrorMessage = "Неверный логин или пароль";
+		else
+			NavigationManager.NavigateTo($"/user/{result.userid}");
+
+		
 	}
 
-	public class User
+	
+	public class UserReq
 	{
-		public int userid { get; set; }
-		public string? avatar { get; set; }
-		public string name { get; set; }
-		public string surname { get; set; }
-		public string? patronymic { get; set; }
+		public string password { get; set; }
 		public string email { get; set; }
-		public string telephonnumber { get; set; }
-		public string passwordhash { get; set; }
-		public string role { get; set; }
-		public bool? isactive { get; set; }
-		public DateTime? createdat { get; set; }
 	}
 }
