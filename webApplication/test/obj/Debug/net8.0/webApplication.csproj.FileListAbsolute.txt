@@ -246,3 +246,15 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Contracts.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Contracts.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\MailKit.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\MimeKit.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Mapster.DependencyInjection.dll

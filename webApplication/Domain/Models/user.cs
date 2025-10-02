@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using Domain.Entities;
 
 namespace Domain.Models;
 
@@ -27,6 +29,31 @@ public partial class user
 
     public DateTime? createdat { get; set; }
 
+    public bool AcceptTerms { get; set; }
+
+    public RoleT RoleT { get; set; }
+
+    public string? VerificationToken { get; set; }
+
+    public DateTime? Verifaied { get; set; }
+
+    public bool IsVerified => Verifaied.HasValue || PasswordReset.HasValue;
+    public string? ResetToken { get; set; }
+
+    public DateTime? ResetTokenExpires { get; set; }
+
+    public DateTime? PasswordReset { get; set; }
+
+    public DateTime? Created { get; set; }
+
+    public DateTime? Updated { get; set; }
+
+    public List<RefreshToken> RefreshTokens { get; set; }
+
+    public bool OwnsToken(string token)
+    {
+        return this.RefreshTokens?.Find(x => x.Token == token) != null;
+    }
     public virtual ICollection<attendance> attendances { get; set; } = new List<attendance>();
 
     //public virtual ICollection<group> groups { get; set; } = new List<group>();

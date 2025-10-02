@@ -22,6 +22,50 @@ namespace Domain.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Domain.Entities.RefreshToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Accountuserid")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("CreatedByIp")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("Expires")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("ReasonRevoked")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ReplaceByToken")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Revoked")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("RevokedByIp")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Accountuserid");
+
+                    b.ToTable("RefreshToken");
+                });
+
             modelBuilder.Entity("Domain.Models.attendance", b =>
                 {
                     b.Property<int>("attendanceid")
@@ -349,6 +393,33 @@ namespace Domain.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("userid"));
 
+                    b.Property<bool>("AcceptTerms")
+                        .HasColumnType("boolean");
+
+                    b.Property<DateTime?>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("PasswordReset")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("ResetToken")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("ResetTokenExpires")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("RoleT")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime?>("Updated")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("Verifaied")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("VerificationToken")
+                        .HasColumnType("text");
+
                     b.Property<string>("avatar")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(256)
@@ -422,6 +493,17 @@ namespace Domain.Migrations
                     b.ToTable("grouplecture");
                 });
 
+            modelBuilder.Entity("Domain.Entities.RefreshToken", b =>
+                {
+                    b.HasOne("Domain.Models.user", "Account")
+                        .WithMany("RefreshTokens")
+                        .HasForeignKey("Accountuserid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
             modelBuilder.Entity("Domain.Models.attendance", b =>
                 {
                     b.HasOne("Domain.Models.lecture", "lecture")
@@ -446,7 +528,7 @@ namespace Domain.Migrations
             modelBuilder.Entity("Domain.Models.group", b =>
                 {
                     b.HasOne("Domain.Models.user", "curator")
-                        .WithMany("groups")
+                        .WithMany()
                         .HasForeignKey("curatorid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
@@ -559,7 +641,7 @@ namespace Domain.Migrations
             modelBuilder.Entity("Domain.Models.students_group", b =>
                 {
                     b.HasOne("Domain.Models.group", "group")
-                        .WithMany()
+                        .WithMany("students_groups")
                         .HasForeignKey("groupid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
@@ -597,6 +679,11 @@ namespace Domain.Migrations
                     b.Navigation("institutions");
                 });
 
+            modelBuilder.Entity("Domain.Models.group", b =>
+                {
+                    b.Navigation("students_groups");
+                });
+
             modelBuilder.Entity("Domain.Models.institution", b =>
                 {
                     b.Navigation("groups");
@@ -618,9 +705,9 @@ namespace Domain.Migrations
 
             modelBuilder.Entity("Domain.Models.user", b =>
                 {
-                    b.Navigation("attendances");
+                    b.Navigation("RefreshTokens");
 
-                    b.Navigation("groups");
+                    b.Navigation("attendances");
 
                     b.Navigation("lectures");
 
