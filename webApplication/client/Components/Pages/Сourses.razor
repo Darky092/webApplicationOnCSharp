@@ -1,5 +1,14 @@
-﻿@page "/{id}/courses/choose"
+﻿@page "/user/{id}/courses/choose"
 @inject NavigationManager Navigation
+@layout Client.Components.Layout.MainLayout
+@using Contracts.courses
+@using Contracts.students_group
+@using Contracts.Data
+@inject HttpClient Http
+@using Microsoft.AspNetCore.Components.Web
+@rendermode RenderMode.InteractiveServer
+
+
 
 <h2>Выберите курс обучения</h2>
 
@@ -16,72 +25,60 @@ else
     <div class="courses-grid">
         @foreach (var course in Courses)
         {
+
             <div class="course-card">
                 <h3>@course.Title</h3>
                 <p>@course.Description</p>
                 <p><strong>Продолжительность:</strong> @course.Duration</p>
-                <button class="btn btn-select" @onclick="() => SelectCourse(course.Id)">
+                <button class="btn btn-select" @onclick="() => SelectCourse(userId ,course.GroupId)">
                     Выбрать курс
                 </button>
             </div>
         }
+
     </div>
+    <p>@errorMessage</p>
 }
 
 @code {
 
-        [Parameter]
-        public string? id { get; set; }
-        protected override void OnParametersSet()
-        {
-
-            var test = id;
-        }
- 
-
-
-
-    public class Course
+    [Parameter]
+    public string? id { get; set; }
+    public int userId;
+    private string? ErrorMessage;
+    protected override void OnParametersSet()
     {
-        public int Id { get; set; }
-        public string Title { get; set; } = "";
-        public string Description { get; set; } = "";
-        public string Duration { get; set; } = "";
+
+        userId = Convert.ToInt32(id);
     }
 
-    private List<Course> Courses = new();
-    private string? ErrorMessage;
+    public string errorMessage = "";
+
+    public CourseData courses = new CourseData();
+    public static List<Course> Courses = new List<Course>();
+
+
 
     protected override void OnInitialized()
     {
-        Courses = new()
-        {
-            new Course
-            {
-                Id = 1,
-                Title = "Основы C# и .NET",
-                Description = "Изучите базовые принципы программирования на C#, работу с переменными, циклами и методами.",
-                Duration = "4 недели"
-            },
-            new Course
-            {
-                Id = 2,
-                Title = "Blazor WebAssembly",
-                Description = "Создавайте современные веб-приложения на C# без JavaScript. Практика с реальными проектами.",
-                Duration = "6 недель"
-            },
-            new Course
-            {
-                Id = 3,
-                Title = "SQL и базы данных",
-                Description = "Научитесь работать с базами данных, писать запросы, проектировать таблицы и оптимизировать производительность.",
-                Duration = "3 недели"
-            }
-        };
+        Courses = courses.GetCourses();
     }
 
-    private void SelectCourse(int courseId)
+
+    private async Task SelectCourse(int courseId ,  int groupId)
     {
-        Navigation.NavigateTo($"/course/{courseId}");
+        StudentGroupBody obj = new StudentGroupBody();
+        obj.userid = userId;
+        obj.groupid = groupId;
+
+        var response = await Http.PostAsJsonAsync("/api/StudentsGroup", obj);
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo($"/user/{id}/courses");
+        }
+        else
+        {
+            errorMessage = "Вы уже записаны на этот курс";
+        }
     }
 }

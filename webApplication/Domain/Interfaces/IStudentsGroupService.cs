@@ -11,8 +11,12 @@ namespace Domain.Interfaces
     {
         Task<List<students_group>> GetAll();
 
-        Task<students_group> GetById(int groupId, int userId);
+        Task<List<students_group>> GetById(int userId);
         Task Create(students_group model);
         Task Delete(int groupId, int userId);
+
+        Task<List<lecture>> GetLecturesByUserId(int userId);
+
+        Task<List<user>> GetStudentsByLectureId(int lectureId);
     }
 }

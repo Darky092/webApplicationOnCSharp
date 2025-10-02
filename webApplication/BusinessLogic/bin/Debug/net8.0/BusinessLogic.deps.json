@@ -217,8 +217,17 @@
           }
         }
       },
+      "Contracts/1.0.0": {
+        "runtime": {
+          "Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Domain/1.0.0": {
         "dependencies": {
+          "Contracts": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
         },
         "runtime": {
@@ -380,6 +389,11 @@
       "sha512": "sha512-yOcDWx4P/s1I83+7gQlgQLmhny2eNcU0cfo1NBWi+en4EAI38Jau+/neT85gUW6w1s7+FUJc2qNOmmwGLIREqA==",
       "path": "system.diagnostics.diagnosticsource/9.0.1",
       "hashPath": "system.diagnostics.diagnosticsource.9.0.1.nupkg.sha512"
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Domain/1.0.0": {
       "type": "project",

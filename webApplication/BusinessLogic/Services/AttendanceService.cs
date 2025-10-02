@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using webApplication.Contracts.attendance;
 using Domain.Interfaces;
 using Domain.Models;
 using Validators.Interefaces;
@@ -40,6 +41,26 @@ namespace BusinessLogic.Services
                 throw new InvalidOperationException("Found more then one attendance");
 
             return attendance.Single();
+        }
+        public async Task<List<AttendanceDetailsDto>> GetAttendanceByUserId(int userId)
+        {
+            if (userId <= 0)
+                throw new ArgumentException("User ID must be greater than zero.", nameof(userId));
+
+            var attendances = await _repositoryWrapper.attendance.GetByUserIdWithDetails(userId);
+
+            var result = attendances.Select(a => new AttendanceDetailsDto
+            {
+                AttendanceId = a.attendanceid,
+                Username = $"{a.user.name} {(string.IsNullOrEmpty(a.user.surname) ? "" : a.user.surname)}",
+                LectureName = a.lecture.lecturename,
+                LectureCreatedAt = a.lecture.createdat, 
+                IsPresent = a.ispresent,
+                Note = a.note,
+                RecordedAt = a.recordedat
+            }).ToList();
+
+            return result;
         }
 
         public async Task Create(attendance model)
@@ -117,6 +138,38 @@ namespace BusinessLogic.Services
                 throw new InvalidOperationException("Found more then one attendance");
 
             await _repositoryWrapper.attendance.Delete(attendance.First());
+            await _repositoryWrapper.Save();
+        }
+        public async Task UpsertAttendance(CreateAttendanceRequest request)
+        {
+            if (request == null)
+                throw new ArgumentNullException(nameof(request));
+
+            
+            var existing = await _repositoryWrapper.attendance
+                .FindByCondition(a => a.lectureid == request.lectureid && a.userid == request.userid);
+
+            if (existing.Any())
+            {
+               
+                var att = existing.First();
+                att.ispresent = request.ispresent;
+                att.note = request.note;
+                await _repositoryWrapper.attendance.Update(att);
+            }
+            else
+            {
+                
+                var newAtt = new attendance
+                {
+                    lectureid = request.lectureid,
+                    userid = request.userid,
+                    ispresent = request.ispresent,
+                    note = request.note
+                };
+                await _repositoryWrapper.attendance.Create(newAtt);
+            }
+
             await _repositoryWrapper.Save();
         }
     }

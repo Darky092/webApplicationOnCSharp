@@ -29,7 +29,7 @@ public partial class user
 
     public virtual ICollection<attendance> attendances { get; set; } = new List<attendance>();
 
-    public virtual ICollection<group> groups { get; set; } = new List<group>();
+    //public virtual ICollection<group> groups { get; set; } = new List<group>();
 
     public virtual ICollection<lecture> lectures { get; set; } = new List<lecture>();
 

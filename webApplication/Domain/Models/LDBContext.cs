@@ -83,7 +83,7 @@ public partial class LDBContext : DbContext
             entity.Property(e => e.groupname).HasMaxLength(256);
             entity.Property(e => e.specialty).HasMaxLength(256);
 
-            entity.HasOne(d => d.curator).WithMany(p => p.groups)
+            entity.HasOne(d => d.curator).WithMany()
                 .HasForeignKey(d => d.curatorid)
                 .HasConstraintName("groups_curatorid_fkey");
 
@@ -213,7 +213,7 @@ public partial class LDBContext : DbContext
             entity.Property(e => e.enrolledat).HasDefaultValueSql("CURRENT_DATE");
 
             entity.HasOne(d => d.group)
-                .WithMany()
+                .WithMany(g => g.students_groups) 
                 .HasForeignKey(d => d.groupid)
                 .HasConstraintName("students_groups_groupid_fkey");
 

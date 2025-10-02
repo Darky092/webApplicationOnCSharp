@@ -9,6 +9,7 @@
       "webApplication/1.0.0": {
         "dependencies": {
           "BusinessLogic": "1.0.0",
+          "Contracts": "1.0.0",
           "DataAcces": "1.0.0",
           "Mapster": "7.4.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.1",
@@ -765,6 +766,14 @@
           }
         }
       },
+      "Contracts/1.0.0": {
+        "runtime": {
+          "Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "DataAcces/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
@@ -779,6 +788,7 @@
       },
       "Domain/1.0.0": {
         "dependencies": {
+          "Contracts": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
         },
         "runtime": {
@@ -1194,6 +1204,11 @@
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
     "BusinessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,133 @@
+﻿@page "/user/{UserId:int}/lectures/create"
+@layout Client.Components.Layout.MainLayout
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h3>Создать новую лекцию</h3>
+
+<div class="card shadow-sm p-4">
+    <form @onsubmit="CreateLectureAsync">
+        <div class="mb-3">
+            <label for="lecturename" class="form-label">Название лекции *</label>
+            <input @bind="model.lecturename" id="lecturename" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Описание</label>
+            <textarea @bind="model.description" id="description" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="starttime" class="form-label">Время начала *</label>
+                <input type="time" @bind="model.starttime" id="starttime" class="form-control" required />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="endtime" class="form-label">Время окончания *</label>
+                <input type="time" @bind="model.endtime" id="endtime" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="roomid" class="form-label">Номер аудитории (опционально)</label>
+            <input type="number" @bind="model.roomid" id="roomid" class="form-control" />
+        </div>
+
+        
+        <input type="hidden" value="@UserId" />
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="submit" class="btn btn-primary" disabled="@isSubmitting">
+                @(isSubmitting ? "Создание..." : "Создать лекцию")
+            </button>
+            <button type="button" class="btn btn-secondary" @onclick="Cancel">
+                Отмена
+            </button>
+        </div>
+    </form>
+
+    @if (!string.IsNullOrEmpty(ErrorMessage))
+    {
+        <div class="alert alert-danger mt-3">@ErrorMessage</div>
+    }
+</div>
+
+@code {
+    [Parameter] public int UserId { get; set; } 
+
+    private CreateLectureModel model = new();
+    private bool isSubmitting = false;
+    private string ErrorMessage = "";
+
+    private async Task CreateLectureAsync()
+    {
+        isSubmitting = true;
+        ErrorMessage = "";
+
+        
+        if (string.IsNullOrWhiteSpace(model.lecturename))
+        {
+            ErrorMessage = "Пожалуйста, укажите название лекции.";
+            isSubmitting = false;
+            return;
+        }
+
+        if (model.starttime >= model.endtime)
+        {
+            ErrorMessage = "Время начала должно быть раньше времени окончания.";
+            isSubmitting = false;
+            return;
+        }
+
+        try
+        {
+            
+            var requestData = new
+            {
+                lecturename = model.lecturename,
+                description = model.description,
+                starttime = model.starttime,
+                endtime = model.endtime,
+                teacherid = UserId,      
+                roomid = model.roomid
+            };
+
+            var response = await Http.PostAsJsonAsync("api/Lecture", requestData);
+
+            if (response.IsSuccessStatusCode)
+            {
+                
+                Navigation.NavigateTo($"/user/{UserId}/lectures");
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                ErrorMessage = $"Ошибка: {(int)response.StatusCode}. Детали: {errorContent}";
+            }
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Ошибка подключения: {ex.Message}";
+        }
+        finally
+        {
+            isSubmitting = false;
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo($"/user/{UserId}/lectures");
+    }
+
+    
+    private class CreateLectureModel
+    {
+        public string lecturename { get; set; } = "";
+        public string? description { get; set; }
+        public TimeOnly starttime { get; set; } = new TimeOnly(9, 0); 
+        public TimeOnly endtime { get; set; } = new TimeOnly(10, 30); 
+        public int? roomid { get; set; }
+    }
+}

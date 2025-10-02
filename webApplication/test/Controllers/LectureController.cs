@@ -48,6 +48,25 @@ namespace webApplication.Controllers
         }
 
         /// <summary>
+        /// Get lecture by id
+        /// </summary>
+        /// <remarks>
+        /// Enter lecture id
+        /// </remarks>
+        /// <param name="model">Lecture</param>
+        /// <returns></returns>
+
+        // GET api/<LectureController>
+
+        [HttpGet("teacher/{teacherId}")]
+        public async Task<IActionResult> GetByTeacherId(int teacherId)
+        {
+            var lectures = await _lectureService.GetLecturesByTeacherId(teacherId);
+            var response = lectures.Adapt<List<GetLectureResponse>>();
+            return Ok(response);
+        }
+
+        /// <summary>
         /// Add new lecture
         /// </summary>
         /// <remarks>

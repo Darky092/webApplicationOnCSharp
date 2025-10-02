@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
 using Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using Validators.Interefaces;
+
 
 namespace BusinessLogic.Services
 {
@@ -25,23 +27,19 @@ namespace BusinessLogic.Services
             return await _repositoryWrapper.studentsGroup.FindAll();
         }
 
-        public async Task<students_group> GetById(int groupId, int userId)
+        public async Task<List<students_group>>GetById(int userId)
         {
-            if (groupId <= 0)
-                throw new ArgumentNullException("Required groupId", nameof(groupId));
             if (userId <= 0)
                 throw new ArgumentNullException("Required userId", nameof(userId));
 
             var studentsGroup = await _repositoryWrapper.studentsGroup
-                .FindByCondition(x => x.userid == userId && x.groupid == groupId);
+                .FindByCondition(x => x.userid == userId);
 
             if (studentsGroup.Count == 0)
-                throw new KeyNotFoundException($"Objects with userId: {userId} and groupId: {groupId} not found");
+                throw new KeyNotFoundException($"Objects with userId: {userId}  not found");
 
-            if (studentsGroup.Count > 1)
-                throw new InvalidOperationException($"Found more then one object with userId: {userId} and groupId: {groupId}");
 
-            return studentsGroup.Single();
+            return studentsGroup;
         }
 
         public async Task Create(students_group model)
@@ -57,9 +55,25 @@ namespace BusinessLogic.Services
             }
 
             await _repositoryWrapper.studentsGroup.Create(model);
-            await _repositoryWrapper.Save();
+            try
+            {
+                await _repositoryWrapper.Save();
+            }
+            catch
+            {
+                throw new ArgumentException("Объект с таким id уже существ");
+            }
+
         }
 
+
+        public async Task<List<lecture>> GetLecturesByUserId(int userId)
+        {
+            if (userId <= 0)
+                throw new ArgumentException("Invalid user ID", nameof(userId));
+
+            return await _repositoryWrapper.studentsGroup.GetLecturesByUserId(userId);
+        }
 
 
         public async Task Delete(int groupId, int userId)
@@ -69,9 +83,24 @@ namespace BusinessLogic.Services
             if (userId <= 0)
                 throw new ArgumentNullException("Require userid", nameof(userId));
 
-            var student_group = await GetById(groupId, userId);
-            await _repositoryWrapper.studentsGroup.Delete(student_group);
+            var studentsGroup = await _repositoryWrapper.studentsGroup
+            .FindByCondition(x => x.userid == userId && x.groupid == groupId);
+
+            if (studentsGroup.Count == 0)
+                throw new KeyNotFoundException($"Objects with userId: {userId} and groupId: {groupId} not found");
+
+            if (studentsGroup.Count > 1)
+                throw new InvalidOperationException($"Found more then one object with userId: {userId} and groupId: {groupId}");
+         
+            await _repositoryWrapper.studentsGroup.Delete(studentsGroup.Single());
             await _repositoryWrapper.Save();
+        }
+        public async Task<List<user>> GetStudentsByLectureId(int lectureId)
+        {
+            if (lectureId <= 0)
+                throw new ArgumentException("Invalid lecture ID", nameof(lectureId));
+
+            return await _repositoryWrapper.studentsGroup.GetStudentsByLectureId(lectureId);
         }
     }
 }

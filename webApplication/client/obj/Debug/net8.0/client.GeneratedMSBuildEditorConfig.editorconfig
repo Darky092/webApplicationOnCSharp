@@ -28,20 +28,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQW5vbnltb3VzTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/Lectures.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZWN0dXJlcy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/UserAttendance.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyQXR0ZW5kYW5jZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/UserCourses.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyQ291cnNlcy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/UserHome.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VySG9tZS5yYXpvcg==
+[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/AddAttendance.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRBdHRlbmRhbmNlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Routes.razor]
@@ -60,9 +48,17 @@ build_metadata.AdditionalFiles.CssScope = b-4kdmjuawjh
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-b3bxtejbwi
 
+[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/AddLecture.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRMZWN0dXJlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-2wnguosh3q
+
 [C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-yaa7x8nh74
+
+[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/Lectures.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZWN0dXJlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0xf3qdb7l3
 
 [C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
@@ -71,6 +67,18 @@ build_metadata.AdditionalFiles.CssScope = b-k215shjv40
 [C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/Registration.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWdpc3RyYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-2uxoa1litf
+
+[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/UserAttendance.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyQXR0ZW5kYW5jZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-uwmtwc7pws
+
+[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/UserCourses.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyQ291cnNlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-jwe88ilfap
+
+[C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/UserHome.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VySG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-x0xnckx73t
 
 [C:/Users/purr/Desktop/webApplicationOnCSharp/webApplication/Client/Components/Pages/Сourses.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1zQoW91cnNlcy5yYXpvcg==

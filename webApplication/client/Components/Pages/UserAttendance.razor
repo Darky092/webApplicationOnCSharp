@@ -1,14 +1,79 @@
-﻿@page "/attendance/{id}"
+﻿@page "/user/{id}/attendance"
+@layout Client.Components.Layout.MainLayout
+@inject HttpClient Http
+@using webApplication.Contracts.attendance
 
-<h3>UserAttendabnce</h3>
+<h3>Посещаемость пользователя</h3>
 
-@code
+@if (attendances == null)
 {
-	[Parameter]
-	public string? id { get; set; }
-	protected override void OnParametersSet()
-	{
+    <p>Загрузка...</p>
+}
+else if (attendances.Count == 0)
+{
+    <p>Нет данных о посещаемости.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Лекция</th>
+                <th>Дата лекции</th> 
+                <th>Присутствовал</th>
+                <th>Заметка</th>
+                <th>Дата записи</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in attendances)
+            {
+                <tr>
+                    <td>@item.LectureName</td>
+                    <td>@(item.LectureCreatedAt?.ToString("d") ?? "—")</td>
+                    <td>
+                        @if (item.IsPresent == true)
+                        {
+                            <span class="badge bg-success">Да</span>
+                        }
+                        else if (item.IsPresent == false)
+                        {
+                            <span class="badge bg-danger">Нет</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Не указано</span>
+                        }
+                    </td>
+                    <td>@(item.Note ?? "—")</td>
+                    <td>@(item.RecordedAt?.ToString("g") ?? "—")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
 
-		var test = id;
-	}
+@code {
+    [Parameter] public string? id { get; set; }
+    private List<AttendanceDetailsDto>? attendances;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (string.IsNullOrEmpty(id) || !int.TryParse(id, out int userId))
+        {
+            attendances = new List<AttendanceDetailsDto>();
+            return;
+        }
+
+        try
+        {
+            attendances = await Http.GetFromJsonAsync<List<AttendanceDetailsDto>>($"/api/Attendance/user/{userId}/attendance");
+            attendances ??= new List<AttendanceDetailsDto>();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка загрузки посещаемости: {ex.Message}");
+            attendances = new List<AttendanceDetailsDto>();
+        }
+    }
 }

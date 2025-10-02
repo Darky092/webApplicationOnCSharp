@@ -1,0 +1,50 @@
+﻿
+.bg-gradient-primary {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-light-primary {
+    background-color: #e0e7ff;
+}
+
+.bg-light-success {
+    background-color: #dcfce7;
+}
+
+.bg-light-danger {
+    background-color: #fee2e2;
+}
+
+
+.profile-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .profile-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }

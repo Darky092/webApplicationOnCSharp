@@ -10,6 +10,7 @@ using Domain.Models;
 using FluentValidation.Results;
 using Moq;
 using Validators.Interefaces;
+using webApplication.Contracts.attendance;
 
 namespace BusinessLogic.Tests
 {
@@ -83,6 +84,119 @@ namespace BusinessLogic.Tests
 
             attendanceRepositoryMoq.Verify(x => x.Create(It.IsAny<attendance>()), Times.Never);
             Assert.IsType<ArgumentException>(ex);
+        }
+
+        [Fact]
+        public async Task GetAttendanceByUserId_WhenUserIdIsZeroOrNegative_ThrowsArgumentException()
+        {
+            await Assert.ThrowsAsync<ArgumentException>(() => service.GetAttendanceByUserId(0));
+            await Assert.ThrowsAsync<ArgumentException>(() => service.GetAttendanceByUserId(-1));
+        }
+
+        [Fact]
+        public async Task GetAttendanceByUserId_CallsRepositoryAndMapsToDto()
+        {
+            var mockAttendances = new List<attendance>
+    {
+        new attendance
+        {
+            attendanceid = 1,
+            ispresent = true,
+            note = "On time",
+            recordedat = new DateTime(2024, 5, 1),
+            user = new user { name = "John", surname = "Doe" },
+            lecture = new lecture
+            {
+                lecturename = "Calculus",
+                createdat = new DateTime(2024, 1, 10)
+            }
+        }
+    };
+
+            attendanceRepositoryMoq
+                .Setup(x => x.GetByUserIdWithDetails(100))
+                .ReturnsAsync(mockAttendances);
+
+            var result = await service.GetAttendanceByUserId(100);
+
+            Assert.Single(result);
+            var dto = result [0];
+            Assert.Equal(1, dto.AttendanceId);
+            Assert.Equal("John Doe", dto.Username);
+            Assert.Equal("Calculus", dto.LectureName);
+            Assert.True(dto.IsPresent);
+            Assert.Equal("On time", dto.Note);
+            Assert.Equal(new DateTime(2024, 5, 1), dto.RecordedAt);
+            Assert.Equal(new DateTime(2024, 1, 10), dto.LectureCreatedAt);
+
+            attendanceRepositoryMoq.Verify(x => x.GetByUserIdWithDetails(100), Times.Once);
+        }
+
+        [Fact]
+        public async Task UpsertAttendance_NullRequest_ThrowsArgumentNullException()
+        {
+            await Assert.ThrowsAsync<ArgumentNullException>(() => service.UpsertAttendance(null));
+        }
+
+        [Fact]
+        public async Task UpsertAttendance_WhenExistingAttendanceFound_UpdatesIt()
+        {
+            var request = new CreateAttendanceRequest
+            {
+                lectureid = 10,
+                userid = 5,
+                ispresent = false,
+                note = "Late"
+            };
+
+            var existingAttendance = new attendance
+            {
+                attendanceid = 99,
+                lectureid = 10,
+                userid = 5,
+                ispresent = true,
+                note = "Present"
+            };
+
+            attendanceRepositoryMoq
+                .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<attendance, bool>>>()))
+                .ReturnsAsync(new List<attendance> { existingAttendance });
+
+            await service.UpsertAttendance(request);
+
+            // Verify update was called
+            attendanceRepositoryMoq.Verify(x => x.Update(It.Is<attendance>(a =>
+                a.attendanceid == 99 &&
+                a.ispresent == false &&
+                a.note == "Late")), Times.Once);
+
+            repositoryWrapperMoq.Verify(x => x.Save(), Times.Once);
+        }
+
+        [Fact]
+        public async Task UpsertAttendance_WhenNoExistingAttendance_CreatesNew()
+        {
+            var request = new CreateAttendanceRequest
+            {
+                lectureid = 20,
+                userid = 8,
+                ispresent = true,
+                note = "Attended"
+            };
+
+            attendanceRepositoryMoq
+                .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<attendance, bool>>>()))
+                .ReturnsAsync(new List<attendance>());
+
+            await service.UpsertAttendance(request);
+
+            attendanceRepositoryMoq.Verify(x => x.Create(It.Is<attendance>(a =>
+                a.lectureid == 20 &&
+                a.userid == 8 &&
+                a.ispresent == true &&
+                a.note == "Attended")), Times.Once);
+
+            repositoryWrapperMoq.Verify(x => x.Save(), Times.Once);
         }
 
         [Fact]

@@ -48,13 +48,9 @@
 
 	protected async Task Logins()
 	{
-
 		UserReq val = new UserReq();
 		val.password = Password;
 		val.email = Email;
-
-
-
 
 		var response = await Http.PostAsJsonAsync("api/User/login", val);
 		result = await response.Content.ReadFromJsonAsync<User>();
@@ -63,14 +59,7 @@
 			ErrorMessage = "Неверный логин или пароль";
 		else
 			NavigationManager.NavigateTo($"/user/{result.userid}");
-
-		
 	}
 
 	
-	public class UserReq
-	{
-		public string password { get; set; }
-		public string email { get; set; }
-	}
 }

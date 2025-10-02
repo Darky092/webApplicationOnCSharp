@@ -22,4 +22,6 @@ public partial class group
     public virtual institution institution { get; set; } = null!;
 
     public virtual ICollection<lecture> lectures { get; set; } = new List<lecture>();
+
+    public virtual ICollection<students_group> students_groups { get; set; } = new List<students_group>();
 }

@@ -90,18 +90,41 @@ namespace BusinessLogic.Tests
         }
 
 
+        [Fact]
+        public async Task GetLecturesByUserId_WhenUserIdIsZeroOrNegative_ThrowsArgumentException()
+        {
+            await Assert.ThrowsAsync<ArgumentException>(() => service.GetLecturesByUserId(0));
+            await Assert.ThrowsAsync<ArgumentException>(() => service.GetLecturesByUserId(-5));
+        }
 
+        [Fact]
+        public async Task GetLecturesByUserId_CallsRepositoryAndReturnsResult()
+        {
+            var mockLectures = new List<lecture>
+    {
+        new lecture { lectureid = 1, lecturename = "Math" },
+        new lecture { lectureid = 2, lecturename = "Physics" }
+    };
+
+            studentsGroupRepositoryMoq
+                .Setup(x => x.GetLecturesByUserId(123))
+                .ReturnsAsync(mockLectures);
+
+            var result = await service.GetLecturesByUserId(123);
+
+            Assert.Equal(2, result.Count);
+            Assert.Equal("Math", result [0].lecturename);
+            studentsGroupRepositoryMoq.Verify(x => x.GetLecturesByUserId(123), Times.Once);
+        }
 
 
 
 
         [Fact]
-        public async Task GetById_WhenGroupIdOrUserIdIsZero_ThrowsArgumentNullException()
+        public async Task GetById_WhenUserIdIsZeroOrNegative_ThrowsArgumentNullException()
         {
-            await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.GetById(0, 1));
-            await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.GetById(1, 0));
-            await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.GetById(-1, 1));
-            await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.GetById(1, -1));
+            await Assert.ThrowsAsync<ArgumentNullException>(() => service.GetById(0));
+            await Assert.ThrowsAsync<ArgumentNullException>(() => service.GetById(-1));
         }
 
         [Fact]
@@ -111,47 +134,50 @@ namespace BusinessLogic.Tests
                 .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<students_group, bool>>>()))
                 .ReturnsAsync(new List<students_group>());
 
-            var ex = await Assert.ThrowsAnyAsync<KeyNotFoundException>(() => service.GetById(999, 888));
-            Assert.Contains("Objects with userId: 888 and groupId: 999 not found", ex.Message);
+            var ex = await Assert.ThrowsAsync<KeyNotFoundException>(() => service.GetById(999));
+            Assert.Contains("Objects with userId: 999  not found", ex.Message);
         }
 
         [Fact]
-        public async Task GetById_WhenStudentGroupFound_ReturnsStudentGroup()
+        public async Task GetById_WhenStudentGroupsFound_ReturnsListOfGroups()
         {
-            var expected = new students_group
+            var expectedGroups = new List<students_group>
             {
-                userid = 100,
-                groupid = 200,
-                enrolledat = DateOnly.FromDateTime(DateTime.Now)
+                new students_group { userid = 100, groupid = 200 },
+                new students_group { userid = 100, groupid = 201 }
             };
+
 
             studentsGroupRepositoryMoq
                 .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<students_group, bool>>>()))
-                .ReturnsAsync(new List<students_group> { expected });
+                .ReturnsAsync(expectedGroups);
 
-            var result = await service.GetById(200, 100);
+            var result = await service.GetById(100);
 
-            Assert.Equal(100, result.userid);
-            Assert.Equal(200, result.groupid);
-            studentsGroupRepositoryMoq.Verify(x => x.FindByCondition(It.IsAny<Expression<Func<students_group, bool>>>()), Times.Once);
+            Assert.Equal(2, result.Count);
+            Assert.All(result, g => Assert.Equal(100, g.userid));
         }
 
         [Fact]
-        public async Task GetById_WhenMultipleStudentGroupsFound_ThrowsInvalidOperationException()
+        public async Task GetStudentsByLectureId_CallsRepositoryAndReturnsResult()
         {
-            var students = new List<students_group>
-            {
-                new students_group { userid = 1, groupid = 2 },
-                new students_group { userid = 1, groupid = 2 }
-            };
+            var mockStudents = new List<user>
+    {
+        new user { userid = 1, name = "John" },
+        new user { userid = 2, name = "Jane" }
+    };
 
             studentsGroupRepositoryMoq
-                .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<students_group, bool>>>()))
-                .ReturnsAsync(students);
+                .Setup(x => x.GetStudentsByLectureId(55))
+                .ReturnsAsync(mockStudents);
 
-            var ex = await Assert.ThrowsAnyAsync<InvalidOperationException>(() => service.GetById(2, 1));
-            Assert.Contains("Found more then one object with userId: 1 and groupId: 2", ex.Message);
+            var result = await service.GetStudentsByLectureId(55);
+
+            Assert.Equal(2, result.Count);
+            Assert.Equal("John", result [0].name);
+            studentsGroupRepositoryMoq.Verify(x => x.GetStudentsByLectureId(55), Times.Once);
         }
+
 
         [Fact]
         public async Task GetAll_ReturnsAllStudentGroups()

@@ -24,3 +24,6 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Domain\bin\Debug\net
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Domain\bin\Debug\net8.0\Contracts.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Domain\bin\Debug\net8.0\Contracts.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Domain\obj\Debug\net8.0\Domain.csproj.Up2Date

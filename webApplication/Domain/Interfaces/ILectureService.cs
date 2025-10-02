@@ -15,5 +15,8 @@ namespace Domain.Interfaces
         Task Create(lecture model);
         Task Update(lecture model);
         Task Delete(int id);
+
+        Task<List<lecture>> GetLecturesByTeacherId(int teacherId);
+
     }
 }

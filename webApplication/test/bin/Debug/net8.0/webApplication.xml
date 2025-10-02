@@ -24,6 +24,16 @@
             <param name="model">attendance</param>
             <returns></returns>
         </member>
+        <member name="M:webApplication.Controllers.AttendanceController.GetUserAttendance(System.Int32)">
+            <summary>
+            Get attendance by user id
+            </summary>
+            <remarks>
+            Enter attendance id
+            </remarks>
+            <param name="userId">attendance</param>
+            <returns></returns>
+        </member>
         <member name="M:webApplication.Controllers.AttendanceController.Add(webApplication.Contracts.attendance.CreateAttendanceRequest)">
              <summary>
              Add attendance to user
@@ -41,6 +51,25 @@
             
              </remarks>
              <param name="model">attendance</param>
+             <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.AttendanceController.Upsert(webApplication.Contracts.attendance.CreateAttendanceRequest)">
+             <summary>
+             Upsert  attendance
+             </summary>
+             <remarks>
+             Query Example
+            
+                 POST /Todo
+                 {
+                    "lectureid" : 1,
+                    "userid" : 1,
+                    "ispresent" : true,
+                    "note" : "text",
+                 }
+            
+             </remarks>
+             <param name="attendance">attendance</param>
              <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.AttendanceController.Update(webApplication.Contracts.attendance.UpdateAttendanceRequest)">
@@ -281,6 +310,16 @@
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.LectureController.GetById(System.Int32)">
+            <summary>
+            Get lecture by id
+            </summary>
+            <remarks>
+            Enter lecture id
+            </remarks>
+            <param name="model">Lecture</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.LectureController.GetByTeacherId(System.Int32)">
             <summary>
             Get lecture by id
             </summary>
@@ -604,17 +643,37 @@
             <summary>
             Get lecture and group
             </summary>
-            <param name="model">LectureGroup</param>
+            <param name="model">StudentsGroup</param>
             <returns></returns>
         </member>
-        <member name="M:webApplication.Controllers.StudentsGroupController.GetById(System.Int32,System.Int32)">
+        <member name="M:webApplication.Controllers.StudentsGroupController.GetById(System.Int32)">
+            <summary>
+            Get student and group by lecture id
+            </summary>
+            <remarks>
+            Enter lectur id
+            </remarks>
+            <param name="userid">StudentsGroup</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.StudentsGroupController.GetStudentsByLectureId(System.Int32)">
+            <summary>
+            Get students by lecture id
+            </summary>
+            <remarks>
+            Enter lectur id
+            </remarks>
+            <param name="lectureId">StudentsGroup</param>
+            <returns></returns>
+        </member>
+        <member name="M:webApplication.Controllers.StudentsGroupController.GetLectures(System.Int32)">
             <summary>
             Get lecture and group by lecture id
             </summary>
             <remarks>
             Enter lectur id
             </remarks>
-            <param name="model">LectureGroup</param>
+            <param name="userid">StudentsGroup</param>
             <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.StudentsGroupController.Create(webApplication.Contracts.students_group.CreateStudentsGroupsRequest)">
@@ -631,7 +690,7 @@
                  }
             
              </remarks>
-             <param name="model">LectureGroup</param>
+             <param name="students_group">StudentsGroup</param>
              <returns></returns>
         </member>
         <member name="M:webApplication.Controllers.StudentsGroupController.Delete(System.Int32,System.Int32)">
@@ -641,7 +700,7 @@
             <remarks>
             Enter lectur id
             </remarks>
-            <param name="model">LectureGroup</param>
+            <param name="model">StudentsGroup</param>
             <returns></returns>
         </member>
         <member name="M:BackendApi.Controllers.UserController.GetAll">
@@ -660,7 +719,7 @@
             <param name="id">User</param>
             <returns></returns>
         </member>
-        <member name="M:BackendApi.Controllers.UserController.GetByNameAndPassword(webApplication.reauests.GetUserByPasswordAndEmailRequest)">
+        <member name="M:BackendApi.Controllers.UserController.GetByNameAndPassword(webApplication.requests.GetUserByPasswordAndEmailRequest)">
             <summary>
             Get user by password and email
             </summary>

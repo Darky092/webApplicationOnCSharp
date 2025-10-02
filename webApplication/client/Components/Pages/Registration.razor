@@ -1,90 +1,120 @@
 ﻿@page "/registration"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.Components.Web
+@rendermode RenderMode.InteractiveServer
+@using webApplication.Contracts.user
 
-<h3>Registration</h3>
 
 <div class="login-form">
     <div class="form-group">
-        <label for="Name">Имя</label>
-        <input @bind="Name" id="Name" type="Name" placeholder="youre name" />
+        <label for="Name">Имя *</label>
+        <input @bind="model.name" id="Name" class="form-control" placeholder="Ваше имя" />
     </div>
 
     <div class="form-group">
-        <label for="Surname">Фамилия</label>
-        <input @bind="Surname" id="Surname" type="Surname" />
+        <label for="Surname">Фамилия *</label>
+        <input @bind="model.surname" id="Surname" class="form-control" />
     </div>
-
 
     <div class="form-group">
         <label for="Patronymic">Отчество</label>
-        <input @bind="Patronymic" id="Patronymic" type="Patronymic" />
+        <input @bind="model.patronymic" id="Patronymic" class="form-control" />
     </div>
 
     <div class="form-group">
-        <label for="Email">Адрес электронной почты</label>
-        <input @bind="Email" id="Email" type="Email" placeholder="your@email.com" />
+        <label for="Email">Email *</label>
+        <input @bind="model.email" id="Email" type="email" class="form-control" placeholder="example@mail.ru" />
     </div>
 
     <div class="form-group">
-        <label for="telephonnumber">Номер телефона</label>
-        <input @bind="telephonnumber" id="telephonnumber" type="telephonnumber" placeholder="+73931232345" />
+        <label for="telephonnumber">Телефон *</label>
+        <input @bind="model.telephonnumber" id="telephonnumber" class="form-control" placeholder="+79001234567" />
     </div>
-
 
     <div class="form-group">
-        <label for="role">Выберите кем вы являетесь</label>
-        <input @bind="role" id="role" type="radio" name="one" />Студент
-        <input @bind="role" id="role" type="radio" name="one" />Учитель
+        <label>Роль *</label><br />
+        <label>
+            <input type="radio" name="role" @onchange="@(() => model.role = "Student")" />
+            Студент
+        </label>
+        <label>
+            <input type="radio" name="role" @onchange="@(() => model.role = "Teacher")" />
+            Учитель
+        </label>
     </div>
-
-
 
     <div class="form-group">
-        <label for="Password">Пароль</label>
-        <input @bind="Password" id="Password" type="Password" />
+        <label for="Password">Пароль *</label>
+        <input @bind="model.passwordhash" id="Password" type="password" class="form-control" />
     </div>
 
-    <button class="btn btn-primary" @onclick="Logins">Зарегистрироваться</button>
+    <button type="button" class="btn btn-primary" @onclick="RegisterAsync" disabled="@isSubmitting">
+        @(isSubmitting ? "Отправка..." : "Зарегистрироваться")
+    </button>
 
-    <p class="signup-link">
-       Есть аккаунт?  <NavLink href="/login">Войти</NavLink>
+    <p class="mt-3">
+        Уже есть аккаунт? <NavLink href="/login">Войти</NavLink>
     </p>
 
     @if (!string.IsNullOrEmpty(ErrorMessage))
     {
-        <div class="error-message">@ErrorMessage</div>
+        <div class="alert alert-danger mt-3">@ErrorMessage</div>
     }
 </div>
 
 @code {
-    private string Email = "";
-    private string Password = "";
+    private CreateUserRequest model = new();
     private string ErrorMessage = "";
-    private string Name = "";
-    private string Surname = "";
-    private string Patronymic = "";
-    private string telephonnumber = "";
-    private string role = "";
+    private bool isSubmitting = false;
 
-    private void Logins()
+    private async Task RegisterAsync()
     {
+        isSubmitting = true;
+        ErrorMessage = "";
 
-        if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
+
+        if 
+        (
+            string.IsNullOrWhiteSpace(model.name) ||
+            string.IsNullOrWhiteSpace(model.surname) ||
+            string.IsNullOrWhiteSpace(model.email) ||
+            string.IsNullOrWhiteSpace(model.telephonnumber) ||
+            string.IsNullOrWhiteSpace(model.passwordhash) ||
+            string.IsNullOrWhiteSpace(model.role)
+        )
         {
-            ErrorMessage = "Пожалуйста, заполните все поля.";
+            ErrorMessage = "Пожалуйста, заполните все обязательные поля.";
+            isSubmitting = false;
             return;
         }
 
-
-        if (Email == "test@example.com" && Password == "123456")
+        try
         {
 
-            ErrorMessage = "Вход выполнен успешно!";
+            var response = await Http.PostAsJsonAsync("api/User", model);
 
+            if (response.IsSuccessStatusCode)
+            {
 
+                Navigation.NavigateTo("/login");
+            }
+            else
+            {
+
+                ErrorMessage = $"Ошибка регистрации: {(int)response.StatusCode} {response.ReasonPhrase}";
+            }
         }
-        else
+        catch (Exception ex)
         {
-            ErrorMessage = "Неверный email или пароль.";
+            ErrorMessage = $"Ошибка подключения: {ex.Message}";
+        }
+        finally
+        {
+            isSubmitting = false;
         }
     }
+
+
+
 }

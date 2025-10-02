@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"449111"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 28 Sep 2025 18:54:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Client/Client.3z7ryayev2.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Client.3z7ryayev2.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Client/Client.6msfezakzp.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Client.6msfezakzp.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3z7ryayev2"},{"Name":"integrity","Value":"sha256-4TRsz5iEDnT/x4Fn3FUpPw/\u002B2KRZyBwuZnxtDk5k05c="},{"Name":"label","Value":"_content/Client/Client.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13487"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224TRsz5iEDnT/x4Fn3FUpPw/\u002B2KRZyBwuZnxtDk5k05c=\u0022"},{"Name":"Last-Modified","Value":"Mon, 29 Sep 2025 23:02:59 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6msfezakzp"},{"Name":"integrity","Value":"sha256-YuferqwOS5Gj7HPc9DhmJsPH4/dfaXcM/pL72poCQN8="},{"Name":"label","Value":"_content/Client/Client.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18665"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YuferqwOS5Gj7HPc9DhmJsPH4/dfaXcM/pL72poCQN8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 02:35:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Client/Client.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Client.3z7ryayev2.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Client.6msfezakzp.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4TRsz5iEDnT/x4Fn3FUpPw/\u002B2KRZyBwuZnxtDk5k05c="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13487"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224TRsz5iEDnT/x4Fn3FUpPw/\u002B2KRZyBwuZnxtDk5k05c=\u0022"},{"Name":"Last-Modified","Value":"Mon, 29 Sep 2025 23:02:59 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YuferqwOS5Gj7HPc9DhmJsPH4/dfaXcM/pL72poCQN8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18665"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YuferqwOS5Gj7HPc9DhmJsPH4/dfaXcM/pL72poCQN8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 02:35:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Client/favicon.ifv42okdf2.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>

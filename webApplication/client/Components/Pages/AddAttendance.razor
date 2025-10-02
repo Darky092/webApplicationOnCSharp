@@ -1,0 +1,222 @@
+﻿@page "/user/{UserId:int}/attendance/create"
+@layout Client.Components.Layout.MainLayout
+@inject HttpClient Http
+@inject NavigationManager Nav
+@using Microsoft.AspNetCore.Components.Web
+@rendermode RenderMode.InteractiveServer
+
+@using Client.Components.bodies
+@using webApplication.Contracts.lecture
+@using webApplication.Contracts.attendance
+
+<h3>Поставить успеваемость</h3>
+
+@if (lectures == null)
+{
+    <div class="alert alert-info">Загрузка лекций...</div>
+}
+else if (lectures.Count == 0)
+{
+    <div class="alert alert-warning">У вас нет активных лекций.</div>
+}
+else
+{
+    <div class="mb-3">
+        <label class="form-label">Выберите лекцию</label>
+        <select class="form-select" @onchange="OnLectureSelected">
+            <option value="">-- Выберите --</option>
+            @if (lectures != null)
+            {
+                @foreach (var lecture in lectures)
+                {
+                    <option value="@lecture.lectureid">@lecture.lecturename</option>
+                }
+            }
+        </select>
+    </div>
+
+    @if (selectedLectureId.HasValue)
+    {
+        if (isLoadingStudents)
+        {
+            <div class="alert alert-info">Загрузка студентов...</div>
+        }
+        else if (!string.IsNullOrEmpty(loadStudentsError))
+        {
+            <div class="alert alert-danger">
+                Ошибка загрузки студентов: @loadStudentsError
+            </div>
+        }
+        else if (students == null || students.Count == 0)
+        {
+            <div class="alert alert-warning">
+                На выбранную лекцию не записано студентов.
+            </div>
+        }
+        else
+        {
+            <form @onsubmit="OnSubmit">
+                <h4>Студенты на лекции "@selectedLectureName"</h4>
+                @foreach (var student in students)
+                {
+                    <div class="card mb-2 p-3">
+                        <div class="form-check">
+                            <input class="form-check-input"
+                            type="checkbox"
+                            id="present_@student.userid"
+                            @onchange="(e) => OnPresentChanged(student.userid, e)" />
+                            <label class="form-check-label" for="present_@student.userid">
+                                @student.name @student.surname @(student.patronymic ?? "")
+                            </label>
+                        </div>
+                        <div class="mt-2">
+                            <input type="text"
+                            class="form-control"
+                            placeholder="Заметка (оценка, комментарий)"
+                            @onchange="(e) => OnNoteChanged(student.userid, e)" />
+                        </div>
+                    </div>
+                }
+                <button type="submit" class="btn btn-primary mt-3">Сохранить успеваемость</button>
+            </form>
+        }
+    }
+}
+
+@code {
+    [Parameter] public int UserId { get; set; }
+
+    private List<GetLectureResponse>? lectures;
+    private List<User>? students;
+    private Dictionary<int, AttendanceInput> attendanceData = new();
+    private int? selectedLectureId;
+    private string? selectedLectureName;
+    private bool isLoadingStudents = false;
+    private string? loadStudentsError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            lectures = await Http.GetFromJsonAsync<List<GetLectureResponse>>($"api/lecture/teacher/{UserId}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка загрузки лекций: {ex.Message}");
+        }
+    }
+
+    private async Task OnLectureSelected(ChangeEventArgs e)
+    {
+        Console.WriteLine($"DEBUG: OnLectureSelected вызван. Значение: {e?.Value}");
+
+        loadStudentsError = null;
+        students = null;
+        selectedLectureId = null;
+
+        if (e?.Value == null)
+        {
+            Console.WriteLine("DEBUG: e.Value is null");
+            return;
+        }
+
+        var valueStr = e.Value.ToString();
+        Console.WriteLine($"DEBUG: Попытка парсинга: '{valueStr}'");
+
+        if (int.TryParse(valueStr, out int lectureId))
+        {
+            Console.WriteLine($"DEBUG: Успешный парсинг, lectureId = {lectureId}");
+            selectedLectureId = lectureId;
+            selectedLectureName = lectures?.FirstOrDefault(l => l.lectureid == lectureId)?.lecturename;
+
+            isLoadingStudents = true;
+            StateHasChanged();
+
+            try
+            {
+                Console.WriteLine($"DEBUG: Отправка запроса за студентами для lectureId={lectureId}");
+                students = await Http.GetFromJsonAsync<List<User>>($"api/studentsgroup/lecture/{lectureId}/students");
+                Console.WriteLine($"DEBUG: Получено студентов: {students?.Count ?? 0}");
+                attendanceData = students?.ToDictionary(
+                    s => s.userid,
+                    s => new AttendanceInput { IsPresent = false, Note = null }
+                ) ?? new();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"DEBUG: ОШИБКА при загрузке студентов: {ex}");
+                loadStudentsError = $"Ошибка: {ex.Message}";
+            }
+            finally
+            {
+                isLoadingStudents = false;
+                StateHasChanged(); 
+            }
+        }
+        else
+        {
+            Console.WriteLine("DEBUG: Не удалось распарсить lectureId");
+        }
+    }
+
+    private void OnPresentChanged(int userId, ChangeEventArgs e)
+    {
+        UpdateAttendance(userId, "IsPresent", e.Value);
+    }
+
+    private void OnNoteChanged(int userId, ChangeEventArgs e)
+    {
+        UpdateAttendance(userId, "Note", e.Value?.ToString());
+    }
+
+    private void UpdateAttendance(int userId, string field, object? value)
+    {
+        if (!attendanceData.ContainsKey(userId))
+            attendanceData[userId] = new AttendanceInput();
+
+        var att = attendanceData[userId];
+        if (field == "IsPresent")
+            att.IsPresent = value as bool? ?? false;
+        else if (field == "Note")
+            att.Note = value?.ToString();
+
+        attendanceData[userId] = att;
+    }
+
+    private async Task OnSubmit()
+    {
+        if (!selectedLectureId.HasValue || students == null)
+            return;
+
+        foreach (var student in students)
+        {
+            var att = attendanceData.GetValueOrDefault(student.userid, new AttendanceInput());
+
+            var request = new CreateAttendanceRequest
+                {
+                    lectureid = selectedLectureId.Value,
+                    userid = student.userid,
+                    ispresent = att.IsPresent,
+                    note = att.Note
+                };
+
+            try
+            {
+                await Http.PostAsJsonAsync("api/attendance/upsert", request);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка сохранения для студента {student.userid}: {ex.Message}");
+
+            }
+        }
+
+        Nav.NavigateTo($"/user/{UserId}");
+    }
+
+    public class AttendanceInput
+    {
+        public bool IsPresent { get; set; }
+        public string? Note { get; set; }
+    }
+}

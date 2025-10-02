@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Models;
+using webApplication.Contracts.attendance;
+
 
 namespace Domain.Interfaces
 {
@@ -16,5 +18,9 @@ namespace Domain.Interfaces
         Task Create(attendance model);
         Task Update(attendance model);
         Task Delete(int id);
+
+        Task<List<AttendanceDetailsDto>> GetAttendanceByUserId(int userId);
+
+        Task UpsertAttendance(CreateAttendanceRequest request);
     }
 }

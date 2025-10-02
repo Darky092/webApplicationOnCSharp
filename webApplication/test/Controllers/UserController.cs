@@ -3,7 +3,7 @@ using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.user;
-using webApplication.reauests;
+using webApplication.requests;
 
 namespace BackendApi.Controllers
 {

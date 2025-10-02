@@ -30,4 +30,5 @@ public partial class lecture
     public virtual user teacher { get; set; } = null!;
 
     public virtual ICollection<group> groups { get; set; } = new List<group>();
+    
 }

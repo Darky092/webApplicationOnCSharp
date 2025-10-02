@@ -1,11 +1,83 @@
 ﻿@page "/user/{id}/courses"
+@inject NavigationManager Navigation
 @layout Client.Components.Layout.MainLayout
+@using Client.Components.bodies
+@inject HttpClient Http
+@using Microsoft.AspNetCore.Components.Web
+@rendermode RenderMode.InteractiveServer
+@using Contracts.Data
+@using Contracts.courses
+@using System.Text.Json
+@using Contracts.students_group
 
 <CascadingValue Value="@id">
     <h2>Ваши курсы</h2>
-  
 </CascadingValue>
+
+@if (userCourses.Any())
+{
+    <div class="courses-grid">
+        @foreach (var course in userCourses)
+        {
+
+            <div class="course-card">
+                <h3>@course.Title</h3>
+                <p>@course.Description</p>
+                <p><strong>Продолжительность:</strong> @course.Duration</p>
+                
+            </div>
+        }
+
+    </div>
+    <NavLink href="@($"user/{id}/courses/choose")">Записаться на курс</NavLink>
+}
+else
+{
+    <p>Вы не записаны ни на один курс</p>
+    <NavLink href="@($"user/{id}/courses/choose")">Записаться на курс</NavLink>
+}
 
 @code {
     [Parameter] public string? id { get; set; }
+
+    private List<Course> userCourses = new();
+    private List<Course> allCourses = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (string.IsNullOrEmpty(id) || !int.TryParse(id, out int userId))
+        {
+            Navigation.NavigateTo("/");
+            return;
+        }
+
+        
+        allCourses = new CourseData().GetCourses();
+
+        try
+        {
+            
+            var response = await Http.GetAsync($"api/StudentsGroup/{userId}");
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var userGroups = JsonSerializer.Deserialize<List<StudentGroupBody>>(json, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+
+                if (userGroups != null)
+                {
+                    
+                    var userGroupIds = userGroups.Select(g => g.groupid).ToHashSet();
+                    userCourses = allCourses.Where(c => userGroupIds.Contains(c.GroupId)).ToList();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+           
+            Console.WriteLine($"Ошибка загрузки курсов {ex.Message}");
+        }
+    }
 }

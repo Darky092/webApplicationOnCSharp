@@ -14,5 +14,10 @@ namespace Domain.Interfaces
         //This func delete object whitout FindByCondition query (delete in one query) // more optimization then simple Delete()
         //DOES NOT USE THIS METHOD
         Task<int> DeleteByCondition(Expression<Func<students_group, bool>> predicate);
+
+        Task<List<lecture>> GetLecturesByUserId(int userId);
+
+        Task<List<user>> GetStudentsByLectureId(int lectureId);
+        
     }
 }

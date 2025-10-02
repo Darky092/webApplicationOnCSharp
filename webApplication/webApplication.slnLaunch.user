@@ -3,11 +3,11 @@
     "Name": "Новый профиль",
     "Projects": [
       {
-        "Path": "Client\\Client.csproj",
+        "Path": "test\\webApplication.csproj",
         "Action": "Start"
       },
       {
-        "Path": "test\\webApplication.csproj",
+        "Path": "Client\\Client.csproj",
         "Action": "Start"
       }
     ]

@@ -103,6 +103,38 @@ namespace BusinessLogic.Tests
             lectureRepositoryMoq.Verify(x => x.Update(It.IsAny<lecture>()), Times.Never);
         }
 
+        [Fact]
+        public async Task GetLecturesByTeacherId_WhenTeacherIdIsZeroOrNegative_ThrowsArgumentException()
+        {
+            await Assert.ThrowsAsync<ArgumentException>(() => service.GetLecturesByTeacherId(0));
+            await Assert.ThrowsAsync<ArgumentException>(() => service.GetLecturesByTeacherId(-3));
+        }
+
+        [Fact]
+        public async Task GetLecturesByTeacherId_CallsRepositoryWithIsActiveTrueAndReturnsResult()
+        {
+            var wrapper = repositoryWrapperMoq.Object;
+            var repoFromWrapper = wrapper.lecture; 
+
+            Assert.NotNull(repoFromWrapper); 
+
+            var mockLectures = new List<lecture>
+    {
+        new lecture { lectureid = 10, lecturename = "Algebra", teacherid = 7, isactive = true },
+        new lecture { lectureid = 11, lecturename = "Geometry", teacherid = 7, isactive = true }
+    };
+
+            lectureRepositoryMoq
+                .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<lecture, bool>>>()))
+                .ReturnsAsync(mockLectures);
+
+            var result = await service.GetLecturesByTeacherId(7);
+
+            Assert.NotNull(result); 
+            Assert.Equal(2, result.Count);
+            lectureRepositoryMoq.Verify(x => x.FindByCondition(It.IsAny<Expression<Func<lecture, bool>>>()), Times.Once);
+        }
+
         [Theory]
         [MemberData(nameof(GetIncorrectLectures))]
         public async Task UpdateAsyncLectureShouldNotUpdate(lecture model)

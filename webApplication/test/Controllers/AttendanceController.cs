@@ -49,6 +49,21 @@ namespace webApplication.Controllers
             return Ok(response);
         }
         /// <summary>
+        /// Get attendance by user id
+        /// </summary>
+        /// <remarks>
+        /// Enter attendance id
+        /// </remarks>
+        /// <param name="userId">attendance</param>
+        /// <returns></returns>
+        // GET api/<AttendanceController>
+        [HttpGet("user/{userId}/attendance")]
+        public async Task<IActionResult> GetUserAttendance(int userId)
+        {
+            var result = await _attendanceService.GetAttendanceByUserId(userId);
+            return Ok(result);
+        }
+        /// <summary>
         /// Add attendance to user
         /// </summary>
         /// <remarks>
@@ -72,6 +87,33 @@ namespace webApplication.Controllers
         {
             var request = attendance.Adapt<attendance>();
             await _attendanceService.Create(request);
+            return Ok();
+        }
+
+
+        /// <summary>
+        /// Upsert  attendance
+        /// </summary>
+        /// <remarks>
+        /// Query Example
+        ///
+        ///     POST /Todo
+        ///     {
+        ///        "lectureid" : 1,
+        ///        "userid" : 1,
+        ///        "ispresent" : true,
+        ///        "note" : "text",
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="attendance">attendance</param>
+        /// <returns></returns>
+
+        // POST api/<AttendanceController>
+        [HttpPost("upsert")]
+        public async Task<IActionResult> Upsert(CreateAttendanceRequest attendance)
+        {
+            await _attendanceService.UpsertAttendance(attendance);
             return Ok();
         }
         /// <summary>

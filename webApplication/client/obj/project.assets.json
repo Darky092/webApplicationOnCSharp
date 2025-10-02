@@ -23,6 +23,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
       }
     }
   },
@@ -68,10 +78,16 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Contracts >= 1.0.0",
       "Json.Net >= 1.0.33",
       "Newtonsoft.Json >= 13.0.4"
     ]
@@ -108,7 +124,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -125,3 +125,5 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic.Tests\
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic.Tests\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic.Tests\bin\Debug\net8.0\Validators.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic.Tests\bin\Debug\net8.0\Validators.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic.Tests\bin\Debug\net8.0\Contracts.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\BusinessLogic.Tests\bin\Debug\net8.0\Contracts.pdb

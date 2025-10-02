@@ -137,6 +137,66 @@
         }
       }
     },
+    "/api/Attendance/user/{userId}/attendance": {
+      "get": {
+        "tags": [
+          "Attendance"
+        ],
+        "summary": "Get attendance by user id",
+        "description": "Enter attendance id",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "attendance",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Attendance/upsert": {
+      "post": {
+        "tags": [
+          "Attendance"
+        ],
+        "summary": "Upsert  attendance",
+        "description": "Query Example\r\n            \r\n    POST /Todo\r\n    {\r\n       \"lectureid\" : 1,\r\n       \"userid\" : 1,\r\n       \"ispresent\" : true,\r\n       \"note\" : \"text\",\r\n    }",
+        "requestBody": {
+          "description": "attendance",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAttendanceRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAttendanceRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAttendanceRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/City": {
       "get": {
         "tags": [
@@ -610,6 +670,31 @@
         "parameters": [
           {
             "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lecture/teacher/{teacherId}": {
+      "get": {
+        "tags": [
+          "Lecture"
+        ],
+        "summary": "Get lecture by id",
+        "description": "Enter lecture id",
+        "parameters": [
+          {
+            "name": "teacherId",
             "in": "path",
             "required": true,
             "schema": {
@@ -1220,6 +1305,7 @@
         "summary": "Add lecture to group",
         "description": "Query Example\r\n            \r\n    POST /Todo\r\n    {\r\n       \"groupid\" : 1,\r\n       \"lectureid\" : 1,      \r\n    }",
         "requestBody": {
+          "description": "StudentsGroup",
           "content": {
             "application/json": {
               "schema": {
@@ -1275,7 +1361,59 @@
         }
       }
     },
-    "/api/StudentsGroup/{id}": {
+    "/api/StudentsGroup/{userid}": {
+      "get": {
+        "tags": [
+          "StudentsGroup"
+        ],
+        "summary": "Get student and group by lecture id",
+        "description": "Enter lectur id",
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "path",
+            "description": "StudentsGroup",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/StudentsGroup/lecture/{lectureId}/students": {
+      "get": {
+        "tags": [
+          "StudentsGroup"
+        ],
+        "summary": "Get students by lecture id",
+        "description": "Enter lectur id",
+        "parameters": [
+          {
+            "name": "lectureId",
+            "in": "path",
+            "description": "StudentsGroup",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/StudentsGroup/{userid}/lectures": {
       "get": {
         "tags": [
           "StudentsGroup"
@@ -1284,27 +1422,13 @@
         "description": "Enter lectur id",
         "parameters": [
           {
-            "name": "groupid",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
             "name": "userid",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "id",
             "in": "path",
+            "description": "StudentsGroup",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -1689,10 +1813,6 @@
       "CreateUserRequest": {
         "type": "object",
         "properties": {
-          "avatar": {
-            "type": "string",
-            "nullable": true
-          },
           "name": {
             "type": "string",
             "nullable": true

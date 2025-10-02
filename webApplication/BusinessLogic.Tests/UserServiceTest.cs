@@ -112,6 +112,87 @@ namespace BusinessLogic.Tests
             repositoryWrapperMoq.Verify(x => x.Save(), Times.Once);
         }
 
+
+        [Fact]
+        public async Task GetByNameAndPassword_WhenPasswordOrEmailIsNull_ThrowsArgumentNullException()
+        {
+            await Assert.ThrowsAsync<ArgumentNullException>(() => service.GetByNameAndPassword(null, "test@example.com"));
+            await Assert.ThrowsAsync<ArgumentNullException>(() => service.GetByNameAndPassword("pass", null));
+        }
+
+        [Fact]
+        public async Task GetByNameAndPassword_WhenUserNotFound_ThrowsKeyNotFoundException()
+        {
+            string password = "mypassword";
+            string email = "notfound@example.com";
+
+            
+            userRepositoryMoq
+                .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<user, bool>>>()))
+                .ReturnsAsync(new List<user>());
+
+            var ex = await Assert.ThrowsAsync<KeyNotFoundException>(() =>
+                service.GetByNameAndPassword(password, email));
+
+            Assert.Contains("not found", ex.Message);
+        }
+
+        [Fact]
+        public async Task GetByNameAndPassword_WhenMultipleUsersFound_ThrowsInvalidOperationException()
+        {
+            string password = "pass";
+            string email = "duplicate@example.com";
+
+            var users = new List<user>
+    {
+        new user { userid = 1, email = email, passwordhash = ComputeHash(password) },
+        new user { userid = 2, email = email, passwordhash = ComputeHash(password) }
+    };
+
+            userRepositoryMoq
+                .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<user, bool>>>()))
+                .ReturnsAsync(users);
+
+            var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
+                service.GetByNameAndPassword(password, email));
+
+            Assert.Equal("Multiple users found.", ex.Message);
+        }
+
+        [Fact]
+        public async Task GetByNameAndPassword_WhenValidCredentials_ReturnsUser()
+        {
+            string password = "secure123";
+            string email = "alice@example.com";
+            string expectedHash = ComputeHash(password);
+
+            var expectedUser = new user
+            {
+                userid = 42,
+                email = email,
+                passwordhash = expectedHash,
+                name = "Alice"
+            };
+
+            
+            userRepositoryMoq
+                .Setup(x => x.FindByCondition(It.IsAny<Expression<Func<user, bool>>>()))
+                .ReturnsAsync(new List<user> { expectedUser });
+
+            var result = await service.GetByNameAndPassword(password, email);
+
+            Assert.Equal(42, result.userid);
+            Assert.Equal("Alice", result.name);
+        }
+
+
+        private static string ComputeHash(string input)
+        {
+            using var md5 = System.Security.Cryptography.MD5.Create();
+            byte [] hash = md5.ComputeHash(System.Text.Encoding.UTF8.GetBytes(input));
+            return Convert.ToBase64String(hash);
+        }
+
         [Fact]
         public async Task UpdateAsyncUserShouldUpdateUser()
         {

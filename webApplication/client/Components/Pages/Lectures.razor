@@ -1,14 +1,67 @@
-﻿@page "/lectures/{id}"
+﻿@page "/user/{id}/lectures"
+@inject NavigationManager Navigation
+@layout Client.Components.Layout.MainLayout
+@using Client.Components.bodies
+@inject HttpClient Http
+@using Microsoft.AspNetCore.Components.Web
+@rendermode RenderMode.InteractiveServer
+
 
 <h3>Lectures</h3>
 
+
+@if (obj.Count == 0)
+{
+	<p> У вас нет лекций</p>
+
+
+}
+else 
+{ 
+	@foreach (var lecture in obj) 
+	{
+		<div class="courses-grid">
+			
+
+				<div class="course-card">
+					<h3>@lecture.lecturename</h3>
+					<p>@lecture.description</p>
+				<p><strong>Продолжительность:</strong> @lecture.starttime - @lecture.endtime</p>
+
+				</div>
+		</div>
+	} 
+} 
+
 @code
 {
+	string userid;
+
 	[Parameter]
 	public string? id { get; set; }
 	protected override void OnParametersSet()
 	{
 
-		var test = id;
+		userid = id;
 	}
+
+
+	public List<Lecture>? obj = new List<Lecture>();
+
+	protected override async Task OnInitializedAsync()
+	{
+
+		
+		
+			var response = await Http.GetFromJsonAsync<List<Lecture>>($"api/StudentsGroup/{id}/lectures");
+
+			obj = response;
+
+		
+
+
+
+
+	}
+
 }

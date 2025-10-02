@@ -9,5 +9,6 @@ namespace Domain.Interfaces
 {
     public interface IAttendanceRepository : IRepositoryBase<attendance>
     {
+        Task<List<attendance>> GetByUserIdWithDetails(int userId);
     }
 }

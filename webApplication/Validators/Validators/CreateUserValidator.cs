@@ -34,8 +34,6 @@ namespace Validators
                 .Must(role => role == "Student" || role == "Teacher" || role == "Admin")
                 .WithMessage("Role must be one of: Student, Teacher, Admin");
 
-            RuleFor(x => x.avatar)
-                .NotEmpty().MaximumLength(500);
 
             RuleFor(x => x.telephonnumber)
                 .NotEmpty()

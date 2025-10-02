@@ -74,6 +74,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "webApplication.Controllers.AttendanceController",
+    "Method": "Upsert",
+    "RelativePath": "api/Attendance/upsert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attendance",
+        "Type": "webApplication.Contracts.attendance.CreateAttendanceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.AttendanceController",
+    "Method": "GetUserAttendance",
+    "RelativePath": "api/Attendance/user/{userId}/attendance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "webApplication.Controllers.CityController",
     "Method": "GetAll",
     "RelativePath": "api/City",
@@ -363,6 +395,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.LectureController",
+    "Method": "GetByTeacherId",
+    "RelativePath": "api/Lecture/teacher/{teacherId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -706,7 +754,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[webApplication.Contracts.room_equipment.GetRoomEquipmentResponse, webApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[webApplication.Contracts.room_equipment.GetRoomEquipmentResponse, Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -766,24 +814,46 @@
   {
     "ContainingType": "webApplication.Controllers.StudentsGroupController",
     "Method": "GetById",
-    "RelativePath": "api/StudentsGroup/{id}",
+    "RelativePath": "api/StudentsGroup/{userid}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "groupid",
+        "Name": "userid",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.StudentsGroupController",
+    "Method": "GetLectures",
+    "RelativePath": "api/StudentsGroup/{userid}/lectures",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
         "Name": "userid",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webApplication.Controllers.StudentsGroupController",
+    "Method": "GetStudentsByLectureId",
+    "RelativePath": "api/StudentsGroup/lecture/{lectureId}/students",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "id",
-        "Type": "",
+        "Name": "lectureId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -873,7 +943,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "webApplication.reauests.GetUserByPasswordAndEmailRequest",
+        "Type": "webApplication.requests.GetUserByPasswordAndEmailRequest",
         "IsRequired": true
       }
     ],

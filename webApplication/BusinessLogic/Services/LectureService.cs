@@ -120,5 +120,14 @@ namespace BusinessLogic.Services
             await _repositoryWrapper.lecture.Delete(lecture.First());
             await _repositoryWrapper.Save();
         }
+        public async Task<List<lecture>> GetLecturesByTeacherId(int teacherId)
+        {
+            if (teacherId <= 0)
+                throw new ArgumentException("Invalid teacher ID", nameof(teacherId));
+
+            return await _repositoryWrapper.lecture
+                .FindByCondition(l => l.teacherid == teacherId && l.isactive == true);
+        }
+
     }
 }

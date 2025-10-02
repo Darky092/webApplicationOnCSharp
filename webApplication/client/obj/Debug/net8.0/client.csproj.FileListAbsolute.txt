@@ -26,7 +26,6 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Client.props
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Client.props
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\Client.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\refint\Client.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\Client.pdb
@@ -40,3 +39,11 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\bin\Debug\net
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\Client.csproj.AssemblyReference.cache
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\Client.csproj.Up2Date
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\bin\Debug\net8.0\Contracts.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\bin\Debug\net8.0\Contracts.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\scopedcss\Components\Pages\UserCourses.razor.rz.scp.css
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\scopedcss\Components\Pages\Lectures.razor.rz.scp.css
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\scopedcss\Components\Pages\UserAttendance.razor.rz.scp.css
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\scopedcss\Components\Pages\AddLecture.razor.rz.scp.css
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\Client\obj\Debug\net8.0\scopedcss\Components\Pages\UserHome.razor.rz.scp.css

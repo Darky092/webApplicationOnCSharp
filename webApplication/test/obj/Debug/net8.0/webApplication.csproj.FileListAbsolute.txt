@@ -142,7 +142,6 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.webApplication.props
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.webApplication.props
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\webAppli.D3F93933.Up2Date
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\webApplication.genruntimeconfig.cache
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\ref\webApplication.dll
@@ -244,3 +243,6 @@ C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Validators.dll
 C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Validators.pdb
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Contracts.dll
+C:\Users\purr\Desktop\webApplicationOnCSharp\webApplication\test\bin\Debug\net8.0\Contracts.pdb

@@ -1250,8 +1250,17 @@
           }
         }
       },
+      "Contracts/1.0.0": {
+        "runtime": {
+          "Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Domain/1.0.0": {
         "dependencies": {
+          "Contracts": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
         },
         "runtime": {
@@ -2052,6 +2061,11 @@
       "hashPath": "xunit.runner.visualstudio.2.5.3.nupkg.sha512"
     },
     "BusinessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
