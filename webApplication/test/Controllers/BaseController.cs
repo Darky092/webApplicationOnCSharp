@@ -1,6 +1,7 @@
 ﻿using Domain.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {

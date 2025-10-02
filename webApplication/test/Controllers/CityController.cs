@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.city;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -25,6 +26,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<CityController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -40,6 +42,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<CityController>
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -65,6 +68,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<CityController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreateCityRequest city)
         {
@@ -91,6 +95,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // PUT api/<CityController>
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateCityRequest city)
         {
@@ -108,6 +113,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<CityController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

@@ -5,6 +5,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.group;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -24,6 +25,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<GroupController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -40,6 +42,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<GroupController>
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -67,6 +70,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<GroupController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreateGroupRequest group)
         {
@@ -95,6 +99,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // PUT api/<GroupController>
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateGroupRequest group)
         {
@@ -112,6 +117,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<GroupController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

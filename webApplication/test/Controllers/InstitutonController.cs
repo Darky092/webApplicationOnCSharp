@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.institution;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -24,6 +25,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<InstitutionController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -39,6 +41,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<InstitutionController>
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -66,6 +69,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<InstitutionController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreateInstitutionRequest institution)
         {
@@ -94,6 +98,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // PUT api/<InstitutionController>
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateInstitutionRequest institution)
         {
@@ -111,6 +116,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // Delete api/<InstitutionController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

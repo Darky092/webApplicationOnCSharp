@@ -93,35 +93,34 @@ namespace test
                         Url = new Uri("https://example.com/license")
                     },
                 });
+
+                
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
-                    Description = @"JWT Authorization header using the Bearer scheme. \r\n\r\n 
-                      Enter 'Bearer' [space] and then your token in the text input below.
-                      \r\n\r\nExample: 'Bearer 12345abcdef'",
                     Name = "Authorization",
-                    In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey,
-                    Scheme = "Bearer"
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Enter 'Bearer' [space] and then your token.\nExample: \"Bearer eyJhbGciOi...\""
                 });
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement()
-                  {
-                    {
-                      new OpenApiSecurityScheme
-                      {
-                        Reference = new OpenApiReference
-                          {
-                            Type = ReferenceType.SecurityScheme,
-                            Id = "Bearer"
-                          },
-                          Scheme = "oauth2",
-                          Name = "Bearer",
-                          In = ParameterLocation.Header,
 
-                        },
-                        new List<string>()
-                      }
-                    });
-                // using System.Reflection;
+               
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
             });
@@ -129,57 +128,6 @@ namespace test
 
 
 
-            TypeAdapterConfig<RegisterRequest, user>
-    .NewConfig()
-    .Map(dest => dest.name, src => src.Name)
-    .Map(dest => dest.surname, src => src.Surname)
-    .Map(dest => dest.patronymic, src => src.Patronymic)
-    .Map(dest => dest.email, src => src.Email)
-    .Map(dest => dest.telephonnumber, src => src.TelephoneNumber ?? "0000000000")
-    .Map(dest => dest.AcceptTerms, src => src.AcceptTerms)
-    .Map(dest => dest.passwordhash, src => (string)null)
-    .Map(dest => dest.RoleT, src => RoleT.User) 
-    .Map(dest => dest.role, src => "User");
-
-            TypeAdapterConfig<CreateRequest, user>
-    .NewConfig()
-    .Map(dest => dest.name, src => src.Name)
-    .Map(dest => dest.surname, src => src.Surname)
-    .Map(dest => dest.patronymic, src => src.Patronymic)
-    .Map(dest => dest.email, src => src.Email)
-    .Map(dest => dest.passwordhash, src => (string)null)
-    .Map(dest => dest.RoleT, src => src.RoleT ?? RoleT.User)
-    .Map(dest => dest.role, src => (src.RoleT ?? RoleT.User).ToString());
-
-            TypeAdapterConfig<UpdateRequest, user>
-                .NewConfig()
-                .Map(dest => dest.name, src => src.Name)
-                .Map(dest => dest.surname, src => src.Surname)
-                .Map(dest => dest.patronymic, src => src.Patronymic)
-                .Map(dest => dest.email, src => src.Email)
-                .Map(dest => dest.telephonnumber, src => src.TelephoneNumber)
-                .AfterMapping((src, dest) =>
-                {
-                    if (src.RoleT.HasValue)
-                    {
-                        dest.RoleT = src.RoleT.Value;
-                        dest.role = src.RoleT.Value.ToString();
-                    }
-                })
-                .Ignore(dest => dest.passwordhash)
-                .IgnoreNullValues(true);
-
-            TypeAdapterConfig<user, AccountResponse>
-                .NewConfig()
-                .Map(dest => dest.Id, src => src.userid)
-                .Map(dest => dest.Name, src => src.name)
-                .Map(dest => dest.Surname, src => src.surname)
-                .Map(dest => dest.Patronymic, src => src.patronymic)
-                .Map(dest => dest.Email, src => src.email)
-                .Map(dest => dest.Role, src => src.role) 
-                .Map(dest => dest.Created, src => src.Created ?? DateTime.UtcNow)
-                .Map(dest => dest.Updated, src => src.Updated)
-                .Map(dest => dest.IsVerified, src => src.IsVerified);
 
 
 
@@ -203,25 +151,29 @@ namespace test
                 context.Database.Migrate();
             }
 
-            // Configure the HTTP request pipeline.
+            
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
+            
+            app.UseRouting(); 
 
-
-
-
+            
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
-
-            app.UseMiddleware<ErrorHandlerMiddleware>();
-
+           
             app.UseMiddleware<JwtMiddleware>();
 
+            
+            app.UseAuthorization();
+
+            
+            app.UseMiddleware<ErrorHandlerMiddleware>();
+
+           
             app.MapControllers();
             app.UseExceptionHandler(errorApp =>
             {

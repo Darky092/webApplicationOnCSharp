@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.attendance;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -26,6 +27,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<AttendanceController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -41,6 +43,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<AttendanceController>
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -57,6 +60,7 @@ namespace webApplication.Controllers
         /// <param name="userId">attendance</param>
         /// <returns></returns>
         // GET api/<AttendanceController>
+        [Authorize]
         [HttpGet("user/{userId}/attendance")]
         public async Task<IActionResult> GetUserAttendance(int userId)
         {
@@ -82,6 +86,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<AttendanceController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreateAttendanceRequest attendance)
         {
@@ -110,6 +115,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<AttendanceController>
+        [Authorize]
         [HttpPost("upsert")]
         public async Task<IActionResult> Upsert(CreateAttendanceRequest attendance)
         {
@@ -136,6 +142,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // PUT api/<AttendanceController>
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateAttendanceRequest attendance)
         {
@@ -153,6 +160,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<AttendanceController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

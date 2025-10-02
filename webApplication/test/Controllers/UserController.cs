@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.user;
 using webApplication.requests;
+using webApplication.Authorization;
 
 namespace BackendApi.Controllers
 {
@@ -21,6 +22,7 @@ namespace BackendApi.Controllers
         /// </summary>
         /// <returns></returns>
         // Get api/<UsersController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -35,6 +37,7 @@ namespace BackendApi.Controllers
         /// <param name="id">User</param>
         /// <returns></returns>
         // Get api/<UsersController>
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -52,6 +55,7 @@ namespace BackendApi.Controllers
         /// <param name="request">User</param>
         /// <returns></returns>
         // POST api/<UsersController>
+        [AllowAnonymous]
         [HttpPost("login")]
         public async Task<IActionResult> GetByNameAndPassword([FromBody] GetUserByPasswordAndEmailRequest request)
         {
@@ -85,7 +89,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // POST api/<UsersController>
-
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreateUserRequest request)
         {
@@ -121,6 +125,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // PUT api/<UsersController>
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateUserRequest request)
         {
@@ -143,6 +148,7 @@ namespace BackendApi.Controllers
         /// <param name="id">User</param>
         /// <returns></returns>
         // Delete api/<UsersController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

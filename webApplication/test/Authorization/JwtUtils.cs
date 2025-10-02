@@ -17,12 +17,16 @@ namespace webApplication.Authorization
     {
         private readonly IRepositoryWrapper _wrapper;
         private readonly AppSettings _appSettings;
+        private readonly ILogger<JwtUtils> _logger;
 
         public JwtUtils(
-            IRepositoryWrapper wrapper, IOptions<AppSettings> appSettings)
+            IRepositoryWrapper wrapper,
+            IOptions<AppSettings> appSettings,
+            ILogger<JwtUtils> logger) 
         {
             _wrapper = wrapper;
             _appSettings = appSettings.Value;
+            _logger = logger;
         }
 
         public string GenerateJwtToken(user account)
@@ -32,7 +36,7 @@ namespace webApplication.Authorization
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new System.Security.Claims.ClaimsIdentity(new [] { new Claim("id", account.userid.ToString()) }),
+                Subject = new System.Security.Claims.ClaimsIdentity(new [] { new Claim("userid", account.userid.ToString()) }),
                 Expires = DateTime.UtcNow.AddMinutes(15),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
@@ -61,10 +65,15 @@ namespace webApplication.Authorization
 
         public int? ValidateJwtToken(string token)
         {
-            if(token == null)
+            if (token == null)
+            {
+                _logger.LogWarning("JWT token is null");
                 return null;
+            }
+
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+
             try
             {
                 tokenHandler.ValidateToken(token, new TokenValidationParameters
@@ -73,21 +82,24 @@ namespace webApplication.Authorization
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = false,
                     ValidateAudience = false,
-                    //set clockskew to zero so tokens expire exactly at token expiration time (instead of 5 minutes later)
                     ClockSkew = TimeSpan.Zero
-
                 }, out SecurityToken validatedToken);
 
                 var jwtToken = (JwtSecurityToken)validatedToken;
-                var accountId = int.Parse(jwtToken.Claims.First(x => x.Type == "userid").Value);
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(x => x.Type == "userid");
+                if (userIdClaim == null)
+                {
+                    _logger.LogWarning("JWT missing 'userid' claim");
+                    return null;
+                }
 
-                //return account id from JWT token if validation successful
+                var accountId = int.Parse(userIdClaim.Value);
+                _logger.LogInformation("JWT validated successfully for user ID: {UserId}", accountId);
                 return accountId;
-
             }
-            catch 
+            catch (Exception ex)
             {
-                //return null if validation fails
+                _logger.LogError(ex, "JWT validation failed for token: {Token}", token.Substring(0, Math.Min(20, token.Length)) + "...");
                 return null;
             }
         }

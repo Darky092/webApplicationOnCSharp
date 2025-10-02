@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.lecture;
 using webApplication.Contracts.students_group;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -25,6 +26,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<StudentsGroupController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -41,6 +43,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<StudentsGroupController>
+        [Authorize]
         [HttpGet("{userid}")]
 
         public async Task<IActionResult> GetById(int userid)
@@ -61,6 +64,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<StudentsGroupController>
+        [Authorize]
 
         [HttpGet("lecture/{lectureId}/students")]
         public async Task<IActionResult> GetStudentsByLectureId(int lectureId)
@@ -97,6 +101,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<StudentsGroupController>
+        [Authorize]
         [HttpGet("{userid}/lectures")]
         public async Task<IActionResult> GetLectures(int userid)
         {
@@ -124,6 +129,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<StudentsGroupController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Create(CreateStudentsGroupsRequest students_group)
         {
@@ -142,6 +148,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<StudentsGroupController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int groupid, int userid)
         {

@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.lectures_groups;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -22,6 +23,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<Lectures_groupController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -38,6 +40,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<Lectures_groupController>
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -63,6 +66,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<Lectures_groupController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreateLecturesGroupsRequest lectures_group)
         {
@@ -81,6 +85,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<Lectures_groupController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int lectureid, int groupid)
         {

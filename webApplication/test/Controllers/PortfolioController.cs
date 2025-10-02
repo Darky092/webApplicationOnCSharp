@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.portfolio;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -22,6 +23,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<PortfolioController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -37,7 +39,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<PortfolioController>
-
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -62,6 +64,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<PortfolioController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreatePortfolioRequest portfolio)
         {
@@ -81,7 +84,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<PortfolioController>
-
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id, string achievement)
         {

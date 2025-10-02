@@ -43,10 +43,10 @@ namespace BusinessLogic.Services
 
         public async Task<AuthenticateResponse> Authenticate(AuthenticateRequest model, string ipAddress)
         {
-            var account = await _repositoryWrapper.user.GetByEmailWithToken(model.Email);
+            var account = await _repositoryWrapper.user.GetByEmailWithToken(model.email);
 
             //validate
-            if (account == null || !account.IsVerified || !BCrypt.Net.BCrypt.Verify(model.Password, account.passwordhash))
+            if (account == null || !account.IsVerified || !BCrypt.Net.BCrypt.Verify(model.passwordhash, account.passwordhash))
                 throw new AppException("Email or password is incorrect");
 
             // authentication successful so generate jwt and refresh tokens
@@ -70,8 +70,8 @@ namespace BusinessLogic.Services
         public async Task<AccountResponse> Create(CreateRequest model)
         {
             //validate
-            if ((await _repositoryWrapper.user.FindByCondition(x => x.email == model.Email)).Count > 0)
-                throw new AppException($"Email '{model.Email}' is already reqistered");
+            if ((await _repositoryWrapper.user.FindByCondition(x => x.email == model.email)).Count > 0)
+                throw new AppException($"Email '{model.email}' is already reqistered");
 
             //man model to new account object
             var account = _mapper.Map<user>(model);
@@ -79,7 +79,7 @@ namespace BusinessLogic.Services
             account.Verifaied = DateTime.UtcNow;
 
             //hash password
-            account.passwordhash = BCrypt.Net.BCrypt.HashPassword(model.Password);
+            account.passwordhash = BCrypt.Net.BCrypt.HashPassword(model.passwordhash);
 
             //save account
             await _repositoryWrapper.user.Update(account);
@@ -111,7 +111,7 @@ namespace BusinessLogic.Services
 
         public async Task ForgotPassword(ForgotPasswordRequest model, string origin)
         {
-            var account = (await _repositoryWrapper.user.FindByCondition(x => x.email == model.Email)).FirstOrDefault();
+            var account = (await _repositoryWrapper.user.FindByCondition(x => x.email == model.email)).FirstOrDefault();
 
             //always return ok response to pervent email enumerators
             if (account == null) return;
@@ -220,7 +220,7 @@ namespace BusinessLogic.Services
 
         public async Task Register(RegisterRequest model, string origin)
         {
-            if ((await _repositoryWrapper.user.FindByCondition(x => x.email == model.Email)).Count > 0)
+            if ((await _repositoryWrapper.user.FindByCondition(x => x.email == model.email)).Count > 0)
             {
                 return;
             }
@@ -231,12 +231,12 @@ namespace BusinessLogic.Services
             var assignedRole = isFirstAccount ? RoleT.Admin : RoleT.User; 
 
             account.RoleT = assignedRole;
-            account.role = assignedRole.ToString(); 
+             
 
             account.Created = DateTime.UtcNow;
             account.Verifaied = DateTime.UtcNow;
             account.VerificationToken = await generateVerificationToken();
-            account.passwordhash = BCrypt.Net.BCrypt.HashPassword(model.Password);
+            account.passwordhash = BCrypt.Net.BCrypt.HashPassword(model.passwordhash);
 
             await _repositoryWrapper.user.Create(account);
             await _repositoryWrapper.Save();
@@ -256,7 +256,7 @@ namespace BusinessLogic.Services
             var account = await getAccountByResetToken(model.Token);
 
             //update password and remove reser token
-            account.passwordhash = BCrypt.Net.BCrypt.HashPassword(model.Password);
+            account.passwordhash = BCrypt.Net.BCrypt.HashPassword(model.passwordhash);
             account.PasswordReset = DateTime.UtcNow;
             account.ResetToken = null;
             account.ResetTokenExpires = null;
@@ -291,12 +291,12 @@ namespace BusinessLogic.Services
             var account = await getAccount(id);
 
             //validate
-            if (account.email != model.Email && (await _repositoryWrapper.user.FindByCondition(x => x.email == model.Email)).Count > 0)
-                throw new AppException($"Email '{model.Email}' is already registered");
+            if (account.email != model.email && (await _repositoryWrapper.user.FindByCondition(x => x.email == model.email)).Count > 0)
+                throw new AppException($"Email '{model.email}' is already registered");
 
             //hash password if it was entered
-            if (!string.IsNullOrEmpty(model.Password))
-                account.passwordhash = BCrypt.Net.BCrypt.HashPassword(model.Password);
+            if (!string.IsNullOrEmpty(model.passwordhash))
+                account.passwordhash = BCrypt.Net.BCrypt.HashPassword(model.passwordhash);
 
             //copy model to account and save
             _mapper.Map(model, account);

@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.room_equipment;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -23,6 +24,7 @@ namespace webApplication.Controllers
         /// </summary>
         /// <returns></returns>
         // GET api/<EquipmentRoomsController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -39,6 +41,7 @@ namespace webApplication.Controllers
         /// <param name="id">Equipment_Rooms</param>
         /// <returns></returns>
         // GET api/<EquipmentRoomsController>
+        [Authorize]
         [HttpGet("{roomId}")]
 
         public async Task<ActionResult<List<GetRoomEquipmentResponse>>> GetById(int roomId)
@@ -66,6 +69,7 @@ namespace webApplication.Controllers
 
         // POST api/<EquipmentRoomsController>
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Create(CreateRoomEquipmentRequest room_equipment)
         {
             var request = room_equipment.Adapt<room_equipment>();
@@ -82,6 +86,7 @@ namespace webApplication.Controllers
         /// <param name="equipment">Equipment_Rooms</param>
         /// <returns></returns>
         // DELETE api/<EquipmentRoomsController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id, string equipment)
         {

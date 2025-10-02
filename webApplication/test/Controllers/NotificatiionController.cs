@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.notification;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -23,6 +24,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<NotificarionController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -38,6 +40,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<NotificarionController>
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -63,6 +66,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<NotificarionController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreateNotificationRequest notification)
         {
@@ -88,7 +92,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // PUT api/<NotificarionController>
-
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateNotificationRequest notification)
         {
@@ -106,6 +110,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<NotificarionController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

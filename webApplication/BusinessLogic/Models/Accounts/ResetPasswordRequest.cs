@@ -14,7 +14,7 @@ namespace BusinessLogic.Models.Accounts
 
         [Required]
         [MinLength(6)]
-        public string Password { get; set; }
+        public string passwordhash { get; set; }
 
         [Required]
         [Compare("Password")]

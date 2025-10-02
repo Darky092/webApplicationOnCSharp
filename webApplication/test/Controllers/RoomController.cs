@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.room;
 using webApplication.Contracts.room_equipment;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -27,6 +28,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<RoomController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -43,6 +45,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<RoomController>
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -68,6 +71,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<RoomController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Create(CreateRoomRequest room)
         {
@@ -93,6 +97,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // PUT api/<RoomController>
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateRoomRequest room)
         {
@@ -110,6 +115,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<RoomController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\updaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\updaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\authorization\\jwtutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\authorization\\jwtutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\authenticalresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\authenticalresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\authorization\\authorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\authorization\\authorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\authorization\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\authorization\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,320 +27,24 @@
       "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\accountresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\authenticalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\authenticalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\forgotpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\forgotpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\verifyemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\verifyemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\validateresettokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\validateresettokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\revoketokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\revoketokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\authorization\\jwtutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\authorization\\jwtutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\authorization\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\authorization\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\authorization\\authorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\authorization\\authorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\authorization\\allowanonymousattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\authorization\\allowanonymousattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\helpers\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\helpers\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\autorization\\ijwtutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\autorization\\ijwtutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\autorization\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\autorization\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\autorization\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\autorization\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\helpers\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\helpers\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\dataacces\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20251002054251_test3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Migrations\\20251002054251_test3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\migrations\\20251002053138_test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\migrations\\20251002053138_test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\migrations\\20251002053017_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\migrations\\20251002053017_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\models\\ldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\models\\ldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic.tests\\lectureservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\lectureservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic.tests\\studentgroupservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\studentgroupservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\studentsgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\studentsgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic.tests\\attendanceservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C21DE2D-06E9-4B84-917F-C6F60ABF5DD2}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\attendanceservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\services\\lectureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\lectureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\istudentsgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\istudentsgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\istudentsgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\istudentsgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\addattendance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\addattendance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\iattendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iattendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\lectures.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\lectures.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\usercourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\usercourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\\u0441ourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\\u0441ourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\layout\\anonymouslayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\layout\\anonymouslayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\studentsgroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\studentsgroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\contracts\\contracts\\students_group\\studentgroupbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|solutionrelative:contracts\\contracts\\students_group\\studentgroupbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\contracts\\contracts\\attendance\\attendanceresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|solutionrelative:contracts\\contracts\\attendance\\attendanceresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\contracts\\contracts\\attendance\\updateattendancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|solutionrelative:contracts\\contracts\\attendance\\updateattendancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\dataacces\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\dataacces\\repositories\\studentgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98BAB82E-40DB-430C-8F7B-8A809A22E952}|DataAcces\\DataAcces.csproj|solutionrelative:dataacces\\repositories\\studentgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\userattendance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\userattendance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\ilectureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\ilectureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF92838-359D-4EC1-B9FB-ADD329912D20}|test\\webApplication.csproj|solutionrelative:test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\models\\students_group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\models\\students_group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\userattendance.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\userattendance.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\userhome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\userhome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\userhome.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\userhome.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\addlecture.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\addlecture.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\addlecture.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\addlecture.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\validators\\validators\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ABCF3E9-70F8-4D78-9CCA-65C5288F1497}|Validators\\Validators.csproj|solutionrelative:validators\\validators\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\contracts\\contracts\\user\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|solutionrelative:contracts\\contracts\\user\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\domain\\interfaces\\iattendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6442B4E-15DB-4A97-88C8-502645AC7983}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iattendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\usercourses.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\usercourses.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\lectures.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\lectures.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\contracts\\data\\coursesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|solutionrelative:contracts\\data\\coursesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\contracts\\contracts\\courses\\coursesbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|solutionrelative:contracts\\contracts\\courses\\coursesbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\contracts\\request\\getuserbypasswordandemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B9B7DE4-A9CE-47F2-99F2-AD9AFCC8235A}|Contracts\\Contracts.csproj|solutionrelative:contracts\\request\\getuserbypasswordandemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\client\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E404846-9317-496A-8F0E-D44D9098CB15}|Client\\Client.csproj|solutionrelative:client\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\purr\\desktop\\webapplicationoncsharp\\webapplication\\businesslogic\\models\\accounts\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C1B627-07D3-430C-B267-5AF28ECD0EE2}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\models\\accounts\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -350,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -358,249 +62,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\appsettings.json",
-              "RelativeDocumentMoniker": "test\\appsettings.json",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\appsettings.json",
-              "RelativeToolTip": "test\\appsettings.json",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-02T10:20:16.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Program.cs",
-              "RelativeDocumentMoniker": "test\\Program.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Program.cs",
-              "RelativeToolTip": "test\\Program.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAADgv6QAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T10:04:38.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "test\\Controllers\\BaseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T09:16:07.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\AccountsController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "test\\Controllers\\AccountsController.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAuwKcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T09:15:45.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "JwtUtils.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\JwtUtils.cs",
-              "RelativeDocumentMoniker": "test\\Authorization\\JwtUtils.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\JwtUtils.cs",
-              "RelativeToolTip": "test\\Authorization\\JwtUtils.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAADgvzkAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T08:12:36.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "JwtMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\JwtMiddleware.cs",
-              "RelativeDocumentMoniker": "test\\Authorization\\JwtMiddleware.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\JwtMiddleware.cs",
-              "RelativeToolTip": "test\\Authorization\\JwtMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T08:12:22.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 2,
               "Title": "AuthorizeAttribute.cs",
               "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\AuthorizeAttribute.cs",
               "RelativeDocumentMoniker": "test\\Authorization\\AuthorizeAttribute.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\AuthorizeAttribute.cs",
               "RelativeToolTip": "test\\Authorization\\AuthorizeAttribute.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBwAAACFAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T08:12:02.387Z",
+              "WhenOpened": "2025-10-02T16:42:38.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AllowAnonymousAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\AllowAnonymousAttribute.cs",
-              "RelativeDocumentMoniker": "test\\Authorization\\AllowAnonymousAttribute.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\AllowAnonymousAttribute.cs",
-              "RelativeToolTip": "test\\Authorization\\AllowAnonymousAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T08:11:07.492Z",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\appsettings.json",
+              "RelativeDocumentMoniker": "test\\appsettings.json",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\appsettings.json",
+              "RelativeToolTip": "test\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-02T15:50:02.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ErrorHandlerMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Helpers\\ErrorHandlerMiddleware.cs",
-              "RelativeDocumentMoniker": "test\\Helpers\\ErrorHandlerMiddleware.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Helpers\\ErrorHandlerMiddleware.cs",
-              "RelativeToolTip": "test\\Helpers\\ErrorHandlerMiddleware.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAADwvyoAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "JwtMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\JwtMiddleware.cs",
+              "RelativeDocumentMoniker": "test\\Authorization\\JwtMiddleware.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\JwtMiddleware.cs",
+              "RelativeToolTip": "test\\Authorization\\JwtMiddleware.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvyEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T08:00:00.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\EmailService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\EmailService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T06:00:54.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AccountService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AccountService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\AccountService.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAgwOYAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T06:00:44.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IJwtUtils.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Autorization\\IJwtUtils.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Autorization\\IJwtUtils.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Autorization\\IJwtUtils.cs",
-              "RelativeToolTip": "BusinessLogic\\Autorization\\IJwtUtils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:59:03.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Autorization\\IEmailService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Autorization\\IEmailService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Autorization\\IEmailService.cs",
-              "RelativeToolTip": "BusinessLogic\\Autorization\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:58:47.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Autorization\\IAccountService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Autorization\\IAccountService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Autorization\\IAccountService.cs",
-              "RelativeToolTip": "BusinessLogic\\Autorization\\IAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:58:35.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AppSettings.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Helpers\\AppSettings.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Helpers\\AppSettings.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Helpers\\AppSettings.cs",
-              "RelativeToolTip": "BusinessLogic\\Helpers\\AppSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:57:20.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "AppException.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Helpers\\AppException.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Helpers\\AppException.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Helpers\\AppException.cs",
-              "RelativeToolTip": "BusinessLogic\\Helpers\\AppException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:57:05.651Z",
+              "WhenOpened": "2025-10-02T14:43:21.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\UpdateRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\UpdateRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\UpdateRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\UpdateRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwA8AAAAAAAAAAAAAAA==",
+              "Title": "JwtUtils.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\JwtUtils.cs",
+              "RelativeDocumentMoniker": "test\\Authorization\\JwtUtils.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Authorization\\JwtUtils.cs",
+              "RelativeToolTip": "test\\Authorization\\JwtUtils.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:55:39.169Z",
+              "WhenOpened": "2025-10-02T14:38:25.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\CreateRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\CreateRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\CreateRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\CreateRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABTAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Program.cs",
+              "RelativeDocumentMoniker": "test\\Program.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Program.cs",
+              "RelativeToolTip": "test\\Program.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAqwMkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:54:52.874Z",
+              "WhenOpened": "2025-10-02T14:19:31.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AttendanceService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AttendanceService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AttendanceService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AttendanceService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\AttendanceService.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAYwK8AAAABAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "test\\Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "test\\Controllers\\AttendanceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T00:38:56.046Z",
+              "WhenOpened": "2025-10-02T14:07:50.574Z",
               "EditorCaption": ""
             },
             {
@@ -611,854 +146,61 @@
               "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\AccountResponse.cs",
               "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\AccountResponse.cs",
               "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\AccountResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:54:06.249Z",
+              "WhenOpened": "2025-10-02T13:59:06.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AuthenticalRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\AuthenticalRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\AuthenticalRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\AuthenticalRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\AuthenticalRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "CreateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\CreateRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\CreateRequest.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\CreateRequest.cs",
+              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\CreateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:54:22.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "VerifyEmailRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\VerifyEmailRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\VerifyEmailRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\VerifyEmailRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\VerifyEmailRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:55:54.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ValidateResetTokenRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\ValidateResetTokenRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\ValidateResetTokenRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\ValidateResetTokenRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\ValidateResetTokenRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:55:47.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RevokeTokenRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\RevokeTokenRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\RevokeTokenRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\RevokeTokenRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\RevokeTokenRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:55:29.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ResetPasswordRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\ResetPasswordRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\ResetPasswordRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\ResetPasswordRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\ResetPasswordRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:55:23.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\RegisterRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\RegisterRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\RegisterRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\RegisterRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:55:15.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ForgotPasswordRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\ForgotPasswordRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\ForgotPasswordRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\ForgotPasswordRequest.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\ForgotPasswordRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:55:07.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthenticalResponse.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\AuthenticalResponse.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\AuthenticalResponse.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\AuthenticalResponse.cs",
-              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\AuthenticalResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAIwA0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:54:31.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "DataAcces\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "DataAcces\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAB9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:45:46.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:44:35.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "20251002054251_test3.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20251002054251_test3.cs",
-              "RelativeDocumentMoniker": "Domain\\Migrations\\20251002054251_test3.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20251002054251_test3.cs",
-              "RelativeToolTip": "Domain\\Migrations\\20251002054251_test3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:42:51.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Entities\\Role.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Role.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Entities\\Role.cs",
-              "RelativeToolTip": "Domain\\Entities\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:42:06.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "20251002053138_test2.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20251002053138_test2.cs",
-              "RelativeDocumentMoniker": "Domain\\Migrations\\20251002053138_test2.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20251002053138_test2.cs",
-              "RelativeToolTip": "Domain\\Migrations\\20251002053138_test2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:31:39.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "20251002053017_test.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20251002053017_test.cs",
-              "RelativeDocumentMoniker": "Domain\\Migrations\\20251002053017_test.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Migrations\\20251002053017_test.cs",
-              "RelativeToolTip": "Domain\\Migrations\\20251002053017_test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T05:30:17.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "StudentGroupServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\StudentGroupServiceTest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic.Tests\\StudentGroupServiceTest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\StudentGroupServiceTest.cs",
-              "RelativeToolTip": "BusinessLogic.Tests\\StudentGroupServiceTest.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAIAwwJQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:23:09.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\UserServiceTest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic.Tests\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\UserServiceTest.cs",
-              "RelativeToolTip": "BusinessLogic.Tests\\UserServiceTest.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAcwIwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:21:49.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "LectureService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\LectureService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\LectureService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\LectureService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\LectureService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAcwHwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T02:46:07.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "IAttendanceService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IAttendanceService.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IAttendanceService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IAttendanceService.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IAttendanceService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T00:35:22.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "AttendanceResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\attendance\\AttendanceResponseDto.cs",
-              "RelativeDocumentMoniker": "Contracts\\Contracts\\attendance\\AttendanceResponseDto.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\attendance\\AttendanceResponseDto.cs",
-              "RelativeToolTip": "Contracts\\Contracts\\attendance\\AttendanceResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T00:34:32.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AttendanceController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\AttendanceController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\AttendanceController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\AttendanceController.cs",
-              "RelativeToolTip": "test\\Controllers\\AttendanceController.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAApwGcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T00:42:14.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "AddAttendance.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\AddAttendance.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\AddAttendance.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\AddAttendance.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\AddAttendance.razor",
-              "ViewState": "AgIAALcAAAAAAAAAAIBJwNcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-02T02:37:32.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "StudentsGroupService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\StudentsGroupService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\StudentsGroupService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\StudentsGroupService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\StudentsGroupService.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAgwGkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T17:54:52.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "user.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\user.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\user.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\user.cs",
-              "RelativeToolTip": "Domain\\Models\\user.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAIwB8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T20:14:05.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "UserCourses.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserCourses.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\UserCourses.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserCourses.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\UserCourses.razor",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwCMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T22:49:50.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "LectureServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\LectureServiceTest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic.Tests\\LectureServiceTest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\LectureServiceTest.cs",
-              "RelativeToolTip": "BusinessLogic.Tests\\LectureServiceTest.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAwIQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:25:10.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "LDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\LDBContext.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\LDBContext.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\LDBContext.cs",
-              "RelativeToolTip": "Domain\\Models\\LDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T19:59:49.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "AttendanceServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\AttendanceServiceTest.cs",
-              "RelativeDocumentMoniker": "BusinessLogic.Tests\\AttendanceServiceTest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic.Tests\\AttendanceServiceTest.cs",
-              "RelativeToolTip": "BusinessLogic.Tests\\AttendanceServiceTest.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAYwMcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:25:33.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "\u0421ourses.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\\u0421ourses.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\\u0421ourses.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\\u0421ourses.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\\u0421ourses.razor",
-              "ViewState": "AgIAABgAAAAAAAAAAIBJwC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T22:48:01.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\UserService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAwHgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T21:33:33.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "IStudentsGroupService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IStudentsGroupService.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IStudentsGroupService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IStudentsGroupService.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IStudentsGroupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T18:54:38.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "IStudentsGroupRepository.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IStudentsGroupRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IStudentsGroupRepository.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IStudentsGroupRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IStudentsGroupRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T19:32:19.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Lectures.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Lectures.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\Lectures.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Lectures.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\Lectures.razor",
-              "ViewState": "AgIAAB4AAAAAAAAAAIBJwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T23:12:59.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "client\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAABsAAAAAAAAAAIBJwDMAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T22:01:30.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "client\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T21:38:56.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "AnonymousLayout.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Layout\\AnonymousLayout.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Layout\\AnonymousLayout.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Layout\\AnonymousLayout.razor",
-              "RelativeToolTip": "client\\Components\\Layout\\AnonymousLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-01T00:54:29.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "StudentsGroupController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\StudentsGroupController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\StudentsGroupController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\StudentsGroupController.cs",
-              "RelativeToolTip": "test\\Controllers\\StudentsGroupController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAwEUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T19:35:02.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "StudentGroupBody.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\students_group\\StudentGroupBody.cs",
-              "RelativeDocumentMoniker": "Contracts\\Contracts\\students_group\\StudentGroupBody.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\students_group\\StudentGroupBody.cs",
-              "RelativeToolTip": "Contracts\\Contracts\\students_group\\StudentGroupBody.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T21:47:58.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "UpdateAttendanceRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\attendance\\UpdateAttendanceRequest.cs",
-              "RelativeDocumentMoniker": "Contracts\\Contracts\\attendance\\UpdateAttendanceRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\attendance\\UpdateAttendanceRequest.cs",
-              "RelativeToolTip": "Contracts\\Contracts\\attendance\\UpdateAttendanceRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T00:36:47.636Z",
+              "WhenOpened": "2025-10-02T13:58:50.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Program.cs",
-              "RelativeDocumentMoniker": "client\\Program.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Program.cs",
-              "RelativeToolTip": "client\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Models\\Accounts\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Models\\Accounts\\RegisterRequest.cs",
+              "RelativeToolTip": "BusinessLogic\\Models\\Accounts\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T23:54:36.36Z",
+              "WhenOpened": "2025-10-02T13:49:24.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "AttendanceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\AttendanceRepository.cs",
-              "RelativeDocumentMoniker": "DataAcces\\Repositories\\AttendanceRepository.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\AttendanceRepository.cs",
-              "RelativeToolTip": "DataAcces\\Repositories\\AttendanceRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "test\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "test\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAwGcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T00:33:30.539Z",
+              "WhenOpened": "2025-10-02T13:45:59.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "StudentGroupRepository.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\StudentGroupRepository.cs",
-              "RelativeDocumentMoniker": "DataAcces\\Repositories\\StudentGroupRepository.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\DataAcces\\Repositories\\StudentGroupRepository.cs",
-              "RelativeToolTip": "DataAcces\\Repositories\\StudentGroupRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwC8AAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\BusinessLogic\\Services\\AccountService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\AccountService.cs",
+              "ViewState": "AgIAACkBAAAAAAAAAAAUwEsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T19:33:34.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "LectureController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\LectureController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\LectureController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\LectureController.cs",
-              "RelativeToolTip": "test\\Controllers\\LectureController.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAuwI4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T03:04:44.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\Login.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Login.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T20:30:45.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "UserAttendance.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserAttendance.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\UserAttendance.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserAttendance.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\UserAttendance.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T22:50:04.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "students_group.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\students_group.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\students_group.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\students_group.cs",
-              "RelativeToolTip": "Domain\\Models\\students_group.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T22:59:17.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "group.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\group.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\group.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\group.cs",
-              "RelativeToolTip": "Domain\\Models\\group.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAABQwBoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T19:31:22.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "test\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\test\\Controllers\\UserController.cs",
-              "RelativeToolTip": "test\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAwJgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T22:01:04.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "lecture.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\lecture.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\lecture.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Models\\lecture.cs",
-              "RelativeToolTip": "Domain\\Models\\lecture.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAxwCEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T20:33:17.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "ILectureService.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\ILectureService.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\ILectureService.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\ILectureService.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\ILectureService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T02:45:44.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "UserAttendance.razor.css",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserAttendance.razor.css",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\UserAttendance.razor.css",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserAttendance.razor.css",
-              "RelativeToolTip": "client\\Components\\Pages\\UserAttendance.razor.css",
-              "ViewState": "AgIAABwAAAAAAAAAAAAmwDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-02T00:26:33.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "Registration.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Registration.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\Registration.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Registration.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\Registration.razor",
-              "ViewState": "AgIAADAAAAAAAAAAAIBJwEIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-01T01:07:05.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "UserHome.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserHome.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\UserHome.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserHome.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\UserHome.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T21:24:03.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "UserHome.razor.css",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserHome.razor.css",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\UserHome.razor.css",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserHome.razor.css",
-              "RelativeToolTip": "client\\Components\\Pages\\UserHome.razor.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-02T02:32:03.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "AddLecture.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\AddLecture.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\AddLecture.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\AddLecture.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\AddLecture.razor",
-              "ViewState": "AgIAAHIAAAAAAAAAAIBJwCEAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-02T02:15:09.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "AddLecture.razor.css",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\AddLecture.razor.css",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\AddLecture.razor.css",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\AddLecture.razor.css",
-              "RelativeToolTip": "client\\Components\\Pages\\AddLecture.razor.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-02T02:15:34.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "CreateUserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateUserValidator.cs",
-              "RelativeDocumentMoniker": "Validators\\Validators\\CreateUserValidator.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Validators\\Validators\\CreateUserValidator.cs",
-              "RelativeToolTip": "Validators\\Validators\\CreateUserValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T02:07:44.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "CreateUserRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\user\\CreateUserRequest.cs",
-              "RelativeDocumentMoniker": "Contracts\\Contracts\\user\\CreateUserRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\user\\CreateUserRequest.cs",
-              "RelativeToolTip": "Contracts\\Contracts\\user\\CreateUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T02:00:52.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "IAttendanceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IAttendanceRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IAttendanceRepository.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Domain\\Interfaces\\IAttendanceRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IAttendanceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T00:31:50.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "UserCourses.razor.css",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserCourses.razor.css",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\UserCourses.razor.css",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\UserCourses.razor.css",
-              "RelativeToolTip": "client\\Components\\Pages\\UserCourses.razor.css",
-              "ViewState": "AgIAABkAAAAAAAAAAAAIwDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-01T23:06:28.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 80,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Routes.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Routes.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Routes.razor",
-              "RelativeToolTip": "client\\Components\\Routes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T22:27:45.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "Lectures.razor.css",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Lectures.razor.css",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\Lectures.razor.css",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Lectures.razor.css",
-              "RelativeToolTip": "client\\Components\\Pages\\Lectures.razor.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-02T00:03:36.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 83,
-              "Title": "GetUserByPasswordAndEmailRequest.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\request\\GetUserByPasswordAndEmailRequest.cs",
-              "RelativeDocumentMoniker": "Contracts\\request\\GetUserByPasswordAndEmailRequest.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\request\\GetUserByPasswordAndEmailRequest.cs",
-              "RelativeToolTip": "Contracts\\request\\GetUserByPasswordAndEmailRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T21:45:30.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
-              "Title": "CoursesBody.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\courses\\CoursesBody.cs",
-              "RelativeDocumentMoniker": "Contracts\\Contracts\\courses\\CoursesBody.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Contracts\\courses\\CoursesBody.cs",
-              "RelativeToolTip": "Contracts\\Contracts\\courses\\CoursesBody.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T21:46:02.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
-              "Title": "CoursesData.cs",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Data\\CoursesData.cs",
-              "RelativeDocumentMoniker": "Contracts\\Data\\CoursesData.cs",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\Contracts\\Data\\CoursesData.cs",
-              "RelativeToolTip": "Contracts\\Data\\CoursesData.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA0wB0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T21:55:29.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "client\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\purr\\Desktop\\webApplicationOnCSharp\\webApplication\\client\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "client\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-01T01:03:17.944Z",
+              "WhenOpened": "2025-10-02T13:35:10.141Z",
               "EditorCaption": ""
             }
           ]

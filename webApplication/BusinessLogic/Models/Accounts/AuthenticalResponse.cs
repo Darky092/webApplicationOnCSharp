@@ -4,12 +4,14 @@ namespace BusinessLogic.Models.Accounts
 {
     public class AuthenticateResponse
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = null!;
-        public string Surname { get; set; } = null!;
-        public string? Patronymic { get; set; }
-        public string Email { get; set; } = null!;
-        public string Role { get; set; } = null!;
+        public int userid { get; set; }
+        public string name { get; set; } = null!;
+        public string surname { get; set; } = null!;
+        public string? patronymic { get; set; }
+        public string email { get; set; } = null!;
+        public string role { get; set; } = null!;
+
+        public string RoleT { get; set; } = null!;
         public DateTime Created { get; set; }
         public DateTime? Updated { get; set; }
         public bool IsVerified { get; set; }

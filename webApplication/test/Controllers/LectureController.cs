@@ -4,6 +4,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApplication.Contracts.lecture;
+using webApplication.Authorization;
 
 namespace webApplication.Controllers
 {
@@ -23,6 +24,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<LectureController>
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -38,7 +40,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<LectureController>
-
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -57,7 +59,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // GET api/<LectureController>
-
+        [Authorize]
         [HttpGet("teacher/{teacherId}")]
         public async Task<IActionResult> GetByTeacherId(int teacherId)
         {
@@ -87,6 +89,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // POST api/<LectureController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(CreateLectureRequest lecture)
         {
@@ -116,6 +119,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // PUT api/<LectureController>
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateLectureRequest lecture)
         {
@@ -133,6 +137,7 @@ namespace webApplication.Controllers
         /// <returns></returns>
 
         // DELETE api/<LectureController>
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
